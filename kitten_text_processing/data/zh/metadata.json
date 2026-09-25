@@ -1,0 +1,20 @@
+{
+  "language": "zh",
+  "nemo_version": "1.2.0",
+  "input_case": "cased",
+  "deterministic": true,
+  "graphs": {
+    "tagger": {
+      "states": 21357,
+      "arcs": 38828,
+      "bytes": 86180,
+      "sha256": "af95569361c98763f4b34279b603bf7e2458ef6d62267feb0226c83716dc510d"
+    },
+    "verbalizer": {
+      "states": 1435,
+      "arcs": 26807,
+      "bytes": 10621,
+      "sha256": "b52a81aded45fb2e0eed284e11617371090bc52f0fe39143bd0ef5b5f5b27523"
+    }
+  }
+}

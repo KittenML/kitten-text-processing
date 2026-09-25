@@ -1,0 +1,4 @@
+# Development only. Never needed to install or run kitten-text-processing.
+nemo_text_processing==1.2.0
+pynini==2.1.6.post1
+sacremoses==0.2.0

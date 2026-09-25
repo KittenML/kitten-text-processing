@@ -1,0 +1,56 @@
+cardinal|Nhà tôi có 2 con mèo.
+cardinal|Trên xe buýt có 17 hành khách.
+cardinal|Thư viện đã mua 35 cuốn sách.
+cardinal|Buổi hòa nhạc còn 99 vé.
+cardinal|Ngôi làng có 120 người sinh sống.
+cardinal|Chúng tôi trồng 1234 cây trong công viên.
+ordinal|Cô ấy về đích ở vị trí thứ 3.
+decimal|Kết quả tính toán là 3,14.
+decimal|Sai số chỉ là 0,05 điểm.
+decimal|Nhiệt độ giảm xuống -2,5 độ.
+decimal|Đồ uống này chứa 12% đường.
+decimal|Lãi suất hằng năm là 4,5%.
+fraction|Cho thêm 1/2 cốc sữa.
+fraction|Chúng tôi đã đi được 3/4 quãng đường.
+money|Cà phê có giá 20000 đồng.
+money|Tôi trả 125000 đồng cho bữa trưa.
+money|Ngân sách là 1.250.000 đồng.
+money|Giá vé là 20 USD.
+money|Người bán trả lại 7500 đồng.
+money|Máy tính này giá 999,99 đô la.
+money|Quỹ đã quyên góp 1 triệu đồng.
+date|Cuộc họp diễn ra ngày 5 tháng 1 năm 2026.
+date|Cô ấy sinh ngày 14 tháng 2 năm 1998.
+date|Tài liệu ghi ngày 03/04/2025.
+date|Ngày giao hàng dự kiến là 2026-09-25.
+date|Tòa nhà được mở cửa vào năm 2001.
+date|Kỳ nghỉ bắt đầu vào ngày 1 tháng 7.
+date|Hồ sơ bao gồm giai đoạn 1980-1990.
+time|Tàu khởi hành lúc 08:30.
+time|Hẹn gặp lúc 15:15.
+time|Chuông báo thức reo lúc 7:00.
+time|Bộ phim bắt đầu lúc 21:45.
+time|Đồng hồ bấm giờ hiển thị 01:02:03.
+time|Cửa hàng mở lúc 9 giờ sáng.
+time|Chúng tôi chờ ở ga 30 phút.
+measure|Thùng hàng nặng 5 kg.
+measure|Thêm 250 ml nước.
+measure|Con đường dài 12 km.
+measure|Giới hạn tốc độ là 80 km/h.
+measure|Bàn rộng 1,5 m.
+measure|Nhiệt độ hôm nay là 23 °C.
+measure|Bình chứa được 10 lít.
+electronic|Truy cập https://example.com để xem chi tiết.
+electronic|Gửi thư tới hello@example.vn trước thứ Sáu.
+electronic|Gọi 0912345678 để được hỗ trợ.
+electronic|Địa chỉ máy chủ là 192.168.1.1.
+electronic|Cài đặt phiên bản 2.4.1.
+electronic|Mã đơn hàng là AB123.
+electronic|Trang web là www.example.vn.
+mixed|Bác sĩ Lan đã khám cho 12 bệnh nhân.
+punctuation|Cô ấy nói: "Tôi cần 3 vé."
+punctuation|Vẫn còn 7 chỗ trống phải không?
+punctuation|Hãy đọc các mục [4] và [5].
+plain|Một dòng sông yên bình chảy qua thung lũng.
+mixed|Ngày 5 tháng 5, tôi mua 2 kg gạo với giá 24500 đồng.
+mixed|Lúc 10:30, cảm biến ghi nhận 22,5 °C và độ ẩm 60%.

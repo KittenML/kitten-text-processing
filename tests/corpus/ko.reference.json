@@ -1,0 +1,512 @@
+{
+  "nemo_version": "1.2.0",
+  "pynini_version": "2.1.6.post1",
+  "sacremoses_version": "0.2.0",
+  "load_seconds": 0.29466870427131653,
+  "cases": [
+    {
+      "id": "ko-001",
+      "lang": "ko",
+      "category": "cardinal",
+      "input": "우리 집에는 고양이 2마리가 있습니다.",
+      "expected": "우리 집에는 고양이 이 마리가 있습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.006653608754277229
+    },
+    {
+      "id": "ko-002",
+      "lang": "ko",
+      "category": "cardinal",
+      "input": "버스에 승객 17명이 탔습니다.",
+      "expected": "버스에 승객 십칠 명이 탔습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0034459559246897697
+    },
+    {
+      "id": "ko-003",
+      "lang": "ko",
+      "category": "cardinal",
+      "input": "도서관에서 책 35권을 샀습니다.",
+      "expected": "도서관에서 책 삼십오 권을 샀습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0035149995237588882
+    },
+    {
+      "id": "ko-004",
+      "lang": "ko",
+      "category": "cardinal",
+      "input": "공연 표가 99장 남았습니다.",
+      "expected": "공연 표가 구 아홉장 남았습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.003305181860923767
+    },
+    {
+      "id": "ko-005",
+      "lang": "ko",
+      "category": "cardinal",
+      "input": "마을에는 주민 120명이 살고 있습니다.",
+      "expected": "마을에는 주민 백이십 명이 살고 있습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.00429844856262207
+    },
+    {
+      "id": "ko-006",
+      "lang": "ko",
+      "category": "cardinal",
+      "input": "공원에 나무 1234그루를 심었습니다.",
+      "expected": "공원에 나무 천이백삼십사 그루를 심었습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.005235453136265278
+    },
+    {
+      "id": "ko-007",
+      "lang": "ko",
+      "category": "ordinal",
+      "input": "그 선수는 3위로 들어왔습니다.",
+      "expected": "그 선수는 삼 위로 들어왔습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.00305233895778656
+    },
+    {
+      "id": "ko-008",
+      "lang": "ko",
+      "category": "decimal",
+      "input": "계산 결과는 3.14입니다.",
+      "expected": "계산 결과는 삼점일사 입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.003295368514955044
+    },
+    {
+      "id": "ko-009",
+      "lang": "ko",
+      "category": "decimal",
+      "input": "오차는 0.05에 불과합니다.",
+      "expected": "오차는 영점영오 에 불과합니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0029581505805253983
+    },
+    {
+      "id": "ko-010",
+      "lang": "ko",
+      "category": "decimal",
+      "input": "기온이 -2.5도까지 내려갔습니다.",
+      "expected": "기온이 마이너스 이점오 도까지 내려갔습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0036610644310712814
+    },
+    {
+      "id": "ko-011",
+      "lang": "ko",
+      "category": "decimal",
+      "input": "이 음료에는 설탕이 12% 들어 있습니다.",
+      "expected": "이 음료에는 설탕이 십이 퍼센트 들어 있습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0043999310582876205
+    },
+    {
+      "id": "ko-012",
+      "lang": "ko",
+      "category": "decimal",
+      "input": "연 이자율은 4.5%입니다.",
+      "expected": "연 이자율은 사점오%입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0028579402714967728
+    },
+    {
+      "id": "ko-013",
+      "lang": "ko",
+      "category": "fraction",
+      "input": "우유 1/2컵을 넣으세요.",
+      "expected": "우유 이분의 일 컵을 넣으세요.",
+      "reference_error": null,
+      "reference_seconds": 0.003030521795153618
+    },
+    {
+      "id": "ko-014",
+      "lang": "ko",
+      "category": "fraction",
+      "input": "전체 거리의 3/4을 걸었습니다.",
+      "expected": "전체 거리의 사분의 삼을 걸었습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0036349575966596603
+    },
+    {
+      "id": "ko-015",
+      "lang": "ko",
+      "category": "money",
+      "input": "커피 한 잔은 2000원입니다.",
+      "expected": "커피 한 잔은 이천 원입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.003438526764512062
+    },
+    {
+      "id": "ko-016",
+      "lang": "ko",
+      "category": "money",
+      "input": "점심값으로 12500원을 냈습니다.",
+      "expected": "점심값으로 만이천오백 원을 냈습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.004624177701771259
+    },
+    {
+      "id": "ko-017",
+      "lang": "ko",
+      "category": "money",
+      "input": "행사 예산은 1,250,000원입니다.",
+      "expected": "행사 예산은 백이십오만원 입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.004485831595957279
+    },
+    {
+      "id": "ko-018",
+      "lang": "ko",
+      "category": "money",
+      "input": "입장권은 20달러입니다.",
+      "expected": "입장권은 이십 달러입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0025132382288575172
+    },
+    {
+      "id": "ko-019",
+      "lang": "ko",
+      "category": "money",
+      "input": "거스름돈으로 750원을 받았습니다.",
+      "expected": "거스름돈으로 칠백오십 원을 받았습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0038546305149793625
+    },
+    {
+      "id": "ko-020",
+      "lang": "ko",
+      "category": "money",
+      "input": "컴퓨터 가격은 999,990원입니다.",
+      "expected": "컴퓨터 가격은 구십구만구천구백구십원 입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.005185388028621674
+    },
+    {
+      "id": "ko-021",
+      "lang": "ko",
+      "category": "money",
+      "input": "재단에서 100만원을 기부했습니다.",
+      "expected": "재단에서 백 만원을 기부했습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.003589097410440445
+    },
+    {
+      "id": "ko-022",
+      "lang": "ko",
+      "category": "date",
+      "input": "회의는 2026년 1월 5일에 열립니다.",
+      "expected": "회의는 이천이십육년 일월 오 일에 열립니다.",
+      "reference_error": null,
+      "reference_seconds": 0.005527102388441563
+    },
+    {
+      "id": "ko-023",
+      "lang": "ko",
+      "category": "date",
+      "input": "그는 1998년 2월 14일에 태어났습니다.",
+      "expected": "그는 천구백구십팔년 이월 십사 일에 태어났습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.006553474813699722
+    },
+    {
+      "id": "ko-024",
+      "lang": "ko",
+      "category": "date",
+      "input": "서류에 적힌 날짜는 2025/03/04입니다.",
+      "expected": "서류에 적힌 날짜는 이천이십오년 삼월 사일 입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.006219037808477879
+    },
+    {
+      "id": "ko-025",
+      "lang": "ko",
+      "category": "date",
+      "input": "배송 예정일은 2026-09-25입니다.",
+      "expected": "배송 예정일은 이천이십육년 구월 이십오일 입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.006241629831492901
+    },
+    {
+      "id": "ko-026",
+      "lang": "ko",
+      "category": "date",
+      "input": "이 건물은 2001년에 문을 열었습니다.",
+      "expected": "이 건물은 이천일 년에 문을 열었습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.004423929378390312
+    },
+    {
+      "id": "ko-027",
+      "lang": "ko",
+      "category": "date",
+      "input": "여름 방학은 7월 1일에 시작합니다.",
+      "expected": "여름 방학은 칠월 일 일에 시작합니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0036579351872205734
+    },
+    {
+      "id": "ko-028",
+      "lang": "ko",
+      "category": "date",
+      "input": "기록에는 1980년부터 1990년까지의 역사가 담겨 있습니다.",
+      "expected": "기록에는 천구백팔십년 부터 천구백구십 년까지의 역사가 담겨 있습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.008131582289934158
+    },
+    {
+      "id": "ko-029",
+      "lang": "ko",
+      "category": "time",
+      "input": "기차는 08:30에 출발합니다.",
+      "expected": "기차는 여덟시 삼십분 에 출발합니다.",
+      "reference_error": null,
+      "reference_seconds": 0.003440666012465954
+    },
+    {
+      "id": "ko-030",
+      "lang": "ko",
+      "category": "time",
+      "input": "오후 3시 15분에 만나요.",
+      "expected": "오후 세시 십오분 에 만나요.",
+      "reference_error": null,
+      "reference_seconds": 0.0032837791368365288
+    },
+    {
+      "id": "ko-031",
+      "lang": "ko",
+      "category": "time",
+      "input": "알람은 7:00에 울립니다.",
+      "expected": "알람은 일곱시 에 울립니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0027862200513482094
+    },
+    {
+      "id": "ko-032",
+      "lang": "ko",
+      "category": "time",
+      "input": "영화는 21:45에 시작합니다.",
+      "expected": "영화는 이십일시 사십오분 에 시작합니다.",
+      "reference_error": null,
+      "reference_seconds": 0.003850376233458519
+    },
+    {
+      "id": "ko-033",
+      "lang": "ko",
+      "category": "time",
+      "input": "초시계에 01:02:03이 표시됩니다.",
+      "expected": "초시계에 한시 이분 삼초 이 표시됩니다.",
+      "reference_error": null,
+      "reference_seconds": 0.004142061807215214
+    },
+    {
+      "id": "ko-034",
+      "lang": "ko",
+      "category": "time",
+      "input": "가게는 오전 9시에 문을 엽니다.",
+      "expected": "가게는 오전 아홉시 에 문을 엽니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0032144542783498764
+    },
+    {
+      "id": "ko-035",
+      "lang": "ko",
+      "category": "time",
+      "input": "역에서 30분을 기다렸습니다.",
+      "expected": "역에서 삼십 분을 기다렸습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0029505155980587006
+    },
+    {
+      "id": "ko-036",
+      "lang": "ko",
+      "category": "measure",
+      "input": "이 상자는 5kg입니다.",
+      "expected": "이 상자는 오 kg입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0023325812071561813
+    },
+    {
+      "id": "ko-037",
+      "lang": "ko",
+      "category": "measure",
+      "input": "물 250ml를 넣어 주세요.",
+      "expected": "물 이백오십 ml를 넣어 주세요.",
+      "reference_error": null,
+      "reference_seconds": 0.0033661657944321632
+    },
+    {
+      "id": "ko-038",
+      "lang": "ko",
+      "category": "measure",
+      "input": "이 도로의 길이는 12km입니다.",
+      "expected": "이 도로의 길이는 십이 km입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0036744335666298866
+    },
+    {
+      "id": "ko-039",
+      "lang": "ko",
+      "category": "measure",
+      "input": "제한 속도는 80km/h입니다.",
+      "expected": "제한 속도는 팔십 km/h입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0031209830194711685
+    },
+    {
+      "id": "ko-040",
+      "lang": "ko",
+      "category": "measure",
+      "input": "탁자의 너비는 1.5m입니다.",
+      "expected": "탁자의 너비는 일점오 m입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0031480444595217705
+    },
+    {
+      "id": "ko-041",
+      "lang": "ko",
+      "category": "measure",
+      "input": "오늘 기온은 23℃입니다.",
+      "expected": "오늘 기온은 이십삼 ℃입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.002872859127819538
+    },
+    {
+      "id": "ko-042",
+      "lang": "ko",
+      "category": "measure",
+      "input": "물통에는 10L가 들어갑니다.",
+      "expected": "물통에는 십 L가 들어갑니다.",
+      "reference_error": null,
+      "reference_seconds": 0.0029019350185990334
+    },
+    {
+      "id": "ko-043",
+      "lang": "ko",
+      "category": "electronic",
+      "input": "자세한 내용은 https://example.com 에서 확인하세요.",
+      "expected": "자세한 내용은 HTTPS colon 슬래시 슬래시 example 닷컴 에서 확인하세요.",
+      "reference_error": null,
+      "reference_seconds": 0.006294454447925091
+    },
+    {
+      "id": "ko-044",
+      "lang": "ko",
+      "category": "electronic",
+      "input": "금요일까지 hello@example.kr 로 이메일을 보내 주세요.",
+      "expected": "금요일까지 hello 골뱅이 example 닷 케이알 로 이메일을 보내 주세요.",
+      "reference_error": null,
+      "reference_seconds": 0.0063124243170022964
+    },
+    {
+      "id": "ko-045",
+      "lang": "ko",
+      "category": "electronic",
+      "input": "문의 전화는 02-1234-5678입니다.",
+      "expected": "문의 전화는 영 이 마이너스 천이백삼십사 마이너스 오천육백칠십팔 입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.008045265451073647
+    },
+    {
+      "id": "ko-046",
+      "lang": "ko",
+      "category": "electronic",
+      "input": "서버 주소는 192.168.1.1입니다.",
+      "expected": "서버 주소는 백구십이점일육팔. 일점일 입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.006330333650112152
+    },
+    {
+      "id": "ko-047",
+      "lang": "ko",
+      "category": "electronic",
+      "input": "버전 2.4.1을 설치하세요.",
+      "expected": "버전 이. 사점일 을 설치하세요.",
+      "reference_error": null,
+      "reference_seconds": 0.003281963989138603
+    },
+    {
+      "id": "ko-048",
+      "lang": "ko",
+      "category": "electronic",
+      "input": "주문 번호는 AB123입니다.",
+      "expected": "주문 번호는 AB 백이십삼 입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.003733045421540737
+    },
+    {
+      "id": "ko-049",
+      "lang": "ko",
+      "category": "electronic",
+      "input": "홈페이지는 www.example.kr 입니다.",
+      "expected": "홈페이지는 WWW 점 example 닷 케이알 입니다.",
+      "reference_error": null,
+      "reference_seconds": 0.004062113352119923
+    },
+    {
+      "id": "ko-050",
+      "lang": "ko",
+      "category": "mixed",
+      "input": "김 선생님은 환자 12명을 진료했습니다.",
+      "expected": "김 선생님은 환자 십이 명을 진료했습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.004133330658078194
+    },
+    {
+      "id": "ko-051",
+      "lang": "ko",
+      "category": "punctuation",
+      "input": "그녀는 \"표 3장 주세요\"라고 말했습니다.",
+      "expected": "그녀는 \"표 세장 주세요\"라고 말했습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.003930126316845417
+    },
+    {
+      "id": "ko-052",
+      "lang": "ko",
+      "category": "punctuation",
+      "input": "아직 7자리가 남아 있나요?",
+      "expected": "아직 칠 자리가 남아 있나요?",
+      "reference_error": null,
+      "reference_seconds": 0.0026745712384581566
+    },
+    {
+      "id": "ko-053",
+      "lang": "ko",
+      "category": "punctuation",
+      "input": "[4]와 [5] 항목을 읽어 주세요.",
+      "expected": "[사]와 [오] 항목을 읽어 주세요.",
+      "reference_error": null,
+      "reference_seconds": 0.003658892586827278
+    },
+    {
+      "id": "ko-054",
+      "lang": "ko",
+      "category": "plain",
+      "input": "잔잔한 강이 계곡을 흐릅니다.",
+      "expected": "잔잔한 강이 계곡을 흐릅니다.",
+      "reference_error": null,
+      "reference_seconds": 0.002622682601213455
+    },
+    {
+      "id": "ko-055",
+      "lang": "ko",
+      "category": "mixed",
+      "input": "5월 5일에 쌀 2kg을 24500원에 샀습니다.",
+      "expected": "오월 오 일에 쌀 이 kg을 이만사천오백 원에 샀습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.006468695588409901
+    },
+    {
+      "id": "ko-056",
+      "lang": "ko",
+      "category": "mixed",
+      "input": "10:30에 측정한 온도는 22.5℃이고 습도는 60%였습니다.",
+      "expected": "열시 삼십분 에 측정한 온도는 이십이점오 ℃이고 습도는 육십%였습니다.",
+      "reference_error": null,
+      "reference_seconds": 0.007307092659175396
+    }
+  ]
+}

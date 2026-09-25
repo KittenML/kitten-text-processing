@@ -1,0 +1,26 @@
+{
+  "language": "hi",
+  "nemo_version": "1.2.0",
+  "input_case": "cased",
+  "deterministic": true,
+  "graphs": {
+    "tagger": {
+      "states": 186723,
+      "arcs": 1720742,
+      "bytes": 908026,
+      "sha256": "747fda009853de6436e3ada16fdd76c2730693988346cf9e3cb5698f2f901f5d"
+    },
+    "verbalizer": {
+      "states": 15437,
+      "arcs": 47530,
+      "bytes": 65079,
+      "sha256": "52ba87bd7512b2a4e41021974cd7d5cc02044ec11d595b46ed9140f06156bdd0"
+    },
+    "post": {
+      "states": 134,
+      "arcs": 1638,
+      "bytes": 2030,
+      "sha256": "00dd2b470b2b515f7a5c4d53070750b258ff7ecbafb1b3db49351454d02a6743"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kitten-text-processing"
+version = "0.1.0"
+description = "Standalone, standard-library-only multilingual text normalization for TTS"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0 AND MIT"
+license-files = ["LICENSE", "LICENSE-SACREMOSES", "NOTICE"]
+dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+
+[project.urls]
+Homepage = "https://github.com/KittenML/kitten-text-processing"
+Repository = "https://github.com/KittenML/kitten-text-processing"
+Issues = "https://github.com/KittenML/kitten-text-processing/issues"
+
+[project.scripts]
+kitten-normalize = "kitten_text_processing.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["kitten_text_processing*"]
+
+[tool.setuptools.package-data]
+kitten_text_processing = ["data/*/*.fst.gz", "data/*/metadata.json"]

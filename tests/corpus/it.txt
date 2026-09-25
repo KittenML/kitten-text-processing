@@ -1,0 +1,56 @@
+cardinal|Ho 2 gatti in casa.
+cardinal|Sull'autobus ci sono 17 passeggeri.
+cardinal|La biblioteca ha acquistato 35 libri.
+cardinal|Restano 99 biglietti per il concerto.
+cardinal|Il paese conta 120 abitanti.
+cardinal|Nel parco abbiamo contato 1.234 alberi.
+ordinal|È arrivata al 3º posto.
+decimal|Il risultato è 3,14.
+decimal|La differenza è di 0,05 punti.
+decimal|La temperatura è scesa a -2,5 gradi.
+decimal|La miscela contiene il 12% di zucchero.
+decimal|Il tasso annuo è del 4,5%.
+fraction|Serve 1/2 tazza di latte.
+fraction|Abbiamo percorso 3/4 del tragitto.
+money|Il caffè costa 2 €.
+money|Ho pagato 12,50 € per il pranzo.
+money|Il preventivo è di 1.250 euro.
+money|Il biglietto costa 20 $.
+money|Mi hanno restituito 0,75 €.
+money|Quel computer costa 999,99 €.
+money|La donazione ammonta a 1 milione di euro.
+date|La riunione si terrà il 5 gennaio 2026.
+date|È nata il 14 febbraio 1998.
+date|Il documento riporta la data 03/04/2025.
+date|La consegna è prevista per il 2026-09-25.
+date|L'edificio è stato inaugurato nel 2001.
+date|Le vacanze iniziano il 1º luglio.
+date|L'archivio copre il periodo 1980-1990.
+time|Il treno parte alle 08:30.
+time|Ci vediamo alle 15:15.
+time|La sveglia suona alle 7:00.
+time|Il film inizia alle 21:45.
+time|Il cronometro segna 01:02:03.
+time|Il negozio apre alle 9 h.
+time|Abbiamo aspettato 30 min in stazione.
+measure|La scatola pesa 5 kg.
+measure|Aggiungi 250 ml di acqua.
+measure|La strada è lunga 12 km.
+measure|Il limite è di 80 km/h.
+measure|Il tavolo è largo 1,5 m.
+measure|Oggi ci sono 23 °C.
+measure|Il serbatoio contiene 10 L.
+electronic|Visita https://example.com per i dettagli.
+electronic|Scrivi a ciao@example.it entro venerdì.
+electronic|Chiama il numero 06 12345678 domani.
+electronic|L'indirizzo del server è 192.168.1.1.
+electronic|Installa la versione 2.4.1.
+electronic|Il codice dell'ordine è AB123.
+electronic|Il sito è www.esempio.it.
+mixed|La dott.ssa Rossi ha visitato 12 pazienti.
+punctuation|Ha detto: «Mi servono 3 biglietti».
+punctuation|Ci sono ancora 7 posti liberi?
+punctuation|Leggi le pagine [4] e [5].
+plain|Un fiume tranquillo attraversa la valle.
+mixed|Il 5 maggio ho pagato 24,50 € per 2 kg di caffè.
+mixed|Alle 10:30 il sensore segnava 22,5 °C e il 60% di umidità.

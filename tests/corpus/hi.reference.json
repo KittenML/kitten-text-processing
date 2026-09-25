@@ -1,0 +1,512 @@
+{
+  "nemo_version": "1.2.0",
+  "pynini_version": "2.1.6.post1",
+  "sacremoses_version": "0.2.0",
+  "load_seconds": 0.1586547838523984,
+  "cases": [
+    {
+      "id": "hi-001",
+      "lang": "hi",
+      "category": "cardinal",
+      "input": "मेरे घर में 2 बिल्लियाँ हैं।",
+      "expected": "मेरे घर में दो बिल्लियाँ हैं।",
+      "reference_error": null,
+      "reference_seconds": 0.01275887992233038
+    },
+    {
+      "id": "hi-002",
+      "lang": "hi",
+      "category": "cardinal",
+      "input": "बस में 17 यात्री बैठे हैं।",
+      "expected": "बस में सत्रह यात्री बैठे हैं।",
+      "reference_error": null,
+      "reference_seconds": 0.003824884071946144
+    },
+    {
+      "id": "hi-003",
+      "lang": "hi",
+      "category": "cardinal",
+      "input": "पुस्तकालय ने 35 किताबें खरीदीं।",
+      "expected": "पुस्तकालय ने पैंतीस किताबें खरीदीं।",
+      "reference_error": null,
+      "reference_seconds": 0.003559967502951622
+    },
+    {
+      "id": "hi-004",
+      "lang": "hi",
+      "category": "cardinal",
+      "input": "संगीत कार्यक्रम के 99 टिकट बचे हैं।",
+      "expected": "संगीत कार्यक्रम के निन्यानबे टिकट बचे हैं।",
+      "reference_error": null,
+      "reference_seconds": 0.004230625927448273
+    },
+    {
+      "id": "hi-005",
+      "lang": "hi",
+      "category": "cardinal",
+      "input": "गाँव में 120 लोग रहते हैं।",
+      "expected": "गाँव में एक सौ बीस लोग रहते हैं।",
+      "reference_error": null,
+      "reference_seconds": 0.004291987977921963
+    },
+    {
+      "id": "hi-006",
+      "lang": "hi",
+      "category": "cardinal",
+      "input": "पार्क में 1,234 पेड़ लगाए गए।",
+      "expected": "पार्क में एक,दो तीन चार पेड़ लगाए गए।",
+      "reference_error": null,
+      "reference_seconds": 0.005584780126810074
+    },
+    {
+      "id": "hi-007",
+      "lang": "hi",
+      "category": "ordinal",
+      "input": "वह दौड़ में तीसरे स्थान पर आई।",
+      "expected": "वह दौड़ में तीसरे स्थान पर आई।",
+      "reference_error": null,
+      "reference_seconds": 0.0032036462798714638
+    },
+    {
+      "id": "hi-008",
+      "lang": "hi",
+      "category": "decimal",
+      "input": "गणना का परिणाम 3.14 है।",
+      "expected": "गणना का परिणाम तीन दशमलव एक चार है।",
+      "reference_error": null,
+      "reference_seconds": 0.00405256450176239
+    },
+    {
+      "id": "hi-009",
+      "lang": "hi",
+      "category": "decimal",
+      "input": "अंतर केवल 0.05 अंक है।",
+      "expected": "अंतर केवल शून्य दशमलव शून्य पाँच अंक है।",
+      "reference_error": null,
+      "reference_seconds": 0.003282426856458187
+    },
+    {
+      "id": "hi-010",
+      "lang": "hi",
+      "category": "decimal",
+      "input": "तापमान -2.5 डिग्री तक गिर गया।",
+      "expected": "तापमान ऋणात्मक दो दशमलव पाँच डिग्री तक गिर गया।",
+      "reference_error": null,
+      "reference_seconds": 0.004382112063467503
+    },
+    {
+      "id": "hi-011",
+      "lang": "hi",
+      "category": "decimal",
+      "input": "इस पेय में 12% चीनी है।",
+      "expected": "इस पेय में बारह% चीनी है।",
+      "reference_error": null,
+      "reference_seconds": 0.003731655888259411
+    },
+    {
+      "id": "hi-012",
+      "lang": "hi",
+      "category": "decimal",
+      "input": "सालाना ब्याज दर 4.5% है।",
+      "expected": "सालाना ब्याज दर चार दशमलव पाँच% है।",
+      "reference_error": null,
+      "reference_seconds": 0.0038207126781344414
+    },
+    {
+      "id": "hi-013",
+      "lang": "hi",
+      "category": "fraction",
+      "input": "दूध का 1/2 कप डालें।",
+      "expected": "दूध का एक बटा दो कप डालें।",
+      "reference_error": null,
+      "reference_seconds": 0.003339008428156376
+    },
+    {
+      "id": "hi-014",
+      "lang": "hi",
+      "category": "fraction",
+      "input": "हमने रास्ते का 3/4 हिस्सा तय कर लिया।",
+      "expected": "हमने रास्ते का तीन बटा चार हिस्सा तय कर लिया।",
+      "reference_error": null,
+      "reference_seconds": 0.004701112397015095
+    },
+    {
+      "id": "hi-015",
+      "lang": "hi",
+      "category": "money",
+      "input": "कॉफ़ी की कीमत ₹20 है।",
+      "expected": "कॉफ़ी की कीमत बीस रुपए है।",
+      "reference_error": null,
+      "reference_seconds": 0.002583044581115246
+    },
+    {
+      "id": "hi-016",
+      "lang": "hi",
+      "category": "money",
+      "input": "दोपहर के खाने पर ₹125.50 खर्च हुए।",
+      "expected": "दोपहर के खाने पर एक सौ पच्चीस रुपए पचास पैसे खर्च हुए।",
+      "reference_error": null,
+      "reference_seconds": 0.00580750685185194
+    },
+    {
+      "id": "hi-017",
+      "lang": "hi",
+      "category": "money",
+      "input": "कार्यक्रम का बजट ₹1,250 है।",
+      "expected": "कार्यक्रम का बजट एक रुपए,दो सौ पचास है।",
+      "reference_error": null,
+      "reference_seconds": 0.004720849916338921
+    },
+    {
+      "id": "hi-018",
+      "lang": "hi",
+      "category": "money",
+      "input": "टिकट की कीमत 20 डॉलर है।",
+      "expected": "टिकट की कीमत बीस डॉलर है।",
+      "reference_error": null,
+      "reference_seconds": 0.003460843116044998
+    },
+    {
+      "id": "hi-019",
+      "lang": "hi",
+      "category": "money",
+      "input": "दुकानदार ने ₹0.75 लौटाए।",
+      "expected": "दुकानदार ने पचहत्तर पैसे लौटाए।",
+      "reference_error": null,
+      "reference_seconds": 0.004154357127845287
+    },
+    {
+      "id": "hi-020",
+      "lang": "hi",
+      "category": "money",
+      "input": "यह कंप्यूटर ₹99,999 का है।",
+      "expected": "यह कंप्यूटर निन्यानबे रुपए,नौ सौ निन्यानबे का है।",
+      "reference_error": null,
+      "reference_seconds": 0.005155773833394051
+    },
+    {
+      "id": "hi-021",
+      "lang": "hi",
+      "category": "money",
+      "input": "संस्था ने 1 लाख रुपये दान किए।",
+      "expected": "संस्था ने एक लाख रुपये दान किए।",
+      "reference_error": null,
+      "reference_seconds": 0.0035203713923692703
+    },
+    {
+      "id": "hi-022",
+      "lang": "hi",
+      "category": "date",
+      "input": "बैठक 5 जनवरी 2026 को होगी।",
+      "expected": "बैठक पाँच जनवरी दो हज़ार छब्बीस को होगी।",
+      "reference_error": null,
+      "reference_seconds": 0.005465902388095856
+    },
+    {
+      "id": "hi-023",
+      "lang": "hi",
+      "category": "date",
+      "input": "उनका जन्म 14 फ़रवरी 1998 को हुआ था।",
+      "expected": "उनका जन्म चौदह फ़रवरी एक हज़ार नौ सौ अट्ठानबे को हुआ था।",
+      "reference_error": null,
+      "reference_seconds": 0.00799044780433178
+    },
+    {
+      "id": "hi-024",
+      "lang": "hi",
+      "category": "date",
+      "input": "दस्तावेज़ पर 03/04/2025 की तारीख है।",
+      "expected": "दस्तावेज़ पर शून्य तीन बटा शून्य चार/ दो हज़ार पच्चीस की तारीख है।",
+      "reference_error": null,
+      "reference_seconds": 0.006604914553463459
+    },
+    {
+      "id": "hi-025",
+      "lang": "hi",
+      "category": "date",
+      "input": "सामान 2026-09-25 को पहुँचेगा।",
+      "expected": "सामान दो हज़ार छब्बीस - सितंबर पच्चीस को पहुँचेगा।",
+      "reference_error": null,
+      "reference_seconds": 0.006078667938709259
+    },
+    {
+      "id": "hi-026",
+      "lang": "hi",
+      "category": "date",
+      "input": "यह भवन 2001 में खुला था।",
+      "expected": "यह भवन दो हज़ार एक में खुला था।",
+      "reference_error": null,
+      "reference_seconds": 0.004085756838321686
+    },
+    {
+      "id": "hi-027",
+      "lang": "hi",
+      "category": "date",
+      "input": "छुट्टियाँ 1 जुलाई से शुरू होंगी।",
+      "expected": "छुट्टियाँ एक जुलाई से शुरू होंगी।",
+      "reference_error": null,
+      "reference_seconds": 0.0031425291672348976
+    },
+    {
+      "id": "hi-028",
+      "lang": "hi",
+      "category": "date",
+      "input": "अभिलेख में 1980 से 1990 तक की जानकारी है।",
+      "expected": "अभिलेख में उन्नीस सौ अस्सी से उन्नीस सौ नब्बे तक की जानकारी है।",
+      "reference_error": null,
+      "reference_seconds": 0.010084225796163082
+    },
+    {
+      "id": "hi-029",
+      "lang": "hi",
+      "category": "time",
+      "input": "ट्रेन 08:30 बजे निकलती है।",
+      "expected": "ट्रेन शून्य आठ:तीस बजे निकलती है।",
+      "reference_error": null,
+      "reference_seconds": 0.00373199675232172
+    },
+    {
+      "id": "hi-030",
+      "lang": "hi",
+      "category": "time",
+      "input": "हम दोपहर 3:15 बजे मिलेंगे।",
+      "expected": "हम दोपहर सवा तीन बजे मिलेंगे।",
+      "reference_error": null,
+      "reference_seconds": 0.004022168926894665
+    },
+    {
+      "id": "hi-031",
+      "lang": "hi",
+      "category": "time",
+      "input": "अलार्म 7:00 बजे बजता है।",
+      "expected": "अलार्म सात बजे बजे बजता है।",
+      "reference_error": null,
+      "reference_seconds": 0.0031961454078555107
+    },
+    {
+      "id": "hi-032",
+      "lang": "hi",
+      "category": "time",
+      "input": "फ़िल्म 21:45 बजे शुरू होगी।",
+      "expected": "फ़िल्म इक्कीस बजकर पैंतालीस मिनट बजे शुरू होगी।",
+      "reference_error": null,
+      "reference_seconds": 0.004586059600114822
+    },
+    {
+      "id": "hi-033",
+      "lang": "hi",
+      "category": "time",
+      "input": "घड़ी में 01:02:03 दिख रहा है।",
+      "expected": "घड़ी में शून्य एक:शून्य दो:शून्य तीन दिख रहा है।",
+      "reference_error": null,
+      "reference_seconds": 0.0041970741003751755
+    },
+    {
+      "id": "hi-034",
+      "lang": "hi",
+      "category": "time",
+      "input": "दुकान सुबह 9 बजे खुलती है।",
+      "expected": "दुकान सुबह नौ बजे खुलती है।",
+      "reference_error": null,
+      "reference_seconds": 0.0030125901103019714
+    },
+    {
+      "id": "hi-035",
+      "lang": "hi",
+      "category": "time",
+      "input": "हम स्टेशन पर 30 मिनट रुके।",
+      "expected": "हम स्टेशन पर तीस मिनट रुके।",
+      "reference_error": null,
+      "reference_seconds": 0.0035396628081798553
+    },
+    {
+      "id": "hi-036",
+      "lang": "hi",
+      "category": "measure",
+      "input": "इस डिब्बे का वजन 5 किलो है।",
+      "expected": "इस डिब्बे का वजन पाँच किलो है।",
+      "reference_error": null,
+      "reference_seconds": 0.003505568951368332
+    },
+    {
+      "id": "hi-037",
+      "lang": "hi",
+      "category": "measure",
+      "input": "250 मिलीलीटर पानी डालें।",
+      "expected": "दो सौ पचास मिलीलीटर पानी डालें।",
+      "reference_error": null,
+      "reference_seconds": 0.0035255784168839455
+    },
+    {
+      "id": "hi-038",
+      "lang": "hi",
+      "category": "measure",
+      "input": "यह सड़क 12 किलोमीटर लंबी है।",
+      "expected": "यह सड़क एक दो किलोमीटर लंबी है।",
+      "reference_error": null,
+      "reference_seconds": 0.0039032474160194397
+    },
+    {
+      "id": "hi-039",
+      "lang": "hi",
+      "category": "measure",
+      "input": "गति सीमा 80 किमी प्रति घंटा है।",
+      "expected": "गति सीमा अस्सी किमी प्रति घंटा है।",
+      "reference_error": null,
+      "reference_seconds": 0.003993609920144081
+    },
+    {
+      "id": "hi-040",
+      "lang": "hi",
+      "category": "measure",
+      "input": "मेज़ की चौड़ाई 1.5 मीटर है।",
+      "expected": "मेज़ की चौड़ाई एक दशमलव पाँच मीटर है।",
+      "reference_error": null,
+      "reference_seconds": 0.003951016813516617
+    },
+    {
+      "id": "hi-041",
+      "lang": "hi",
+      "category": "measure",
+      "input": "आज तापमान 23 डिग्री सेल्सियस है।",
+      "expected": "आज तापमान तेईस डिग्री सेल्सियस है।",
+      "reference_error": null,
+      "reference_seconds": 0.0037711728364229202
+    },
+    {
+      "id": "hi-042",
+      "lang": "hi",
+      "category": "measure",
+      "input": "टंकी में 10 लीटर पानी आता है।",
+      "expected": "टंकी में दस लीटर पानी आता है।",
+      "reference_error": null,
+      "reference_seconds": 0.0038237934932112694
+    },
+    {
+      "id": "hi-043",
+      "lang": "hi",
+      "category": "electronic",
+      "input": "जानकारी के लिए https://example.com पर जाएँ।",
+      "expected": "जानकारी के लिए एच टी टी पी एस कोलन फॉरवर्ड स्लैश फॉरवर्ड स्लैश ई एक्स ए एम पी एल ई डॉट कॉम पर जाएँ।",
+      "reference_error": null,
+      "reference_seconds": 0.004765491932630539
+    },
+    {
+      "id": "hi-044",
+      "lang": "hi",
+      "category": "electronic",
+      "input": "शुक्रवार से पहले hello@example.in पर संदेश भेजें।",
+      "expected": "शुक्रवार से पहले एच ई एल एल ओ एट ई एक्स ए एम पी एल ई डॉट इन पर संदेश भेजें।",
+      "reference_error": null,
+      "reference_seconds": 0.004819749854505062
+    },
+    {
+      "id": "hi-045",
+      "lang": "hi",
+      "category": "electronic",
+      "input": "सहायता के लिए 9876543210 पर कॉल करें।",
+      "expected": "सहायता के लिए शून्य नौ आठ सात छह पाँच चार तीन दो एक शून्य पर कॉल करें।",
+      "reference_error": null,
+      "reference_seconds": 0.01092236116528511
+    },
+    {
+      "id": "hi-046",
+      "lang": "hi",
+      "category": "electronic",
+      "input": "सर्वर का पता 192.168.1.1 है।",
+      "expected": "सर्वर का पता एक नौ दो डॉट एक छह आठ डॉट एक डॉट एक है।",
+      "reference_error": null,
+      "reference_seconds": 0.007951314561069012
+    },
+    {
+      "id": "hi-047",
+      "lang": "hi",
+      "category": "electronic",
+      "input": "संस्करण 2.4.1 स्थापित करें।",
+      "expected": "संस्करण दो. चार दशमलव एक स्थापित करें।",
+      "reference_error": null,
+      "reference_seconds": 0.00392085500061512
+    },
+    {
+      "id": "hi-048",
+      "lang": "hi",
+      "category": "electronic",
+      "input": "ऑर्डर का कोड AB123 है।",
+      "expected": "ऑर्डर का कोड ए बी एक दो तीन है।",
+      "reference_error": null,
+      "reference_seconds": 0.002696594223380089
+    },
+    {
+      "id": "hi-049",
+      "lang": "hi",
+      "category": "electronic",
+      "input": "हमारी वेबसाइट www.example.in है।",
+      "expected": "हमारी वेबसाइट डब्ल्यू डब्ल्यू डब्ल्यू डॉट ई एक्स ए एम पी एल ई डॉट इन है।",
+      "reference_error": null,
+      "reference_seconds": 0.003171674907207489
+    },
+    {
+      "id": "hi-050",
+      "lang": "hi",
+      "category": "mixed",
+      "input": "डॉ. शर्मा ने १२ मरीज़ देखे।",
+      "expected": "डॉक्टर शर्मा ने बारह मरीज़ देखे।",
+      "reference_error": null,
+      "reference_seconds": 0.004166889935731888
+    },
+    {
+      "id": "hi-051",
+      "lang": "hi",
+      "category": "punctuation",
+      "input": "उसने कहा, \"मुझे ३ टिकट चाहिए।\"",
+      "expected": "उसने कहा, \"मुझे तीन टिकट चाहिए।\"",
+      "reference_error": null,
+      "reference_seconds": 0.004210436716675758
+    },
+    {
+      "id": "hi-052",
+      "lang": "hi",
+      "category": "punctuation",
+      "input": "क्या अभी ७ सीटें खाली हैं?",
+      "expected": "क्या अभी सात सीटें खाली हैं?",
+      "reference_error": null,
+      "reference_seconds": 0.003176008351147175
+    },
+    {
+      "id": "hi-053",
+      "lang": "hi",
+      "category": "punctuation",
+      "input": "कृपया खंड [४] और [५] पढ़ें।",
+      "expected": "कृपया खंड [४] और [५] पढ़ें।",
+      "reference_error": null,
+      "reference_seconds": 0.0027295295149087906
+    },
+    {
+      "id": "hi-054",
+      "lang": "hi",
+      "category": "plain",
+      "input": "एक शांत नदी घाटी से होकर बहती है।",
+      "expected": "एक शांत नदी घाटी से होकर बहती है।",
+      "reference_error": null,
+      "reference_seconds": 0.003555423580110073
+    },
+    {
+      "id": "hi-055",
+      "lang": "hi",
+      "category": "mixed",
+      "input": "५ मई को मैंने २ किलो चावल के लिए ₹२४५ दिए।",
+      "expected": "पाँच मई को मैंने दो किलो चावल के लिए दो सौ पैंतालीस रुपए दिए।",
+      "reference_error": null,
+      "reference_seconds": 0.0065706586465239525
+    },
+    {
+      "id": "hi-056",
+      "lang": "hi",
+      "category": "mixed",
+      "input": "सुबह १०:३० बजे तापमान २२.५ डिग्री और नमी ६०% थी।",
+      "expected": "सुबह साढ़े दस बजे तापमान बाईस दशमलव पाँच डिग्री और नमी साठ% थी।",
+      "reference_error": null,
+      "reference_seconds": 0.010219245217740536
+    }
+  ]
+}

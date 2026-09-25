@@ -1,0 +1,56 @@
+cardinal|Mu rugo dufite injangwe 2.
+cardinal|Muri bisi harimo abagenzi 17.
+cardinal|Isomero ryaguze ibitabo 35.
+cardinal|Hasigaye amatike 99 y'igitaramo.
+cardinal|Mu mudugudu hatuye abantu 120.
+cardinal|Twateye ibiti 1234 muri pariki.
+ordinal|Yabaye uwa 3 mu isiganwa.
+decimal|Igisubizo ni 3,14.
+decimal|Itandukaniro ni amanota 0,05.
+decimal|Ubushyuhe bwamanutse bugera kuri -2,5.
+decimal|Iki kinyobwa kirimo isukari 12%.
+decimal|Inyungu y'umwaka ni 4,5%.
+fraction|Ongeramo 1/2 cy'igikombe cy'amata.
+fraction|Tumaze kugenda 3/4 by'urugendo.
+money|Ikawa igura amafaranga 500.
+money|Nishyuye amafaranga 1250 ku ifunguro.
+money|Ingengo y'imari ni amafaranga 125000.
+money|Itike igura amadolari 20.
+money|Umucuruzi yanshubije amafaranga 75.
+money|Iyi mudasobwa igura amafaranga 299999.
+money|Umuryango watanze amafaranga 1000000.
+date|Inama izaba ku wa 5 Mutarama 2026.
+date|Yavutse ku wa 14 Gashyantare 1998.
+date|Ku nyandiko handitse itariki 03/04/2025.
+date|Ibicuruzwa bizagera hano ku wa 2026-09-25.
+date|Iyi nyubako yafunguwe mu mwaka wa 2001.
+date|Ikiruhuko gitangira ku wa 1 Nyakanga.
+date|Ububiko burimo inyandiko zo kuva mu 1980 kugeza mu 1990.
+time|Gari ya moshi ihaguruka saa 08:30.
+time|Tuzahure saa 15:15.
+time|Isaha izavuga saa 7:00.
+time|Filimi itangira saa 21:45.
+time|Isaha yerekana 01:02:03.
+time|Iduka rifungura saa 9 za mu gitondo.
+time|Twategereje iminota 30 kuri sitasiyo.
+measure|Agasanduku gapima kg 5.
+measure|Ongeramo ml 250 z'amazi.
+measure|Umuhanda ufite uburebure bwa km 12.
+measure|Umuvuduko ntarengwa ni km 80 mu isaha.
+measure|Imeza ifite ubugari bwa m 1,5.
+measure|Uyu munsi ubushyuhe ni 23 °C.
+measure|Ikigega kijyamo litiro 10.
+electronic|Sura https://example.com kugira ngo ubone amakuru.
+electronic|Andikira hello@example.rw mbere yo ku wa Gatanu.
+electronic|Hamagara 0781234567 kugira ngo bagufashe.
+electronic|Aderesi ya seriveri ni 192.168.1.1.
+electronic|Shyiramo verisiyo 2.4.1.
+electronic|Kode y'ibyo watumije ni AB123.
+electronic|Urubuga rwacu ni www.example.rw.
+mixed|Muganga yakiriye abarwayi 12 uyu munsi.
+punctuation|Yavuze ati: "Nkeneye amatike 3."
+punctuation|Haracyari imyanya 7 idafite abayicayeho?
+punctuation|Soma ibice [4] na [5].
+plain|Uruzi rutuje runyura mu kibaya.
+mixed|Ku wa 5 Gicurasi naguze kg 2 z'umuceri ku mafaranga 2450.
+mixed|Saa 10:30 ubushyuhe bwari 22,5 °C naho ubuhehere ari 60%.

@@ -1,0 +1,512 @@
+{
+  "nemo_version": "1.2.0",
+  "pynini_version": "2.1.6.post1",
+  "sacremoses_version": "0.2.0",
+  "load_seconds": 0.27315083611756563,
+  "cases": [
+    {
+      "id": "ja-001",
+      "lang": "ja",
+      "category": "cardinal",
+      "input": "家には猫が2匹います。",
+      "expected": "家には猫が二匹います。",
+      "reference_error": null,
+      "reference_seconds": 0.0017850454896688461
+    },
+    {
+      "id": "ja-002",
+      "lang": "ja",
+      "category": "cardinal",
+      "input": "バスには17人の乗客がいます。",
+      "expected": "バスには十七人の乗客がいます。",
+      "reference_error": null,
+      "reference_seconds": 0.009954205714166164
+    },
+    {
+      "id": "ja-003",
+      "lang": "ja",
+      "category": "cardinal",
+      "input": "図書館は35冊の本を購入しました。",
+      "expected": "図書館は三十五冊の本を購入しました。",
+      "reference_error": null,
+      "reference_seconds": 0.002116684801876545
+    },
+    {
+      "id": "ja-004",
+      "lang": "ja",
+      "category": "cardinal",
+      "input": "コンサートのチケットは残り99枚です。",
+      "expected": "コンサートのチケットは残り九十九枚です。",
+      "reference_error": null,
+      "reference_seconds": 0.0022408487275242805
+    },
+    {
+      "id": "ja-005",
+      "lang": "ja",
+      "category": "cardinal",
+      "input": "この村には120人が住んでいます。",
+      "expected": "この村には百二十人が住んでいます。",
+      "reference_error": null,
+      "reference_seconds": 0.0021591754630208015
+    },
+    {
+      "id": "ja-006",
+      "lang": "ja",
+      "category": "cardinal",
+      "input": "公園に1234本の木を植えました。",
+      "expected": "公園に千二百三十四本の木を植えました。",
+      "reference_error": null,
+      "reference_seconds": 0.0025895237922668457
+    },
+    {
+      "id": "ja-007",
+      "lang": "ja",
+      "category": "ordinal",
+      "input": "彼女は3位でゴールしました。",
+      "expected": "彼女は三位でゴールしました。",
+      "reference_error": null,
+      "reference_seconds": 0.0015788469463586807
+    },
+    {
+      "id": "ja-008",
+      "lang": "ja",
+      "category": "decimal",
+      "input": "計算の結果は3.14です。",
+      "expected": "計算の結果は三点一四です。",
+      "reference_error": null,
+      "reference_seconds": 0.0020005637779831886
+    },
+    {
+      "id": "ja-009",
+      "lang": "ja",
+      "category": "decimal",
+      "input": "誤差は0.05でした。",
+      "expected": "誤差は零点零五でした。",
+      "reference_error": null,
+      "reference_seconds": 0.0014208713546395302
+    },
+    {
+      "id": "ja-010",
+      "lang": "ja",
+      "category": "decimal",
+      "input": "気温が-2.5度まで下がりました。",
+      "expected": "気温がマイナス二点五度まで下がりました。",
+      "reference_error": null,
+      "reference_seconds": 0.002111024223268032
+    },
+    {
+      "id": "ja-011",
+      "lang": "ja",
+      "category": "decimal",
+      "input": "この飲み物には12%の砂糖が含まれています。",
+      "expected": "この飲み物には十二%の砂糖が含まれています。",
+      "reference_error": null,
+      "reference_seconds": 0.002553657628595829
+    },
+    {
+      "id": "ja-012",
+      "lang": "ja",
+      "category": "decimal",
+      "input": "年利は4.5%です。",
+      "expected": "年利は四点五%です。",
+      "reference_error": null,
+      "reference_seconds": 0.0013564331457018852
+    },
+    {
+      "id": "ja-013",
+      "lang": "ja",
+      "category": "fraction",
+      "input": "牛乳を1/2カップ加えてください。",
+      "expected": "牛乳を二分の一カップ加えてください。",
+      "reference_error": null,
+      "reference_seconds": 0.002129998989403248
+    },
+    {
+      "id": "ja-014",
+      "lang": "ja",
+      "category": "fraction",
+      "input": "道のりの3/4を歩きました。",
+      "expected": "道のりの四分の三を歩きました。",
+      "reference_error": null,
+      "reference_seconds": 0.0017833132296800613
+    },
+    {
+      "id": "ja-015",
+      "lang": "ja",
+      "category": "money",
+      "input": "このコーヒーは200円です。",
+      "expected": "このコーヒーは二百円です。",
+      "reference_error": null,
+      "reference_seconds": 0.00166403129696846
+    },
+    {
+      "id": "ja-016",
+      "lang": "ja",
+      "category": "money",
+      "input": "昼食に1250円払いました。",
+      "expected": "昼食に千二百五十円払いました。",
+      "reference_error": null,
+      "reference_seconds": 0.00212814100086689
+    },
+    {
+      "id": "ja-017",
+      "lang": "ja",
+      "category": "money",
+      "input": "予算は12,500円です。",
+      "expected": "予算は十二,五百円です。",
+      "reference_error": null,
+      "reference_seconds": 0.0018605217337608337
+    },
+    {
+      "id": "ja-018",
+      "lang": "ja",
+      "category": "money",
+      "input": "入場券は20ドルです。",
+      "expected": "入場券は二十ドルです。",
+      "reference_error": null,
+      "reference_seconds": 0.0013399142771959305
+    },
+    {
+      "id": "ja-019",
+      "lang": "ja",
+      "category": "money",
+      "input": "お釣りは75円でした。",
+      "expected": "お釣りは七十五円でした。",
+      "reference_error": null,
+      "reference_seconds": 0.001399102620780468
+    },
+    {
+      "id": "ja-020",
+      "lang": "ja",
+      "category": "money",
+      "input": "このパソコンは99,999円です。",
+      "expected": "このパソコンは九十九,九百九十九円です。",
+      "reference_error": null,
+      "reference_seconds": 0.0024148542433977127
+    },
+    {
+      "id": "ja-021",
+      "lang": "ja",
+      "category": "money",
+      "input": "100万円を寄付しました。",
+      "expected": "百万円を寄付しました。",
+      "reference_error": null,
+      "reference_seconds": 0.0016022427007555962
+    },
+    {
+      "id": "ja-022",
+      "lang": "ja",
+      "category": "date",
+      "input": "会議は2026年1月5日です。",
+      "expected": "会議は二千二十六年一月五日です。",
+      "reference_error": null,
+      "reference_seconds": 0.0022074850276112556
+    },
+    {
+      "id": "ja-023",
+      "lang": "ja",
+      "category": "date",
+      "input": "彼女は1998年2月14日に生まれました。",
+      "expected": "彼女は千九百九十八年二月十四日に生まれました。",
+      "reference_error": null,
+      "reference_seconds": 0.003265335224568844
+    },
+    {
+      "id": "ja-024",
+      "lang": "ja",
+      "category": "date",
+      "input": "書類の日付は2025/03/04です。",
+      "expected": "書類の日付は二千二十五年三月四日です。",
+      "reference_error": null,
+      "reference_seconds": 0.0027516111731529236
+    },
+    {
+      "id": "ja-025",
+      "lang": "ja",
+      "category": "date",
+      "input": "配達予定日は2026-09-25です。",
+      "expected": "配達予定日は二千二十六年九月二十五日です。",
+      "reference_error": null,
+      "reference_seconds": 0.002918231301009655
+    },
+    {
+      "id": "ja-026",
+      "lang": "ja",
+      "category": "date",
+      "input": "この建物は2001年に開館しました。",
+      "expected": "この建物は二千一年に開館しました。",
+      "reference_error": null,
+      "reference_seconds": 0.0022156434133648872
+    },
+    {
+      "id": "ja-027",
+      "lang": "ja",
+      "category": "date",
+      "input": "夏休みは7月1日に始まります。",
+      "expected": "夏休みは七月一日に始まります。",
+      "reference_error": null,
+      "reference_seconds": 0.001698971726000309
+    },
+    {
+      "id": "ja-028",
+      "lang": "ja",
+      "category": "date",
+      "input": "記録は1980年から1990年まで残っています。",
+      "expected": "記録は千九百八十年から千九百九十年まで残っています。",
+      "reference_error": null,
+      "reference_seconds": 0.0036705173552036285
+    },
+    {
+      "id": "ja-029",
+      "lang": "ja",
+      "category": "time",
+      "input": "電車は08:30に出発します。",
+      "expected": "電車は八時三十分に出発します。",
+      "reference_error": null,
+      "reference_seconds": 0.0018668072298169136
+    },
+    {
+      "id": "ja-030",
+      "lang": "ja",
+      "category": "time",
+      "input": "午後3時15分に会いましょう。",
+      "expected": "午後三時十五分に会いましょう。",
+      "reference_error": null,
+      "reference_seconds": 0.0019504167139530182
+    },
+    {
+      "id": "ja-031",
+      "lang": "ja",
+      "category": "time",
+      "input": "目覚ましは7:00に鳴ります。",
+      "expected": "目覚ましは七:零零に鳴ります。",
+      "reference_error": null,
+      "reference_seconds": 0.001720992848277092
+    },
+    {
+      "id": "ja-032",
+      "lang": "ja",
+      "category": "time",
+      "input": "映画は21:45に始まります。",
+      "expected": "映画は二十一時四十五分に始まります。",
+      "reference_error": null,
+      "reference_seconds": 0.002074172720313072
+    },
+    {
+      "id": "ja-033",
+      "lang": "ja",
+      "category": "time",
+      "input": "ストップウォッチは01:02:03を示しています。",
+      "expected": "ストップウォッチは一時二分三秒を示しています。",
+      "reference_error": null,
+      "reference_seconds": 0.0028243670240044594
+    },
+    {
+      "id": "ja-034",
+      "lang": "ja",
+      "category": "time",
+      "input": "お店は午前9時に開きます。",
+      "expected": "お店は午前九時に開きます。",
+      "reference_error": null,
+      "reference_seconds": 0.0014549922198057175
+    },
+    {
+      "id": "ja-035",
+      "lang": "ja",
+      "category": "time",
+      "input": "駅で30分待ちました。",
+      "expected": "駅で三十分待ちました。",
+      "reference_error": null,
+      "reference_seconds": 0.0013012345880270004
+    },
+    {
+      "id": "ja-036",
+      "lang": "ja",
+      "category": "measure",
+      "input": "この箱は5kgあります。",
+      "expected": "この箱は五kgあります。",
+      "reference_error": null,
+      "reference_seconds": 0.0013794908300042152
+    },
+    {
+      "id": "ja-037",
+      "lang": "ja",
+      "category": "measure",
+      "input": "水を250ml加えてください。",
+      "expected": "水を二百五十ml加えてください。",
+      "reference_error": null,
+      "reference_seconds": 0.0018960712477564812
+    },
+    {
+      "id": "ja-038",
+      "lang": "ja",
+      "category": "measure",
+      "input": "この道は12km続きます。",
+      "expected": "この道は十二km続きます。",
+      "reference_error": null,
+      "reference_seconds": 0.0016569765284657478
+    },
+    {
+      "id": "ja-039",
+      "lang": "ja",
+      "category": "measure",
+      "input": "制限速度は80km/hです。",
+      "expected": "制限速度は八十km/hです。",
+      "reference_error": null,
+      "reference_seconds": 0.0015758955851197243
+    },
+    {
+      "id": "ja-040",
+      "lang": "ja",
+      "category": "measure",
+      "input": "机の幅は1.5mです。",
+      "expected": "机の幅は一点五mです。",
+      "reference_error": null,
+      "reference_seconds": 0.0014422731474041939
+    },
+    {
+      "id": "ja-041",
+      "lang": "ja",
+      "category": "measure",
+      "input": "今日の気温は23℃です。",
+      "expected": "今日の気温は二十三℃です。",
+      "reference_error": null,
+      "reference_seconds": 0.0015311548486351967
+    },
+    {
+      "id": "ja-042",
+      "lang": "ja",
+      "category": "measure",
+      "input": "タンクには10L入ります。",
+      "expected": "タンクには十L入ります。",
+      "reference_error": null,
+      "reference_seconds": 0.001507543958723545
+    },
+    {
+      "id": "ja-043",
+      "lang": "ja",
+      "category": "electronic",
+      "input": "詳しくはhttps://example.comをご覧ください。",
+      "expected": "詳しくはhttps://example.comをご覧ください。",
+      "reference_error": null,
+      "reference_seconds": 0.0030520372092723846
+    },
+    {
+      "id": "ja-044",
+      "lang": "ja",
+      "category": "electronic",
+      "input": "金曜日までにhello@example.jpへメールしてください。",
+      "expected": "金曜日までにhello@example.jpへメールしてください。",
+      "reference_error": null,
+      "reference_seconds": 0.003338141366839409
+    },
+    {
+      "id": "ja-045",
+      "lang": "ja",
+      "category": "electronic",
+      "input": "03-1234-5678までお電話ください。",
+      "expected": "零三-千二百三十四-五千六百七十八までお電話ください。",
+      "reference_error": null,
+      "reference_seconds": 0.0041105132550001144
+    },
+    {
+      "id": "ja-046",
+      "lang": "ja",
+      "category": "electronic",
+      "input": "サーバーのアドレスは192.168.1.1です。",
+      "expected": "サーバーのアドレスは百六十八年一月一日です。",
+      "reference_error": null,
+      "reference_seconds": 0.0040608057752251625
+    },
+    {
+      "id": "ja-047",
+      "lang": "ja",
+      "category": "electronic",
+      "input": "バージョン2.4.1をインストールしてください。",
+      "expected": "バージョン二年四月一日をインストールしてください。",
+      "reference_error": null,
+      "reference_seconds": 0.002839355729520321
+    },
+    {
+      "id": "ja-048",
+      "lang": "ja",
+      "category": "electronic",
+      "input": "注文番号はAB123です。",
+      "expected": "注文番号はAB百二十三です。",
+      "reference_error": null,
+      "reference_seconds": 0.001987593248486519
+    },
+    {
+      "id": "ja-049",
+      "lang": "ja",
+      "category": "electronic",
+      "input": "ウェブサイトはwww.example.jpです。",
+      "expected": "ウェブサイトはwww.example.jpです。",
+      "reference_error": null,
+      "reference_seconds": 0.00240483321249485
+    },
+    {
+      "id": "ja-050",
+      "lang": "ja",
+      "category": "mixed",
+      "input": "田中先生は12人の患者を診察しました。",
+      "expected": "田中先生は十二人の患者を診察しました。",
+      "reference_error": null,
+      "reference_seconds": 0.002265169285237789
+    },
+    {
+      "id": "ja-051",
+      "lang": "ja",
+      "category": "punctuation",
+      "input": "彼女は「チケットを3枚ください」と言いました。",
+      "expected": "彼女は「チケットを三枚ください」と言いました。",
+      "reference_error": null,
+      "reference_seconds": 0.0024187350645661354
+    },
+    {
+      "id": "ja-052",
+      "lang": "ja",
+      "category": "punctuation",
+      "input": "まだ7席空いていますか？",
+      "expected": "まだ七席空いていますか？",
+      "reference_error": null,
+      "reference_seconds": 0.001375827006995678
+    },
+    {
+      "id": "ja-053",
+      "lang": "ja",
+      "category": "punctuation",
+      "input": "[4]と[5]の項目を読んでください。",
+      "expected": "[四]と[五]の項目を読んでください。",
+      "reference_error": null,
+      "reference_seconds": 0.0021097110584378242
+    },
+    {
+      "id": "ja-054",
+      "lang": "ja",
+      "category": "plain",
+      "input": "静かな川が谷を流れています。",
+      "expected": "静かな川が谷を流れています。",
+      "reference_error": null,
+      "reference_seconds": 0.0014551859349012375
+    },
+    {
+      "id": "ja-055",
+      "lang": "ja",
+      "category": "mixed",
+      "input": "5月5日にコーヒー2kgを2450円で買いました。",
+      "expected": "五月五日にコーヒー二kgを二千四百五十円で買いました。",
+      "reference_error": null,
+      "reference_seconds": 0.0032689515501260757
+    },
+    {
+      "id": "ja-056",
+      "lang": "ja",
+      "category": "mixed",
+      "input": "10:30の測定では22.5℃、湿度60%でした。",
+      "expected": "十時三十分の測定では二十二点五℃、湿度六十%でした。",
+      "reference_error": null,
+      "reference_seconds": 0.0033877557143568993
+    }
+  ]
+}

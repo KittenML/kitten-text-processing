@@ -1,0 +1,512 @@
+{
+  "nemo_version": "1.2.0",
+  "pynini_version": "2.1.6.post1",
+  "sacremoses_version": "0.2.0",
+  "load_seconds": 1.5431095343083143,
+  "cases": [
+    {
+      "id": "ar-001",
+      "lang": "ar",
+      "category": "cardinal",
+      "input": "يوجد في البيت 2 من القطط.",
+      "expected": "يوجد في البيت اثنان من القطط.",
+      "reference_error": null,
+      "reference_seconds": 0.0020414823666214943
+    },
+    {
+      "id": "ar-002",
+      "lang": "ar",
+      "category": "cardinal",
+      "input": "في الحافلة 17 راكبًا.",
+      "expected": "في الحافلة سبعة عشر راكبًا.",
+      "reference_error": null,
+      "reference_seconds": 0.001273241825401783
+    },
+    {
+      "id": "ar-003",
+      "lang": "ar",
+      "category": "cardinal",
+      "input": "اشترت المكتبة 35 كتابًا.",
+      "expected": "اشترت المكتبة خمسة وثلاثون كتابًا.",
+      "reference_error": null,
+      "reference_seconds": 0.0012844596058130264
+    },
+    {
+      "id": "ar-004",
+      "lang": "ar",
+      "category": "cardinal",
+      "input": "بقيت 99 تذكرة للحفل.",
+      "expected": "بقيت تسعة وتسعون تذكرة للحفل.",
+      "reference_error": null,
+      "reference_seconds": 0.0012267259880900383
+    },
+    {
+      "id": "ar-005",
+      "lang": "ar",
+      "category": "cardinal",
+      "input": "يعيش في القرية 120 شخصًا.",
+      "expected": "يعيش في القرية مئة وعشرون شخصًا.",
+      "reference_error": null,
+      "reference_seconds": 0.0013925619423389435
+    },
+    {
+      "id": "ar-006",
+      "lang": "ar",
+      "category": "cardinal",
+      "input": "زرعنا 1234 شجرة في الحديقة.",
+      "expected": "زرعنا ألف ومئتان وأربعة وثلاثون شجرة في الحديقة.",
+      "reference_error": null,
+      "reference_seconds": 0.0017384598031640053
+    },
+    {
+      "id": "ar-007",
+      "lang": "ar",
+      "category": "ordinal",
+      "input": "وصلت المتسابقة في المركز 3.",
+      "expected": "وصلت المتسابقة في المركز ثلاثة.",
+      "reference_error": null,
+      "reference_seconds": 0.0013158861547708511
+    },
+    {
+      "id": "ar-008",
+      "lang": "ar",
+      "category": "decimal",
+      "input": "نتيجة الحساب هي 3.14.",
+      "expected": "نتيجة الحساب هي ثلاثة واربعة عشر من مئة.",
+      "reference_error": null,
+      "reference_seconds": 0.0012606680393218994
+    },
+    {
+      "id": "ar-009",
+      "lang": "ar",
+      "category": "decimal",
+      "input": "الفارق يساوي 0.05 نقطة.",
+      "expected": "الفارق يساوي 0.05 نقطة.",
+      "reference_error": null,
+      "reference_seconds": 0.0008866023272275925
+    },
+    {
+      "id": "ar-010",
+      "lang": "ar",
+      "category": "decimal",
+      "input": "انخفضت الحرارة إلى -2.5 درجة.",
+      "expected": "انخفضت الحرارة إلى سالباثنان وخمسة من عشرة درجة.",
+      "reference_error": null,
+      "reference_seconds": 0.0017098626121878624
+    },
+    {
+      "id": "ar-011",
+      "lang": "ar",
+      "category": "decimal",
+      "input": "يحتوي المشروب على 12% من السكر.",
+      "expected": "يحتوي المشروب على اثنا عشر في المائة من السكر.",
+      "reference_error": null,
+      "reference_seconds": 0.0018036123365163803
+    },
+    {
+      "id": "ar-012",
+      "lang": "ar",
+      "category": "decimal",
+      "input": "معدل الفائدة السنوي هو 4.5%.",
+      "expected": "معدل الفائدة السنوي هو أربعة وخمسة من عشرة في المائة.",
+      "reference_error": null,
+      "reference_seconds": 0.0016608508303761482
+    },
+    {
+      "id": "ar-013",
+      "lang": "ar",
+      "category": "fraction",
+      "input": "أضف 1/2 كوب من الحليب.",
+      "expected": "أضف نصف كوب من الحليب.",
+      "reference_error": null,
+      "reference_seconds": 0.001443488523364067
+    },
+    {
+      "id": "ar-014",
+      "lang": "ar",
+      "category": "fraction",
+      "input": "قطعنا 3/4 الطريق.",
+      "expected": "قطعنا ثلاثة أرباع الطريق.",
+      "reference_error": null,
+      "reference_seconds": 0.0010454626753926277
+    },
+    {
+      "id": "ar-015",
+      "lang": "ar",
+      "category": "money",
+      "input": "سعر القهوة 2 دولار.",
+      "expected": "سعر القهوة اثنان دولار.",
+      "reference_error": null,
+      "reference_seconds": 0.0010524177923798561
+    },
+    {
+      "id": "ar-016",
+      "lang": "ar",
+      "category": "money",
+      "input": "دفعت $12.50 مقابل الغداء.",
+      "expected": "دفعت اثنا عشر دولار وخمسون سنت مقابل الغداء.",
+      "reference_error": null,
+      "reference_seconds": 0.0015438394621014595
+    },
+    {
+      "id": "ar-017",
+      "lang": "ar",
+      "category": "money",
+      "input": "ميزانية المشروع 1250 ريالًا.",
+      "expected": "ميزانية المشروع ألف ومئتان وخمسون ريالًا.",
+      "reference_error": null,
+      "reference_seconds": 0.001538730226457119
+    },
+    {
+      "id": "ar-018",
+      "lang": "ar",
+      "category": "money",
+      "input": "سعر التذكرة 20 €.",
+      "expected": "سعر التذكرة عشرون €.",
+      "reference_error": null,
+      "reference_seconds": 0.0011069420725107193
+    },
+    {
+      "id": "ar-019",
+      "lang": "ar",
+      "category": "money",
+      "input": "أعاد البائع إليّ 0.75 دولار.",
+      "expected": "أعاد البائع إليّ 0.75 دولار.",
+      "reference_error": null,
+      "reference_seconds": 0.0010117385536432266
+    },
+    {
+      "id": "ar-020",
+      "lang": "ar",
+      "category": "money",
+      "input": "ثمن الحاسوب 999.99 دولارًا.",
+      "expected": "ثمن الحاسوب تسع مئة وتسعة وتسعون وتسعة وتسعون من مئة دولارًا.",
+      "reference_error": null,
+      "reference_seconds": 0.001615673303604126
+    },
+    {
+      "id": "ar-021",
+      "lang": "ar",
+      "category": "money",
+      "input": "بلغ التبرع 1 مليون ريال.",
+      "expected": "بلغ التبرع واحد مليون ريال.",
+      "reference_error": null,
+      "reference_seconds": 0.001236063428223133
+    },
+    {
+      "id": "ar-022",
+      "lang": "ar",
+      "category": "date",
+      "input": "سيعقد الاجتماع في 5 يناير 2026.",
+      "expected": "سيعقد الاجتماع في خمسة يناير ألفان وستة وعشرون.",
+      "reference_error": null,
+      "reference_seconds": 0.002034720964729786
+    },
+    {
+      "id": "ar-023",
+      "lang": "ar",
+      "category": "date",
+      "input": "ولدت في 14 فبراير 1998.",
+      "expected": "ولدت في اربعة عشر فبراير ألف وتسع مئة وثمانية وتسعون.",
+      "reference_error": null,
+      "reference_seconds": 0.002144835889339447
+    },
+    {
+      "id": "ar-024",
+      "lang": "ar",
+      "category": "date",
+      "input": "يحمل المستند تاريخ 03/04/2025.",
+      "expected": "يحمل المستند تاريخ 03/04/2025.",
+      "reference_error": null,
+      "reference_seconds": 0.001019987277686596
+    },
+    {
+      "id": "ar-025",
+      "lang": "ar",
+      "category": "date",
+      "input": "موعد التسليم هو 2026-09-25.",
+      "expected": "موعد التسليم هو 2026-09-25.",
+      "reference_error": null,
+      "reference_seconds": 0.0014030039310455322
+    },
+    {
+      "id": "ar-026",
+      "lang": "ar",
+      "category": "date",
+      "input": "افتتح المبنى في عام 2001.",
+      "expected": "افتتح المبنى في عام ألفان وواحد.",
+      "reference_error": null,
+      "reference_seconds": 0.0014297962188720703
+    },
+    {
+      "id": "ar-027",
+      "lang": "ar",
+      "category": "date",
+      "input": "تبدأ العطلة في 1 يوليو.",
+      "expected": "تبدأ العطلة في واحد يوليو.",
+      "reference_error": null,
+      "reference_seconds": 0.0011979900300502777
+    },
+    {
+      "id": "ar-028",
+      "lang": "ar",
+      "category": "date",
+      "input": "يغطي الأرشيف الفترة من 1980 إلى 1990.",
+      "expected": "يغطي الأرشيف الفترة من ألف وتسع مئة وثمانون إلى ألف وتسع مئة وتسعون.",
+      "reference_error": null,
+      "reference_seconds": 0.0028456775471568108
+    },
+    {
+      "id": "ar-029",
+      "lang": "ar",
+      "category": "time",
+      "input": "ينطلق القطار عند 08:30.",
+      "expected": "ينطلق القطار عند 08:30.",
+      "reference_error": null,
+      "reference_seconds": 0.0009190160781145096
+    },
+    {
+      "id": "ar-030",
+      "lang": "ar",
+      "category": "time",
+      "input": "سنلتقي الساعة 3:15 مساءً.",
+      "expected": "سنلتقي الساعة 3:15 مساءً.",
+      "reference_error": null,
+      "reference_seconds": 0.0010922737419605255
+    },
+    {
+      "id": "ar-031",
+      "lang": "ar",
+      "category": "time",
+      "input": "يرن المنبه عند 7:00.",
+      "expected": "يرن المنبه عند 7:00.",
+      "reference_error": null,
+      "reference_seconds": 0.0009478246793150902
+    },
+    {
+      "id": "ar-032",
+      "lang": "ar",
+      "category": "time",
+      "input": "يبدأ الفيلم عند 21:45.",
+      "expected": "يبدأ الفيلم عند 21:45.",
+      "reference_error": null,
+      "reference_seconds": 0.0011536376550793648
+    },
+    {
+      "id": "ar-033",
+      "lang": "ar",
+      "category": "time",
+      "input": "تظهر الساعة 01:02:03.",
+      "expected": "تظهر الساعة 01:02:03.",
+      "reference_error": null,
+      "reference_seconds": 0.0007207468152046204
+    },
+    {
+      "id": "ar-034",
+      "lang": "ar",
+      "category": "time",
+      "input": "يفتح المتجر الساعة 9 صباحًا.",
+      "expected": "يفتح المتجر الساعة تسعة صباحًا.",
+      "reference_error": null,
+      "reference_seconds": 0.0011901799589395523
+    },
+    {
+      "id": "ar-035",
+      "lang": "ar",
+      "category": "time",
+      "input": "انتظرنا 30 دقيقة في المحطة.",
+      "expected": "انتظرنا ثلاثون دقيقة في المحطة.",
+      "reference_error": null,
+      "reference_seconds": 0.0012650350108742714
+    },
+    {
+      "id": "ar-036",
+      "lang": "ar",
+      "category": "measure",
+      "input": "وزن الصندوق 5 كغ.",
+      "expected": "وزن الصندوق خمسة كغ.",
+      "reference_error": null,
+      "reference_seconds": 0.0009713666513562202
+    },
+    {
+      "id": "ar-037",
+      "lang": "ar",
+      "category": "measure",
+      "input": "أضف 250 مل من الماء.",
+      "expected": "أضف مئتان وخمسون مل من الماء.",
+      "reference_error": null,
+      "reference_seconds": 0.00156340841203928
+    },
+    {
+      "id": "ar-038",
+      "lang": "ar",
+      "category": "measure",
+      "input": "طول الطريق 12 كم.",
+      "expected": "طول الطريق اثنا عشر كيلومتر.",
+      "reference_error": null,
+      "reference_seconds": 0.0012987544760107994
+    },
+    {
+      "id": "ar-039",
+      "lang": "ar",
+      "category": "measure",
+      "input": "السرعة القصوى 80 كم/ساعة.",
+      "expected": "السرعة القصوى ثمانون كم/ساعة.",
+      "reference_error": null,
+      "reference_seconds": 0.0013210447505116463
+    },
+    {
+      "id": "ar-040",
+      "lang": "ar",
+      "category": "measure",
+      "input": "عرض الطاولة 1.5 متر.",
+      "expected": "عرض الطاولة واحد وخمسة من عشرة متر.",
+      "reference_error": null,
+      "reference_seconds": 0.0012198947370052338
+    },
+    {
+      "id": "ar-041",
+      "lang": "ar",
+      "category": "measure",
+      "input": "درجة الحرارة اليوم 23 °C.",
+      "expected": "درجة الحرارة اليوم ثلاثة وعشرون درجة مئوية.",
+      "reference_error": null,
+      "reference_seconds": 0.0016671037301421165
+    },
+    {
+      "id": "ar-042",
+      "lang": "ar",
+      "category": "measure",
+      "input": "يتسع الخزان لـ 10 لترات.",
+      "expected": "يتسع الخزان لـ عشرة لترات.",
+      "reference_error": null,
+      "reference_seconds": 0.001295996829867363
+    },
+    {
+      "id": "ar-043",
+      "lang": "ar",
+      "category": "electronic",
+      "input": "زر الموقع https://example.com لمعرفة التفاصيل.",
+      "expected": "زر الموقع https://example.com لمعرفة التفاصيل.",
+      "reference_error": null,
+      "reference_seconds": 0.0012516845017671585
+    },
+    {
+      "id": "ar-044",
+      "lang": "ar",
+      "category": "electronic",
+      "input": "أرسل رسالة إلى hello@example.com قبل الجمعة.",
+      "expected": "أرسل رسالة إلى hello@example.com قبل الجمعة.",
+      "reference_error": null,
+      "reference_seconds": 0.00133490189909935
+    },
+    {
+      "id": "ar-045",
+      "lang": "ar",
+      "category": "electronic",
+      "input": "اتصل بالرقم 0501234567 للمساعدة.",
+      "expected": "اتصل بالرقم 0501234567 للمساعدة.",
+      "reference_error": null,
+      "reference_seconds": 0.0010876832529902458
+    },
+    {
+      "id": "ar-046",
+      "lang": "ar",
+      "category": "electronic",
+      "input": "عنوان الخادم هو 192.168.1.1.",
+      "expected": "عنوان الخادم هو 192.168.1.1.",
+      "reference_error": null,
+      "reference_seconds": 0.0015355702489614487
+    },
+    {
+      "id": "ar-047",
+      "lang": "ar",
+      "category": "electronic",
+      "input": "ثبّت الإصدار 2.4.1.",
+      "expected": "ثبّت الإصدار 2.4.1.",
+      "reference_error": null,
+      "reference_seconds": 0.0008887751027941704
+    },
+    {
+      "id": "ar-048",
+      "lang": "ar",
+      "category": "electronic",
+      "input": "رمز الطلب هو AB123.",
+      "expected": "رمز الطلب هو AB123.",
+      "reference_error": null,
+      "reference_seconds": 0.0007774187251925468
+    },
+    {
+      "id": "ar-049",
+      "lang": "ar",
+      "category": "electronic",
+      "input": "موقعنا هو www.example.org.",
+      "expected": "موقعنا هو www.example.org.",
+      "reference_error": null,
+      "reference_seconds": 0.0007613180205225945
+    },
+    {
+      "id": "ar-050",
+      "lang": "ar",
+      "category": "mixed",
+      "input": "فحص الطبيب ١٢ مريضًا اليوم.",
+      "expected": "فحص الطبيب ١٢ مريضًا اليوم.",
+      "reference_error": null,
+      "reference_seconds": 0.0010828832164406776
+    },
+    {
+      "id": "ar-051",
+      "lang": "ar",
+      "category": "punctuation",
+      "input": "قالت: «أحتاج إلى ٣ تذاكر».",
+      "expected": "قالت: «أحتاج إلى ٣ تذاكر».",
+      "reference_error": null,
+      "reference_seconds": 0.0011671613901853561
+    },
+    {
+      "id": "ar-052",
+      "lang": "ar",
+      "category": "punctuation",
+      "input": "هل بقيت ٧ مقاعد شاغرة؟",
+      "expected": "هل بقيت ٧ مقاعد شاغرة؟",
+      "reference_error": null,
+      "reference_seconds": 0.0010548979043960571
+    },
+    {
+      "id": "ar-053",
+      "lang": "ar",
+      "category": "punctuation",
+      "input": "اقرأ القسمين [٤] و[٥].",
+      "expected": "اقرأ القسمين [٤] و[٥].",
+      "reference_error": null,
+      "reference_seconds": 0.000975864939391613
+    },
+    {
+      "id": "ar-054",
+      "lang": "ar",
+      "category": "plain",
+      "input": "يجري نهر هادئ عبر الوادي.",
+      "expected": "يجري نهر هادئ عبر الوادي.",
+      "reference_error": null,
+      "reference_seconds": 0.0009983554482460022
+    },
+    {
+      "id": "ar-055",
+      "lang": "ar",
+      "category": "mixed",
+      "input": "في ٥ مايو اشتريت ٢ كغ من الأرز بمبلغ ٢٤٫٥٠ ريالًا.",
+      "expected": "في ٥ مايو اشتريت ٢ كغ من الأرز بمبلغ ٢٤٫٥٠ ريالًا.",
+      "reference_error": null,
+      "reference_seconds": 0.002473904751241207
+    },
+    {
+      "id": "ar-056",
+      "lang": "ar",
+      "category": "mixed",
+      "input": "عند ١٠:٣٠ كانت الحرارة ٢٢٫٥ درجة والرطوبة ٦٠٪.",
+      "expected": "عند ١٠:٣٠ كانت الحرارة ٢٢٫٥ درجة والرطوبة ٦٠٪.",
+      "reference_error": null,
+      "reference_seconds": 0.0017471686005592346
+    }
+  ]
+}

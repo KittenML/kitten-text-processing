@@ -1,0 +1,370 @@
+{
+  "oracle": "nemo_text_processing==1.2.0, pynini==2.1.6.post1, sacremoses==0.2.0",
+  "languages": {
+    "en": {
+      "exact": 1683,
+      "both_reject": 1,
+      "upstream": 565,
+      "audio_fixture_inputs": 62
+    },
+    "es": {
+      "exact": 1681,
+      "both_reject": 2,
+      "upstream": 566,
+      "audio_fixture_inputs": 29
+    },
+    "fr": {
+      "exact": 1235,
+      "both_reject": 1,
+      "upstream": 117,
+      "audio_fixture_inputs": 0
+    },
+    "de": {
+      "exact": 1431,
+      "both_reject": 2,
+      "upstream": 315,
+      "audio_fixture_inputs": 50
+    },
+    "pt": {
+      "exact": 1068,
+      "both_reject": 410,
+      "upstream": 359,
+      "audio_fixture_inputs": 0
+    },
+    "it": {
+      "exact": 1166,
+      "both_reject": 2,
+      "upstream": 52,
+      "audio_fixture_inputs": 0
+    },
+    "zh": {
+      "exact": 1482,
+      "both_reject": 2,
+      "upstream": 367,
+      "audio_fixture_inputs": 0
+    },
+    "ja": {
+      "exact": 1237,
+      "both_reject": 422,
+      "upstream": 542,
+      "audio_fixture_inputs": 0
+    },
+    "ko": {
+      "exact": 1486,
+      "both_reject": 2,
+      "upstream": 369,
+      "audio_fixture_inputs": 0
+    },
+    "hi": {
+      "exact": 1795,
+      "both_reject": 1,
+      "upstream": 678,
+      "audio_fixture_inputs": 0
+    },
+    "ar": {
+      "exact": 1235,
+      "both_reject": 2,
+      "upstream": 118,
+      "audio_fixture_inputs": 0
+    },
+    "ru": {
+      "exact": 1308,
+      "both_reject": 2,
+      "upstream": 192,
+      "audio_fixture_inputs": 192
+    },
+    "vi": {
+      "exact": 1514,
+      "both_reject": 77,
+      "upstream": 472,
+      "audio_fixture_inputs": 0
+    },
+    "hu": {
+      "exact": 1319,
+      "both_reject": 2,
+      "upstream": 205,
+      "audio_fixture_inputs": 0
+    },
+    "sv": {
+      "exact": 1371,
+      "both_reject": 2,
+      "upstream": 256,
+      "audio_fixture_inputs": 3
+    },
+    "hy": {
+      "exact": 1250,
+      "both_reject": 2,
+      "upstream": 134,
+      "audio_fixture_inputs": 0
+    },
+    "rw": {
+      "exact": 715,
+      "both_reject": 503,
+      "upstream": 100,
+      "audio_fixture_inputs": 0
+    }
+  },
+  "counts": {
+    "exact": 22976,
+    "both_reject": 1435,
+    "upstream": 5407,
+    "audio_fixture_inputs": 336
+  },
+  "fixture_discrepancies": [
+    {
+      "id": "upstream:it/test_cases_electronic.txt:1",
+      "input": "Trovateci su mail.university.edu.",
+      "upstream_expected": [
+        "Trovateci su m a i l punto u n i v e r s i t y punto edu ."
+      ],
+      "reference": {
+        "output": "Trovateci su m a i l punto u n i v e r s i t y punto edu.",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.02245850022882223
+      }
+    },
+    {
+      "id": "upstream:it/test_cases_electronic.txt:2",
+      "input": "Trovateci su mail.nasa.gov.",
+      "upstream_expected": [
+        "Trovateci su m a i l punto n a s a punto gov ."
+      ],
+      "reference": {
+        "output": "Trovateci su m a i l punto n a s a punto gov.",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.01826772652566433
+      }
+    },
+    {
+      "id": "upstream:it/test_cases_electronic.txt:3",
+      "input": "Trovateci su mail.nasa.mx.",
+      "upstream_expected": [
+        "Trovateci su m a i l punto n a s a punto m x ."
+      ],
+      "reference": {
+        "output": "Trovateci su m a i l punto n a s a punto m x.",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.016901271417737007
+      }
+    },
+    {
+      "id": "upstream:it/test_cases_electronic.txt:13",
+      "input": "visitate il sito https://www.nvidia.com.",
+      "upstream_expected": [
+        "visitate il sito h t t p s due punti slash slash w w w punto nvidia punto com ."
+      ],
+      "reference": {
+        "output": "visitate il sito h t t p s due punti slash slash w w w punto nvidia punto com.",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.02822090405970812
+      }
+    },
+    {
+      "id": "upstream:hy/test_cases_whitelist.txt:1",
+      "input": "ս.թ.",
+      "upstream_expected": [
+        "սույն թվականի"
+      ],
+      "reference": {
+        "output": "սույն թվականի",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.0022843852639198303
+      }
+    },
+    {
+      "id": "upstream:hy/test_cases_whitelist.txt:2",
+      "input": "մ.թ.ա.",
+      "upstream_expected": [
+        "մեր թվարկությունից առաջ"
+      ],
+      "reference": {
+        "output": "մեր թվարկությունից առաջ",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.0014154138043522835
+      }
+    },
+    {
+      "id": "upstream:hy/test_cases_whitelist.txt:3",
+      "input": "մ.թ.",
+      "upstream_expected": [
+        "մեր թվարկություն"
+      ],
+      "reference": {
+        "output": "մեր թվարկություն",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.0012633930891752243
+      }
+    },
+    {
+      "id": "upstream:hy/test_cases_whitelist.txt:4",
+      "input": "Ք.ա.",
+      "upstream_expected": [
+        "քրիստոսից առաջ"
+      ],
+      "reference": {
+        "output": "քրիստոսից առաջ",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.0012521203607320786
+      }
+    },
+    {
+      "id": "upstream:hy/test_cases_whitelist.txt:5",
+      "input": "Ք.հ.",
+      "upstream_expected": [
+        "քրիստոսից հետո"
+      ],
+      "reference": {
+        "output": "քրիստոսից հետո",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.0012354962527751923
+      }
+    },
+    {
+      "id": "upstream:hy/test_cases_whitelist.txt:6",
+      "input": "Ք.ծ.ա.",
+      "upstream_expected": [
+        "քրիստոսի ծննդից առաջ"
+      ],
+      "reference": {
+        "output": "քրիստոսի ծննդից առաջ",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.0012848442420363426
+      }
+    },
+    {
+      "id": "upstream:hy/test_cases_whitelist.txt:7",
+      "input": "Ք.ծ.հ.",
+      "upstream_expected": [
+        "քրիստոսի ծննդից հետո"
+      ],
+      "reference": {
+        "output": "քրիստոսի ծննդից հետո",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.0013020755723118782
+      }
+    },
+    {
+      "id": "upstream:hy/test_cases_whitelist.txt:8",
+      "input": "ս․թ․",
+      "upstream_expected": [
+        "սույն թվականի"
+      ],
+      "reference": {
+        "output": "սույն թվականի",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.0012631053104996681
+      }
+    },
+    {
+      "id": "upstream:hy/test_cases_whitelist.txt:9",
+      "input": "մ․թ․ա․",
+      "upstream_expected": [
+        "մեր թվարկությունից առաջ"
+      ],
+      "reference": {
+        "output": "մեր թվարկությունից առաջ",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.001325550489127636
+      }
+    },
+    {
+      "id": "upstream:hy/test_cases_whitelist.txt:10",
+      "input": "մ․թ․",
+      "upstream_expected": [
+        "մեր թվարկություն"
+      ],
+      "reference": {
+        "output": "մեր թվարկություն",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.0012548509985208511
+      }
+    },
+    {
+      "id": "upstream:hy/test_cases_whitelist.txt:11",
+      "input": "Ք․ա․",
+      "upstream_expected": [
+        "քրիստոսից առաջ"
+      ],
+      "reference": {
+        "output": "քրիստոսից առաջ",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.0012542447075247765
+      }
+    },
+    {
+      "id": "upstream:hy/test_cases_whitelist.txt:12",
+      "input": "Ք․հ․",
+      "upstream_expected": [
+        "քրիստոսից հետո"
+      ],
+      "reference": {
+        "output": "քրիստոսից հետո",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.0012557990849018097
+      }
+    },
+    {
+      "id": "upstream:hy/test_cases_whitelist.txt:13",
+      "input": "Ք․ծ․ա․",
+      "upstream_expected": [
+        "քրիստոսի ծննդից առաջ"
+      ],
+      "reference": {
+        "output": "քրիստոսի ծննդից առաջ",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.0013081450015306473
+      }
+    },
+    {
+      "id": "upstream:hy/test_cases_whitelist.txt:14",
+      "input": "Ք․ծ․հ․",
+      "upstream_expected": [
+        "քրիստոսի ծննդից հետո"
+      ],
+      "reference": {
+        "output": "քրիստոսի ծննդից հետո",
+        "error": null,
+        "timeout": false,
+        "seconds": 0.0012940475717186928
+      }
+    }
+  ],
+  "files": {
+    "en.jsonl": "1b1f48dfc807171e95c32ec8143364dc56264d267c828c539a492f98ddfb7ad7",
+    "es.jsonl": "05b20919e1f387d25093dc01ab6ec16e4269347c4aceff014b81fb976227fe13",
+    "fr.jsonl": "df3ad5bf00be3cc1fab74015150ac37fa1a977772d02b7656e7dbe37403dcbcb",
+    "de.jsonl": "b557a4bb71946e026cfa540e3ae79890c51359eb4746d9822c4fdc2eb174a267",
+    "pt.jsonl": "1a151bd71da4d97d85d108175aad7fa9701b25bacf73deb4084ca3dc76d2c52b",
+    "it.jsonl": "081d0dc192cc6ba0246f3aa93bbb2bba18f12f34f9e6b3a6018aa9f5af903f6b",
+    "zh.jsonl": "951900f0fb62e4c60ef8c5833f0af837266632493d8d3dd0c771a423bfe7f608",
+    "ja.jsonl": "bdfc80804829dc5fc0f57d3165aa42c47f6b20062a657fe8b05a256e0cc7a5aa",
+    "ko.jsonl": "c1002f8ead8dea018d1900b4435a01552b2148783db263d55caf2e5475307a1b",
+    "hi.jsonl": "97e8d50f18bd3cafc9831b163968a3308107246511c78865c77e56b7160fb93f",
+    "ar.jsonl": "c828eb6bdfd3b67125795041c4dce25fa11f01bf2f743c9d2b906853ddfad990",
+    "ru.jsonl": "98d4884a930f0b375b2df4ae2b0f5e2b46b8475b7df9fed878c919a114046823",
+    "vi.jsonl": "21977f166dbecf6784c9c9001ab00cb25e758c243d1edeb0b31a401d5be75141",
+    "hu.jsonl": "9880437f3ba2d5fe98bfc1fb23f945eb48ed5a93f5589991200be3aef2a3d9c3",
+    "sv.jsonl": "ff152c01c2c313eca6c3d16e90d32414d7f70f5746d1d61e8efb01ebb04daddb",
+    "hy.jsonl": "8e1bb756f870722aa95a6357862c888c6100176967e2848edc98a8178e96caf6",
+    "rw.jsonl": "8ee1ff63ef5d98296487960f11c2a0eaa10c24c7ade9e74981de26fd3d32c644"
+  },
+  "upstream_commit": "7efa127d968c081793ebf11fa94dfb4257302d48",
+  "generated_seed": 20261002
+}

@@ -1,0 +1,56 @@
+cardinal|Otthon 2 macskánk van.
+cardinal|A buszon 17 utas ül.
+cardinal|A könyvtár 35 könyvet vásárolt.
+cardinal|A koncertre még 99 jegy maradt.
+cardinal|A faluban 120 ember él.
+cardinal|A parkban 1234 fát ültettünk.
+ordinal|A versenyen a 3. helyen végzett.
+decimal|A számítás eredménye 3,14.
+decimal|Az eltérés 0,05 pont.
+decimal|A hőmérséklet -2,5 fokra csökkent.
+decimal|Az ital 12% cukrot tartalmaz.
+decimal|Az éves kamat 4,5%.
+fraction|Adj hozzá 1/2 csésze tejet.
+fraction|Az út 3/4 részét már megtettük.
+money|A kávé 500 Ft-ba kerül.
+money|Az ebédért 1250 Ft-ot fizettem.
+money|A költségvetés 125 000 forint.
+money|A belépő ára 20 €.
+money|75 Ft-ot kaptam vissza.
+money|Ez a számítógép 299 999 Ft.
+money|Az alapítvány 1 millió forintot adományozott.
+date|Az értekezlet 2026. január 5-én lesz.
+date|1998. február 14-én született.
+date|Az iraton a 2025.03.04. dátum szerepel.
+date|A szállítás napja 2026-09-25.
+date|Az épület 2001-ben nyílt meg.
+date|A szünet július 1-jén kezdődik.
+date|Az irattár az 1980-1990 közötti éveket fedi le.
+time|A vonat 08:30-kor indul.
+time|Találkozzunk 15:15-kor.
+time|Az ébresztő 7:00-kor szól.
+time|A film 21:45-kor kezdődik.
+time|A stopper 01:02:03 értéket mutat.
+time|A bolt reggel 9 órakor nyit.
+time|30 percet vártunk az állomáson.
+measure|A doboz tömege 5 kg.
+measure|Önts hozzá 250 ml vizet.
+measure|Az út hossza 12 km.
+measure|A sebességhatár 80 km/h.
+measure|Az asztal 1,5 m széles.
+measure|Ma 23 °C van odakint.
+measure|A tartályba 10 l fér.
+electronic|Részletek a https://example.com oldalon találhatók.
+electronic|Péntekig írj a hello@example.hu címre.
+electronic|Hívd a 06 1 234 5678 számot.
+electronic|A kiszolgáló címe 192.168.1.1.
+electronic|Telepítsd a 2.4.1 verziót.
+electronic|A rendelés kódja AB123.
+electronic|A honlapunk címe www.pelda.hu.
+mixed|Dr. Kovács 12 beteget vizsgált meg.
+punctuation|Azt mondta: „3 jegyet kérek.”
+punctuation|Van még 7 szabad hely?
+punctuation|Olvasd el a [4] és [5] részt.
+plain|Csendes folyó halad át a völgyön.
+mixed|Május 5-én 2450 Ft-ot fizettem 2 kg rizsért.
+mixed|10:30-kor az érzékelő 22,5 °C-ot és 60% páratartalmat mutatott.

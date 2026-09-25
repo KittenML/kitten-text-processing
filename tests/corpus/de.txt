@@ -1,0 +1,56 @@
+cardinal|Bei uns wohnen 2 Katzen.
+cardinal|Im Bus sitzen 17 Fahrgäste.
+cardinal|Die Bücherei kaufte 35 Romane.
+cardinal|Für das Konzert sind noch 99 Karten verfügbar.
+cardinal|Das Dorf hat 120 Einwohner.
+cardinal|Im Park stehen 1.234 Bäume.
+ordinal|Sie belegte den 3. Platz.
+decimal|Das Ergebnis lautet 3,14.
+decimal|Die Abweichung beträgt 0,05 Punkte.
+decimal|Die Temperatur sank auf -2,5 Grad.
+decimal|Die Mischung enthält 12% Zucker.
+decimal|Der jährliche Zinssatz liegt bei 4,5%.
+fraction|Wir brauchen 1/2 Tasse Milch.
+fraction|Schon 3/4 der Strecke liegen hinter uns.
+money|Der Kaffee kostet 2 €.
+money|Für das Mittagessen bezahlte ich 12,50 €.
+money|Das Budget beträgt 1.250 Euro.
+money|Eine Eintrittskarte kostet 20 $.
+money|Ich bekam 0,75 € zurück.
+money|Dieser Computer kostet 999,99 €.
+money|Die Stiftung spendete 1 Million Euro.
+date|Die Sitzung findet am 5. Januar 2026 statt.
+date|Sie wurde am 14. Februar 1998 geboren.
+date|Auf dem Schreiben steht 03.04.2025.
+date|Als Lieferdatum ist 2026-09-25 angegeben.
+date|Das Gebäude wurde 2001 eröffnet.
+date|Die Ferien beginnen am 1. Juli.
+date|Das Archiv umfasst die Jahre 1980-1990.
+time|Der Zug fährt um 08:30 Uhr ab.
+time|Wir treffen uns um 15:15.
+time|Der Wecker klingelt um 7 Uhr.
+time|Der Film beginnt um 21:45 Uhr.
+time|Die Stoppuhr zeigt 01:02:03.
+time|Das Geschäft öffnet um 9:00.
+time|Wir warteten 30 min am Bahnhof.
+measure|Die Kiste wiegt 5 kg.
+measure|Gib 250 ml Wasser dazu.
+measure|Die Straße ist 12 km lang.
+measure|Hier sind höchstens 80 km/h erlaubt.
+measure|Der Tisch ist 1,5 m breit.
+measure|Heute sind es 23 °C.
+measure|Der Tank fasst 10 l.
+electronic|Weitere Angaben stehen auf https://example.com.
+electronic|Schreib vor Freitag an hallo@example.de.
+electronic|Rufen Sie 030 12345678 an.
+electronic|Der Server hat die Adresse 192.168.1.1.
+electronic|Installiere bitte Version 2.4.1.
+electronic|Die Bestellnummer lautet AB123.
+electronic|Unsere Webseite heißt www.beispiel.de.
+mixed|Dr. Müller behandelte 12 Patienten.
+punctuation|Sie sagte: „Ich brauche 3 Karten.“
+punctuation|Sind noch 7 Plätze frei?
+punctuation|Lies die Abschnitte [4] und [5].
+plain|Ein ruhiger Fluss durchquert das Tal.
+mixed|Am 5. Mai bezahlte ich 24,50 € für 2 kg Kaffee.
+mixed|Um 10:30 meldete der Sensor 22,5 °C und 60% Luftfeuchtigkeit.

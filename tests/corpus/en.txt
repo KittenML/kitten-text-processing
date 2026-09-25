@@ -1,0 +1,104 @@
+cardinal|There are 0 tickets left.
+cardinal|I packed 1 umbrella and 2 coats.
+cardinal|The farm has 17 sheep.
+cardinal|We counted 42 stars before midnight.
+cardinal|All 99 seats were occupied.
+cardinal|The warehouse received 100 boxes.
+cardinal|Please turn to page 101.
+cardinal|The museum welcomed 1,234 visitors.
+cardinal|Her collection contains 10,000 stamps.
+cardinal|The grant supports 1 million students.
+cardinal|The population reached 2.5 million.
+cardinal|The answer is -12.
+cardinal|Room 007 is at the end of the hall.
+cardinal|Call extension 0304.
+ordinal|She finished 1st in the race.
+ordinal|This is my 2nd attempt.
+ordinal|Take the 3rd exit at the roundabout.
+ordinal|They celebrated their 21st anniversary.
+ordinal|The office is on the 32nd floor.
+ordinal|He was the 100th customer.
+ordinal|Read the 11th and 12th chapters.
+decimal|The reading was 3.14.
+decimal|Add 0.05 to the total.
+decimal|The temperature dropped to -2.5 degrees.
+decimal|The ratio is .75.
+decimal|Accuracy improved by 9%.
+decimal|The rate changed from 1.2% to 2.4%.
+decimal|The final score was 99.99 percent.
+money|The coffee costs $3.
+money|I paid $12.50 for lunch.
+money|The invoice totals $1,250.00.
+money|That sticker costs $0.01.
+money|The train ticket costs £25.75.
+money|They donated €100 to the shelter.
+money|The souvenir costs ¥500.
+money|She saved $1.5 million last year.
+money|The refund was $0.99, not $9.99.
+money|We spent $20 on food and $15 on travel.
+money|The price rose by 5% to $42.
+date|The meeting is on January 5, 2026.
+date|We arrived on Feb. 14, 2024.
+date|Her birthday is May 1.
+date|The document is dated 03/04/2025.
+date|The deadline is 2026-09-25.
+date|He graduated in 1999.
+date|The bridge opened in 2001.
+date|The archive covers 1980-1990.
+date|Meet me on the 4th of July.
+date|The eclipse occurred on April 8, 2024.
+time|The alarm rings at 7:00 AM.
+time|Our train leaves at 3:05 p.m.
+time|Dinner starts at 18:30.
+time|The timer reads 01:02:03.
+time|Please arrive by 12:45 pm.
+time|The store opens at 9 a.m.
+time|We spoke for 1 h and 30 min.
+measure|The parcel weighs 5 kg.
+measure|Add 250 ml of milk.
+measure|The road is 12 km long.
+measure|The speed limit is 60 km/h.
+measure|The board is 2.5 m wide.
+measure|The freezer is set to -18 °C.
+measure|The engine produces 120 kW.
+measure|The room measures 10 m².
+measure|The bottle holds 1 L.
+measure|The screen is 24 inches wide.
+fraction|Use 1/2 cup of sugar.
+fraction|She ate 3/4 of the cake.
+fraction|The recipe needs 2 1/2 cups of flour.
+fraction|Only 1/3 of the seats were taken.
+fraction|The odds are 1:100.
+electronic|Visit https://example.com for details.
+electronic|Email hello@example.org before Friday.
+electronic|The server address is 192.168.1.1.
+electronic|Call 800-555-0199 for assistance.
+electronic|Install version 2.4.1 today.
+electronic|Our website is www.nvidia.com.
+electronic|Send the file to jane.doe+test@example.co.uk.
+electronic|The code is A123B.
+electronic|Use port 8080 on localhost.
+electronic|The filename is report_2026.pdf.
+abbreviation|Dr. Rivera will see you now.
+abbreviation|Mr. Smith and Mrs. Jones arrived early.
+abbreviation|Prof. Brown teaches at the university.
+abbreviation|The address is 12 Main St.
+abbreviation|See Fig. 2 for the results.
+abbreviation|Smith et al. published the study in 2024.
+abbreviation|NASA launched 3 satellites.
+punctuation|She said, "I ordered 2 coffees."
+punctuation|The result (42) surprised everyone.
+punctuation|Read sections [3] and [4].
+punctuation|Is the answer 7?
+punctuation|We won 10-2!
+punctuation|The children's 3 books are missing.
+punctuation|Wait... there are 5 more.
+plain|Hello, world!
+plain|Café crème tastes delicious.
+plain|A quiet river flows through the valley.
+plain|Please keep this sentence unchanged.
+mixed|Dr. Lee paid $45.20 for 3 kg of rice on May 5, 2026.
+mixed|At 10:30 AM, the sensor read 23.5 °C and 45% humidity.
+mixed|Order 21st-century maps from maps@example.com for $9.99.
+mixed|The train travelled 125 km in 1.5 hours on 06/07/2025.
+mixed|Keep 0 before the 12 spoken words.

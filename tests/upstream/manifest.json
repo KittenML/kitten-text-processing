@@ -1,0 +1,2251 @@
+{
+  "repository": "https://github.com/NVIDIA/NeMo-text-processing",
+  "commit": "7efa127d968c081793ebf11fa94dfb4257302d48",
+  "license": "Apache-2.0",
+  "files": {
+    "en/test_cases_address.txt": "5b93c41649086d0736334afd21446a3d40f9a22191447090384e1b5bcd110f5d",
+    "en/test_cases_cardinal.txt": "1353e375b51251345dc18e9ca06bd8af50242f5f5f84f90f5e2a16d786aaa6cf",
+    "en/test_cases_date.txt": "786dabfb4721e726416b3ee9b543c4a1110afd8ae41fe426f3d20447c89f77d1",
+    "en/test_cases_decimal.txt": "0f634684317ae2768f40990aaa58ae7930e964ee66d1b175b13747b6bad63694",
+    "en/test_cases_electronic.txt": "a2aef216231c3ff6e927ca26add421a0a4cb7b3938dc4e9843e53ccce97fbb81",
+    "en/test_cases_fraction.txt": "21d5cbba2d180787a7d24f78141a93b0b7dd135ac5797d11db0e2d501d5841a3",
+    "en/test_cases_math.txt": "17ce7862a5658d873011b45f7e7ab4b5d3baa8f97af8acc884b1010456b41fa3",
+    "en/test_cases_measure.txt": "cb95a0fa482375f563c86b32e78472c367aedd6493a479cf4be0cb1ac230c38c",
+    "en/test_cases_money.txt": "2cea091aa235e078da2c216eaf6497ad5a63ae80dc68a54f53a1094e5d6e46b6",
+    "en/test_cases_normalize_with_audio.txt": "3140a62b35cf94cadc08db05f2e916612affd763dabf058fc4a4738a69a100ba",
+    "en/test_cases_ordinal.txt": "24bd1b7e5793335f8fb302cbadd66ab33fc2853bdb6a55d58d3f683a6c51bba7",
+    "en/test_cases_punctuation.txt": "573de5cdf93c034d6f3453d4930b374923217f11034f25969f5619900a7e7cbe",
+    "en/test_cases_punctuation_match_input.txt": "aba7239afec219c0867425d045e8787db554079c473529f38f87dd12493bc409",
+    "en/test_cases_range.txt": "5c5269df2c1425a04a2303a181cf519ae012bcdb333d3170c1c82c5f49e0bf18",
+    "en/test_cases_roman.txt": "fc3eb5cd7762ce3fff2641fef5d9f3414a4ec24738ad4be110d164e7660ea6ca",
+    "en/test_cases_serial.txt": "368c8071a649d7f631af9fc6f9b95ec9a5dcac87466c58216276f9f750f3b8a5",
+    "en/test_cases_special_text.txt": "7cb4d7b42074065e6ae306fd9b4ca82172afc9903347193fd001fa48a0f3fcd9",
+    "en/test_cases_telephone.txt": "b63db0e92412eabfeee1fffac0d5c838a08776cd09f7158b866a83f067fe3eca",
+    "en/test_cases_time.txt": "bc0a9f403d58809cf5c67212f91cf615ff723b165d28fd42624d9647a150bfaa",
+    "en/test_cases_whitelist.txt": "6ad4d61e304427394525b4c17b1836fdc9bde45c5554c39f01636abfd2802105",
+    "en/test_cases_word.txt": "7309e541ab20bb101724215aae9528f22c5661dd8fa43750ea6011a739e36e0e",
+    "es/test_cases_cardinal.txt": "da0c4dbcd9ff0234fbb3ddc0b9516551c0e30f7e7e2780afa0fef152da62357b",
+    "es/test_cases_date.txt": "a9b985181336795c1d07f203eb6601f6218e96c686b77341dabc7d88a11b5633",
+    "es/test_cases_decimal.txt": "a78935e2b45aedb2c0fc5504d7cf1bb41843bc562f2ba1ec2d12e42d2df83b1b",
+    "es/test_cases_electronic.txt": "d2cb16418c73445b2c86c96244360f0bdc59a136fd73619e689904fcf5205ff3",
+    "es/test_cases_fraction.txt": "a26af91fab65400d83639c062745606e88543bf202273895f58c2c4dd3985554",
+    "es/test_cases_measure.txt": "701f4449b7ff5fdc9620420a597af5b39812b4ca6386796356fcbdc63fce6016",
+    "es/test_cases_money.txt": "2339654dc4ce17305a3a0c63e0ad73e6cbe9c2074ff421cac381730ad1432d0d",
+    "es/test_cases_normalize_with_audio.txt": "33a7f5436fe0f7ad87633fdbed00cceb636514dc2842db92f9e787e040f84d03",
+    "es/test_cases_ordinal.txt": "06524e13a8861ecb77cd805070bd91cfbe988406668477ec112ed754410ad9a9",
+    "es/test_cases_telephone.txt": "926e21f827277a22036acd7c8bb45862f2020f9e96ac11a2a2880d5c3ff208c3",
+    "es/test_cases_time.txt": "a6e7d5a1a6f695e52362cf809ca4ca2db1161da1989fd26bd1c28d47a55b81db",
+    "es/test_cases_whitelist.txt": "89a701e57174558a0a1852ef19026e3ea7e54c44dbf9b31e53ba9ee89b1d12bd",
+    "es/test_cases_word.txt": "a8617f85b69448417570caf76a3361e9694e3eee676f6e8bdad62a8e1b4c802b",
+    "fr/test_cases_cardinal.txt": "959798c1129a50a81d5b95012f14eb0578fd12b81df5ade904294adf4144867f",
+    "fr/test_cases_date.txt": "c9232e990d97228cf0a37f9ce04add2e8b0873a82eb860ad6891f58f2fd8931c",
+    "fr/test_cases_decimal.txt": "f06fb5eb4ca3ecb10554954e7a14edda0c282628bc8fb0000684788dd8bd9e1d",
+    "fr/test_cases_fraction.txt": "c3bcba13a12736263e8b58ac9df413c9ecf6e62d0dfc1e4c2e2677b017b40ac0",
+    "fr/test_cases_ordinal.txt": "dcaa2d8867188705a9db25f9db18c399f1ac0af1cec35cae4e14347a202bfd92",
+    "fr/test_cases_whitelist.txt": "fb594dceeb73a6e4a251d7e4175f3326b134491aee42b1722a4ecbe1fb3d3d7a",
+    "fr/test_cases_word.txt": "a5f8f53a3f72f6501455cedb1eee73ebabb20fbbab792981b4a050973511142d",
+    "de/test_cases_cardinal.txt": "eb4668f759dd60af2fd50f1bc5db80a27fc73809815106e3ed67e5410b71ec9a",
+    "de/test_cases_date.txt": "518cac8b76b58afcc38d8e1896e37616903e2075e1a671794fce26144997e8bd",
+    "de/test_cases_decimal.txt": "25a834d006f3e6e81d3af7117bac44aa87617ce7dbf9e00d5a4fa9017bd63aa0",
+    "de/test_cases_electronic.txt": "251288f2a8c29dd7a076663d0a69393f61006599cca12404631cb657bfccc23b",
+    "de/test_cases_fraction.txt": "7a146fa03fc10a7c6caf8b3cdb5a090a6b29e147f5a4ea52358aca9129cbddb9",
+    "de/test_cases_measure.txt": "995698b3bf3e2fb8e4d520e021111a075f36bcf7bbc03bdb57c18557503d60bb",
+    "de/test_cases_money.txt": "e4327715a5079fa1fc5d260b9bd7d4809037ba686b40370bc959e1fb1faceeeb",
+    "de/test_cases_normalize_with_audio.txt": "76b4ed1c0c65b6393ce5e6c5af2940144985ef299bf1c0078095831890c48abe",
+    "de/test_cases_ordinal.txt": "e544b7175f0d2811d1a989e7ffd95e9b0f56f18ffdc671d13415ca8be14d731d",
+    "de/test_cases_telephone.txt": "8edd8db6fd3238da5feeb34c9cef5a609bcda524741677909475d6925da41ebb",
+    "de/test_cases_time.txt": "8dd4d59bec79729762170a1be9639ee7b5e23c0d82ee43c980c317e78d74e4dd",
+    "de/test_cases_whitelist.txt": "18f9a14ed16b7e3eca26dca66f063981f3e6972a3e69d62f85a5b1fc1b72b75d",
+    "de/test_cases_word.txt": "5402e784ba2697008af4d4873fe009987a1ccc04b789515240788cfa047a0828",
+    "pt/test_cases_cardinal.txt": "bcb4c16ace626f60e320c44423205fa30cd439cdf3fd84f0ddf6bf101f09d3d7",
+    "pt/test_cases_date.txt": "d6f72b2e93339f3aaac93e7a7994a919aabdfea242d0d221ae230343a95819fa",
+    "pt/test_cases_decimal.txt": "7ce8b52bec40620a806193fa6569170fabbf62d70a9f2f9d357fcfbe112582db",
+    "pt/test_cases_electronic.txt": "359ef674611e9c943e466aa72f473061230bab0413145c775ecd3c5a106a95e3",
+    "pt/test_cases_fraction.txt": "77d0980ac4418054bd3bb7a7c3b814ee85272d1c4ffbaf2f4d467fe2e413aaea",
+    "pt/test_cases_measure.txt": "982f8799f4c20acfed10d6f801ebc82bf5c5f514f4200296b25a872f11965e6e",
+    "pt/test_cases_money.txt": "02d5bea359ac0febc167f1b1e70e59b1d9b7fd792b43619a21e0f717fe69ccf0",
+    "pt/test_cases_ordinal.txt": "74411cb3a7bdc0f7ae30c781c76389baf61614b0fabf31dff2bcfb43d07629b7",
+    "pt/test_cases_telephone.txt": "d634055863be978d22a58584b2ca02d3c59ad1b79ed37d1d53fdf2a87a86defe",
+    "pt/test_cases_time.txt": "83a5d4c74e2fc353d9390e95aacce06a40e626e5a498164af0959520d81ff7bb",
+    "it/test_cases_cardinal.txt": "848fe5d18600c0a6c02d366991e6c1bac18d19fe2240be8a06c5da427927fbab",
+    "it/test_cases_decimal.txt": "1918ddc46611df57590da1041e18528176c7037b736fa232710d782640de954c",
+    "it/test_cases_electronic.txt": "1be5eb8627c71b104ad6a5767604396de9f995e6edf841ddee33ec7fd48f1844",
+    "it/test_cases_measure.txt": "8d3a10458a0bf6b8dcbbb0a283c8b1d607286463692e5e75ec0894be18df0a28",
+    "it/test_cases_money.txt": "93202d4e19df67b30325f97013b83cae41bd4e64857d8f7ad9bb8034ff772417",
+    "it/test_cases_time.txt": "6d7e1d5b536f6cdc75c4b4f599c21d861066ea1e3ad621e3a9ed3c298fc5fac8",
+    "it/test_cases_whitelist.txt": "b6a105880c19239a348e43b4c207c8b67f7b4cb4655cb8e9ba2ae244aebc8fa9",
+    "zh/test_cases_cardinal.txt": "7649a5e60d281005741dcbd5541f9f6455bd8dd31211ec4a8a07d3509d39caa1",
+    "zh/test_cases_date.txt": "2b77ba5158ba26389eddcc0d0d6bf46fb892c952f452d6ff901216d2bd78db7d",
+    "zh/test_cases_decimal.txt": "0b153589d7d316ccd795fb5c0dbe8852239409e6484eca3ccf6d18e765b4d70a",
+    "zh/test_cases_fraction.txt": "6f34cb6eedda6952adf75c155196233100a8cfff9ac8d8d41063ca142c015d0c",
+    "zh/test_cases_measure.txt": "e9f3efc0c7d803813e28af3446ad5f9dbffcba159bd486ea951593f9dc3d9f17",
+    "zh/test_cases_money.txt": "49ffe89de8afe1fb2189f1785266042af89aab2a91dd738d459a3fadabf8d6f1",
+    "zh/test_cases_ordinal.txt": "f4c9297b431c04f9fe3a3e4fdeeb37f4b509471f12e498070017a93e57e35452",
+    "zh/test_cases_time.txt": "6d79a0dc9ee99166f3d86625986a64ae8a5029868d1744b4cd4eb53f4c9b70a3",
+    "zh/test_cases_whitelist.txt": "6be602a8a95fbd89e4e2dc1c2f3e8062643c7e583d1670120bb74a1ee880dd71",
+    "zh/test_cases_word.txt": "e8304db470dab93f9ab7cda995adad7d2bbd801146cbbca9898606d7573e4132",
+    "ja/test_cases_cardinal.txt": "5ba78ba2b88705d8ddb77a5d93c7ecdefcaa708784e0ea609d6729c093b28c85",
+    "ja/test_cases_date.txt": "10f2cc88f9cae7cd14c68dd5c60f4426428b662bfce8297c66ffe42f25839b6e",
+    "ja/test_cases_decimal.txt": "55877ce0096ca6dee25b5c771eec4d0ebfbd3c824c7dc97190169a8445f2fdf2",
+    "ja/test_cases_fraction.txt": "a13bd5f20591d9b63e28ae1512e0e048385ba1e77a8d01b233a25b6cd53fbb3d",
+    "ja/test_cases_ordinal.txt": "71a85609fe2b9b988817de2eb2f7fae4d9b873765e71d69332dd9e72682c7b1d",
+    "ja/test_cases_time.txt": "3a75e77ad505061a38b5e54fc2b27426be64a7da95332937eff5cc264a44bfe0",
+    "ko/test_cases_cardinal.txt": "daa507b8a64329e53b211c8fe2fd35e4b0bd32043616f9b642a00097e00937e5",
+    "ko/test_cases_date.txt": "f8d3fcba7a5d5fde1ff6a853510142e5af981cc43943b7be0dc6f3d837483eba",
+    "ko/test_cases_decimal.txt": "e67f171d8e5bec71eefee01c6b23312aac4419cbc1021cd94771e05242c3e6d0",
+    "ko/test_cases_electronic.txt": "57319fb0e81f51b3d6666f3c3823dba5ffa65298a4bbafaa762d28f4c668c9b7",
+    "ko/test_cases_fraction.txt": "87b82b4fb777f9bf80c35e4a3657031b82e7fb9fb2e171bf0f89b09e280864da",
+    "ko/test_cases_measure.txt": "2d4393e33666c1b10a0660b8efef9fe1c9516a3261039f17ad477fc485577b44",
+    "ko/test_cases_money.txt": "10c211fdef5183333dcac9881f04c6fd7352803b4c603bfc18dd8ef2fdcb7b93",
+    "ko/test_cases_ordinal.txt": "9b2d4ceff693d71ad6f3e90b84a1c51b51970d581403900c69111d606afb4631",
+    "ko/test_cases_telephone.txt": "66012de27c582d55b2398b8055a095038b5f26d76fd912cad56bb5cf3c187a11",
+    "ko/test_cases_time.txt": "7fb09d51ccc8e405bd8344c72c67bbd02334160426ecd5095365828bd580cbc9",
+    "hi/test_cases_address.txt": "9e0aae877107a3a3d0aeebf08c3ef3a16b597407fe92e745c21ac97b5ca63966",
+    "hi/test_cases_cardinal.txt": "a939310de8849f63491963b1cffc10305d0a9613740d7b5d1d7b900c36de5361",
+    "hi/test_cases_date.txt": "9d6226d4eb61119575351318c05596186762a5faba03d3ff93ca5e6944c04095",
+    "hi/test_cases_decimal.txt": "6e3f2578785dd3c191051e49f5f54abfc4f6e91d4cadefa71008583c60fc8e51",
+    "hi/test_cases_electronic.txt": "4d3045082571fef08f9ec3ce8c00a88cff7de7fd52eaca4e3cc8fe59f0aa02a3",
+    "hi/test_cases_fraction.txt": "2732f1c7abee7992e2d98657758099043ef1ae67ffb1043605933e0f8039590e",
+    "hi/test_cases_measure.txt": "9eb64e99caeed54b10ab81741b98715593e3f5dab05b335fa4b12e8498323339",
+    "hi/test_cases_money.txt": "393f5c99d2a61305fb62d8cc203a5372a87b09e7de4e43ffc382cfe9bb865d35",
+    "hi/test_cases_ordinal.txt": "a05e2fcafecdffc4379061a117f7e9e765f42897130c8140194256c23883a577",
+    "hi/test_cases_telephone.txt": "42161a928d37fcaf61ef1f615f107a9dd03fce56bc6f2108c484680c0cd472f3",
+    "hi/test_cases_time.txt": "4e91b2239f88051c2957514a93dcfb31e03b677dbb7afd52ab51b002cb38c696",
+    "hi/test_cases_whitelist.txt": "8bcbd5a5b1fe19891a4041a3d0f0a23ad3c21567a56ea5b29f5ed60e9db59e06",
+    "hi/test_cases_word.txt": "4449b475e74ccffc6d4bb06bc1602b9d7be07e7e9254a3bb6a3154d7e1d4c206",
+    "ar/test_cases_cardinal.txt": "73b2d0a8c61f8b77260ab5fe94b16dd5e661e992b4c83d433cb54c56e191f326",
+    "ar/test_cases_decimal.txt": "066923e2c9102d1ae3616af66f2de746913b3acaf79005831daf7eb224215558",
+    "ar/test_cases_fraction.txt": "3286e6c1720cd32259a4a3e788c0996c877e91759cb4cefc3cd93a14404ccf7a",
+    "ar/test_cases_measure.txt": "86b43817a7545cd50853d36f62a6bbbe2271e1901684dac9d280ede4cac87e12",
+    "ar/test_cases_money.txt": "fe23824cfa128352a736d9daea6013935720e39e41ba03907e316c7351dad411",
+    "ru/test_cases_cardinal.txt": "fa107c2d0b91c3fd1311477cff95b8d450393e2efdf1f370591032958b024bbc",
+    "ru/test_cases_cardinal_normalize_with_audio.txt": "8e1b7f5a74427a7f78219ee2334d41be845934924c2dacfa03188e548d4ea35a",
+    "ru/test_cases_date.txt": "331b9f16529cd887b1522e58b8573a7e0bdaaf1039cb6268445595c6c41f7f40",
+    "ru/test_cases_decimal.txt": "ac3ae70414c8e10b2a3339a3a99b88e09014da49efc5dd8086da68fe4ad34597",
+    "ru/test_cases_electronic.txt": "acaccf9b565fcbc399fd5d41c7a16eb62f597375c48dbc58a78708663a5351d6",
+    "ru/test_cases_measure.txt": "a28512327aedb676671c53f2f42ae82330608ef2d5cfd0da78816d8baef8eb68",
+    "ru/test_cases_money.txt": "090290b6b33d6d17f11dd111216ba3bc0f83fe8c2d4c87914590903d27c65e50",
+    "ru/test_cases_ordinal.txt": "d08c987be4d770e5d0f8816d11baf5b10283a9a63c475983ae6f5bbe7c9fd75f",
+    "ru/test_cases_telephone.txt": "9470cf8c6529e3ab50b9ce484e2359b3c343ab9a7e81b6b9b372e3e21b841dc2",
+    "ru/test_cases_time.txt": "6b5c345c430d77f228ae6a57b172919d7dc3e9607de8b89d13be50eb15c88fa6",
+    "ru/test_cases_whitelist.txt": "ce5c4c407abaeeddbe4ffe84f03c0a9af1e12ccbc1d4030f488ae71ed0b42b3d",
+    "ru/test_cases_word.txt": "9bb5787329afd0068abdeefd268b090046fe119d41db6b0bec0a37d4ba6b35f0",
+    "vi/test_cases_cardinal.txt": "921724da4dbd8e54f5ec35153553be0c33c31cc589dc87cd043b72fc2efab818",
+    "vi/test_cases_date.txt": "a3825cdf017f9b69679768bbdd7e6dd73c65b142a6527a57677c5bbb84d0c44d",
+    "vi/test_cases_decimal.txt": "40d3d9b50b722cceb6e8a7294ecf066bdaf358325117cc8d924ca8580100163f",
+    "vi/test_cases_fraction.txt": "b46b6756f373c6c8a5687b8c4d6528ef1f9aef26b6d43131356ef82fb0a1509c",
+    "vi/test_cases_measure.txt": "2c52d0af0f44fc24a073230bc47192175b1c98d751c6bfbc220bbd53951ad40c",
+    "vi/test_cases_money.txt": "775533b5e68ddeed65ef479df6f2899b87b794fe64b41c6fa5d6f5015bcb54aa",
+    "vi/test_cases_ordinal.txt": "b39f16940e943ce22dc9d241dc50e7a6628fb2c48b99c9f2cec372aa83bc8d01",
+    "vi/test_cases_range.txt": "d02449a238c250dc84e880a4bedbd0b41c26713a602f4baf69296a44241983c6",
+    "vi/test_cases_roman.txt": "54271c6b9a094469dcab8acec8ee61b5d203563df386ebda22049b5e521c8a5e",
+    "vi/test_cases_time.txt": "53d3f13428d49fde222ddb06f1bbcadc31ad7e86e83cd6ff4924ca01771694c8",
+    "hu/test_cases_cardinal.txt": "92d86852ce076770544516ba173ac81cc06ffa351c0554c9bbb39ae0f2f9a1f4",
+    "hu/test_cases_date.txt": "70573d69486fa1240192719be5926bf013c14c35d0647ca2b33653bf6c19b103",
+    "hu/test_cases_decimal.txt": "ae8541804e1c93bac6b0035a6c83919eb5a1971ffa7e1d2de2709b03693dc7a6",
+    "hu/test_cases_electronic.txt": "0c1092a9ad97d794134ae6d565fd7dbdd06c2c346f4a8af4fab769219d4eebde",
+    "hu/test_cases_fraction.txt": "87836a1f7be501d7b69f34cfe3528b1f9b91b873ed78309c40357a0d306ebeaa",
+    "hu/test_cases_measure.txt": "168915f1412e1e2873e93273b24f7bd5c6813e9626393786ddd0635a3e732507",
+    "hu/test_cases_money.txt": "2570f6ab09f6fc8c26dd2539e48550e57afbe514718e8633c39b7eee96de7e30",
+    "hu/test_cases_ordinal.txt": "202e97224768bdb650b4ebf9b8aec58a1587fdf846a164fbecaa6be8d679c6f9",
+    "hu/test_cases_telephone.txt": "83af090e2400d34b495e76313477b5a9233083870f83b8071cf2595f7d6844a5",
+    "hu/test_cases_time.txt": "dbbb19182b60aed71fdc94ef1ec757a7b6eabc33d32ddc29c4f74d228ec9bf07",
+    "hu/test_cases_whitelist.txt": "907716e8a375e6efed745bf65200301b25eec4633b2c91bd2e73cf0606eb1958",
+    "hu/test_cases_word.txt": "b388343e019b0370134bf122433d68ff6a979962eca15bb3b7c852f37a111a65",
+    "sv/test_cases_cardinal.txt": "0d012a3449e7865a93efc31550d90684132f8e226a56dbbf7e102b20c0ada3de",
+    "sv/test_cases_date.txt": "d43452bc531210fcccb084f34cbfbb69f01ebd87cf68e1138917b4ab64b49ffc",
+    "sv/test_cases_decimal.txt": "34853ac8c1419d08bde07e13e95dad8173ce76e69c76ecd8cb234323ff896f90",
+    "sv/test_cases_electronic.txt": "b58c938101e507e4d52ae167008fad6a5520f5fdfbc3406ac61340eb77e4cf62",
+    "sv/test_cases_fraction.txt": "fb7fedb46340c212d1e63abf9e40b6252c4aa1454db5a2960d61d71c2c5603d5",
+    "sv/test_cases_measure.txt": "4fb44cce25366e81092273dbbff92168a087ef9b9c9e4887a1e11ea710764d64",
+    "sv/test_cases_money.txt": "cbf2cb47a6a83cc8773499574d5180b7c227bc0b253f42c1f492c1620139c40a",
+    "sv/test_cases_normalize_with_audio.txt": "43a400aaf412ebd7da5c603644b556d3f5d77af9ccb866415ad77fac27ae01c0",
+    "sv/test_cases_ordinal.txt": "8b16542f521848ff2f235229f2e89f109a8b4b97da8ba6269d6dac5b6c1160a4",
+    "sv/test_cases_telephone.txt": "ef9e821604ce1f160648631012874cb5cad1a86c6f827f83dd3a1b262d9c128e",
+    "sv/test_cases_time.txt": "bd263e9131eb6bff98493578f8ee2447f6441fbe7c5d247b312261d5d12ceb26",
+    "sv/test_cases_whitelist.txt": "a8b20c330cb741224c5b62808e4b9ac6db0bcfb2fd60c0fc0c41625b2bed80a4",
+    "sv/test_cases_word.txt": "a8617f85b69448417570caf76a3361e9694e3eee676f6e8bdad62a8e1b4c802b",
+    "hy/test_cases_cardinal.txt": "5ad639fc1def52290856e9c1c03380a9889ebe4822ce3c03c779d37454148391",
+    "hy/test_cases_decimal.txt": "6aff2416ab42870577b7f212872b86cccfc798e8684dd67d0c8e27d2166957e7",
+    "hy/test_cases_fraction.txt": "b2875b56628cf3d5088ec8a87be409f0867c961a47ef2bc4456c6893af858b9f",
+    "hy/test_cases_measure.txt": "baa892fc415d42c7167ef1009830cb89e4007d059a6fac80811dfad684e0c620",
+    "hy/test_cases_money.txt": "218f1aa05cd6b5713e5e560801da9385f0691b014149b23e122167d74147f011",
+    "hy/test_cases_ordinal.txt": "7009a4825a0e5c841ff60541670de69a8d85b744190583b29a37a18547957550",
+    "hy/test_cases_time.txt": "b5147ac868796854ec9e8218deed6dd210061df50501b80918ee4cb2818a253b",
+    "hy/test_cases_whitelist.txt": "b943f19b30b43f024405886de1eb56584f2e41f630e28e8634b483593748da6c",
+    "hy/test_cases_word.txt": "225a5d3f56259d4221c6ede81f69454ab95f15264e042696def284d8149488a4",
+    "rw/test_cases_cardinal.txt": "8406f9efd474537dd103e2796d6667f217ef2a72f6240ea83466bd5ed41a20bd",
+    "rw/test_cases_time.txt": "611ee3ea4538aa1b8153eefc3f81ef8b2a140eac0f191244914b2700d6dadbfc",
+    "rw/test_cases_whitelist.txt": "72afe6bca95aa1ac0f5f275114166208f2c68e457d8ab1a0249f2bcc8427eb29",
+    "rw/test_cases_word.txt": "50e9f5319e89161e11af4f8600a0e1f18e80fcdf49e3f7c6e1cfff344cca5767"
+  },
+  "settings": {
+    "en/test_cases_address.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_address.py:test_norm"
+    },
+    "en/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_cardinal.py:test_norm"
+    },
+    "en/test_cases_date.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_date.py:test_norm_uncased"
+    },
+    "en/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_decimal.py:test_norm"
+    },
+    "en/test_cases_electronic.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_electronic.py:test_norm"
+    },
+    "en/test_cases_fraction.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_fraction.py:test_norm"
+    },
+    "en/test_cases_math.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_math.py:test_norm"
+    },
+    "en/test_cases_measure.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_measure.py:test_norm"
+    },
+    "en/test_cases_money.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": false
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_money.py:test_norm"
+    },
+    "en/test_cases_normalize_with_audio.txt": {
+      "options": {
+        "punct_post_process": true
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 0,
+      "test": "test_normalization_with_audio.py:test_norm"
+    },
+    "en/test_cases_ordinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_ordinal.py:test_norm"
+    },
+    "en/test_cases_punctuation.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_punctuation.py:test_norm"
+    },
+    "en/test_cases_punctuation_match_input.txt": {
+      "options": {
+        "punct_post_process": true
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_punctuation.py:test_norm_python_punct_post_process"
+    },
+    "en/test_cases_range.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_range.py:test_norm"
+    },
+    "en/test_cases_roman.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {},
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 0,
+      "test": "test_roman.py:test_norm"
+    },
+    "en/test_cases_serial.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_serial.py:test_norm"
+    },
+    "en/test_cases_special_text.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_special_text.py:test_norm"
+    },
+    "en/test_cases_telephone.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_telephone.py:test_norm"
+    },
+    "en/test_cases_time.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_time.py:test_norm"
+    },
+    "en/test_cases_whitelist.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_whitelist.py:test_norm"
+    },
+    "en/test_cases_word.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_word.py:test_norm"
+    },
+    "es/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_cardinal.py:test_norm"
+    },
+    "es/test_cases_date.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_date.py:test_norm"
+    },
+    "es/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_decimal.py:test_norm"
+    },
+    "es/test_cases_electronic.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_electronic.py:test_norm"
+    },
+    "es/test_cases_fraction.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_fraction.py:test_norm"
+    },
+    "es/test_cases_measure.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_measure.py:test_norm"
+    },
+    "es/test_cases_money.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_money.py:test_norm"
+    },
+    "es/test_cases_normalize_with_audio.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 0,
+      "test": "test_normalization_with_audio.py:test_norm"
+    },
+    "es/test_cases_ordinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_ordinal.py:test_norm"
+    },
+    "es/test_cases_telephone.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_telephone.py:test_norm"
+    },
+    "es/test_cases_time.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_time.py:test_norm"
+    },
+    "es/test_cases_whitelist.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_whitelist.py:test_norm"
+    },
+    "es/test_cases_word.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_word.py:test_norm"
+    },
+    "fr/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_cardinal.py:test_norm"
+    },
+    "fr/test_cases_date.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_date.py:test_norm"
+    },
+    "fr/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_decimal.py:test_norm"
+    },
+    "fr/test_cases_fraction.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_fraction.py:test_norm"
+    },
+    "fr/test_cases_ordinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_ordinal.py:test_norm"
+    },
+    "fr/test_cases_whitelist.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_whitelist.py:test_norm"
+    },
+    "fr/test_cases_word.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_word.py:test_norm"
+    },
+    "de/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 1,
+      "test": "test_cardinal.py:test_norm"
+    },
+    "de/test_cases_date.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 1,
+      "test": "test_date.py:test_norm"
+    },
+    "de/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 1,
+      "test": "test_decimal.py:test_norm"
+    },
+    "de/test_cases_electronic.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 1,
+      "test": "test_electronic.py:test_norm"
+    },
+    "de/test_cases_fraction.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 1,
+      "test": "test_fraction.py:test_norm"
+    },
+    "de/test_cases_measure.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 1,
+      "test": "test_measure.py:test_norm"
+    },
+    "de/test_cases_money.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 1,
+      "test": "test_money.py:test_norm"
+    },
+    "de/test_cases_normalize_with_audio.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 0,
+      "test": "test_normalization_with_audio.py:test_norm"
+    },
+    "de/test_cases_ordinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {},
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 1,
+      "test": "test_ordinal.py:test_norm"
+    },
+    "de/test_cases_telephone.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 1,
+      "test": "test_telephone.py:test_norm"
+    },
+    "de/test_cases_time.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 1,
+      "test": "test_time.py:test_norm"
+    },
+    "de/test_cases_whitelist.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 1,
+      "test": "test_whitelist.py:test_norm"
+    },
+    "de/test_cases_word.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 1,
+      "test": "test_word.py:test_norm"
+    },
+    "pt/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_cardinal.py:test_norm"
+    },
+    "pt/test_cases_date.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_date.py:test_norm"
+    },
+    "pt/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_decimal.py:test_norm"
+    },
+    "pt/test_cases_electronic.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_electronic.py:test_norm"
+    },
+    "pt/test_cases_fraction.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_fraction.py:test_norm"
+    },
+    "pt/test_cases_measure.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_measure.py:test_norm"
+    },
+    "pt/test_cases_money.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_money.py:test_norm"
+    },
+    "pt/test_cases_ordinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_ordinal.py:test_norm"
+    },
+    "pt/test_cases_telephone.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_telephone.py:test_norm"
+    },
+    "pt/test_cases_time.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_time.py:test_norm"
+    },
+    "it/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_cardinal.py:test_norm_char"
+    },
+    "it/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_decimal.py:test_norm_char"
+    },
+    "it/test_cases_electronic.txt": {
+      "options": {
+        "punct_post_process": true
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_electronic.py:test_norm_char"
+    },
+    "it/test_cases_measure.txt": {
+      "options": {
+        "punct_post_process": true
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_measure.py:test_norm_char"
+    },
+    "it/test_cases_money.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_money.py:test_norm_char"
+    },
+    "it/test_cases_time.txt": {
+      "options": {
+        "punct_post_process": true
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_time.py:test_norm_char"
+    },
+    "it/test_cases_whitelist.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_whitelist.py:test_norm_char"
+    },
+    "zh/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_cardinal.py:test_norm_date"
+    },
+    "zh/test_cases_date.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_date.py:test_norm_date"
+    },
+    "zh/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_decimal.py:test_norm_date"
+    },
+    "zh/test_cases_fraction.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_fraction.py:test_norm_fraction"
+    },
+    "zh/test_cases_measure.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_measure.py:test_norm_measure"
+    },
+    "zh/test_cases_money.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_money.py:test_norm_money"
+    },
+    "zh/test_cases_ordinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_ordinal.py:test_norm_date"
+    },
+    "zh/test_cases_time.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_time.py:test_norm_time"
+    },
+    "zh/test_cases_whitelist.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_whitelist.py:test_norm_date"
+    },
+    "zh/test_cases_word.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_word.py:test_norm_date"
+    },
+    "ja/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_cardinal.py:test_norm_date"
+    },
+    "ja/test_cases_date.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_date.py:test_denorm"
+    },
+    "ja/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_decimal.py:test_norm_date"
+    },
+    "ja/test_cases_fraction.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_fraction.py:test_denorm"
+    },
+    "ja/test_cases_ordinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_ordinal.py:test_norm_date"
+    },
+    "ja/test_cases_time.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_time.py:test_denorm"
+    },
+    "ko/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_cardinal.py:test_norm"
+    },
+    "ko/test_cases_date.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_date.py:test_date"
+    },
+    "ko/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_decimal.py:test_decimal"
+    },
+    "ko/test_cases_electronic.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_electronic.py:test_electronic"
+    },
+    "ko/test_cases_fraction.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_fraction.py:test_fraction"
+    },
+    "ko/test_cases_measure.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_measure.py:test_measure"
+    },
+    "ko/test_cases_money.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_money.py:test_money"
+    },
+    "ko/test_cases_ordinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_ordinal.py:test_norm_date"
+    },
+    "ko/test_cases_telephone.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_telephone.py:test_telephone"
+    },
+    "ko/test_cases_time.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_time.py:test_time"
+    },
+    "hi/test_cases_address.txt": {
+      "options": {
+        "punct_post_process": true
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_address.py:test_norm"
+    },
+    "hi/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": false
+      },
+      "strip_expected": true,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_cardinal.py:test_norm"
+    },
+    "hi/test_cases_date.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": false
+      },
+      "strip_expected": true,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_date.py:test_norm"
+    },
+    "hi/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": false
+      },
+      "strip_expected": true,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_decimal.py:test_norm"
+    },
+    "hi/test_cases_electronic.txt": {
+      "options": {
+        "punct_post_process": true
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_electronic.py:test_norm"
+    },
+    "hi/test_cases_fraction.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": false
+      },
+      "strip_expected": true,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_fraction.py:test_norm"
+    },
+    "hi/test_cases_measure.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": false
+      },
+      "strip_expected": true,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_measure.py:test_norm"
+    },
+    "hi/test_cases_money.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": false
+      },
+      "strip_expected": true,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_money.py:test_norm"
+    },
+    "hi/test_cases_ordinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": false
+      },
+      "strip_expected": true,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_ordinal.py:test_norm"
+    },
+    "hi/test_cases_time.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": false
+      },
+      "strip_expected": true,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_time.py:test_norm"
+    },
+    "hi/test_cases_whitelist.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": false
+      },
+      "strip_expected": true,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_whitelist.py:test_norm"
+    },
+    "hi/test_cases_word.txt": {
+      "options": {
+        "punct_post_process": true
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_word.py:test_norm"
+    },
+    "ar/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_cardinal.py:test_norm"
+    },
+    "ar/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_decimal.py:test_norm"
+    },
+    "ar/test_cases_fraction.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 1,
+      "test": "test_fraction.py:test_norm"
+    },
+    "ar/test_cases_measure.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {},
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 1,
+      "test": "test_measure.py:test_norm"
+    },
+    "ar/test_cases_money.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_money.py:test_norm"
+    },
+    "ru/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {},
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 1,
+      "test": "test_ru_normalization.py:test_norm_cardinal"
+    },
+    "ru/test_cases_ordinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {},
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 1,
+      "test": "test_ru_normalization.py:test_norm_ordinal"
+    },
+    "ru/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {},
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 1,
+      "test": "test_ru_normalization.py:test_norm_decimal"
+    },
+    "ru/test_cases_measure.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {},
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 1,
+      "test": "test_ru_normalization.py:test_norm_measure"
+    },
+    "ru/test_cases_date.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {},
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 1,
+      "test": "test_ru_normalization.py:test_norm_date"
+    },
+    "ru/test_cases_telephone.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {},
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 1,
+      "test": "test_ru_normalization.py:test_norm_telephone"
+    },
+    "ru/test_cases_money.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {},
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 1,
+      "test": "test_ru_normalization.py:test_norm_money"
+    },
+    "ru/test_cases_time.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {},
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 1,
+      "test": "test_ru_normalization.py:test_norm_time"
+    },
+    "ru/test_cases_electronic.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {},
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 1,
+      "test": "test_ru_normalization.py:test_norm_electronic"
+    },
+    "ru/test_cases_whitelist.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {},
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 1,
+      "test": "test_ru_normalization.py:test_norm_whitelist"
+    },
+    "ru/test_cases_word.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {},
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 1,
+      "test": "test_ru_normalization.py:test_norm_word"
+    },
+    "vi/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_cardinal.py:test_norm"
+    },
+    "vi/test_cases_date.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_date.py:test_norm"
+    },
+    "vi/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_decimal.py:test_norm"
+    },
+    "vi/test_cases_fraction.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_fraction.py:test_norm"
+    },
+    "vi/test_cases_measure.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_measure.py:test_norm"
+    },
+    "vi/test_cases_money.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_money.py:test_norm"
+    },
+    "vi/test_cases_ordinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_ordinal.py:test_norm"
+    },
+    "vi/test_cases_range.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_range.py:test_norm"
+    },
+    "vi/test_cases_roman.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_roman.py:test_norm"
+    },
+    "vi/test_cases_time.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_time.py:test_norm"
+    },
+    "hu/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_cardinal.py:test_norm"
+    },
+    "hu/test_cases_date.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_date.py:test_norm"
+    },
+    "hu/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_decimal.py:test_norm"
+    },
+    "hu/test_cases_electronic.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_electronic.py:test_norm"
+    },
+    "hu/test_cases_fraction.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_fraction.py:test_norm"
+    },
+    "hu/test_cases_measure.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_measure.py:test_norm"
+    },
+    "hu/test_cases_money.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_money.py:test_norm"
+    },
+    "hu/test_cases_ordinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_ordinal.py:test_norm"
+    },
+    "hu/test_cases_telephone.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_telephone.py:test_norm"
+    },
+    "hu/test_cases_time.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_time.py:test_norm"
+    },
+    "hu/test_cases_whitelist.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_whitelist.py:test_norm"
+    },
+    "hu/test_cases_word.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_word.py:test_norm"
+    },
+    "sv/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_cardinal.py:test_norm"
+    },
+    "sv/test_cases_date.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_date.py:test_norm"
+    },
+    "sv/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_decimal.py:test_norm"
+    },
+    "sv/test_cases_electronic.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_electronic.py:test_norm"
+    },
+    "sv/test_cases_fraction.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_fraction.py:test_norm"
+    },
+    "sv/test_cases_measure.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_measure.py:test_norm"
+    },
+    "sv/test_cases_money.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_money.py:test_norm"
+    },
+    "sv/test_cases_normalize_with_audio.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {},
+      "strip_expected": false,
+      "audio_only": true,
+      "input_column": 0,
+      "test": "test_normalization_with_audio.py:test_norm"
+    },
+    "sv/test_cases_ordinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_ordinal.py:test_norm"
+    },
+    "sv/test_cases_telephone.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_telephone.py:test_norm"
+    },
+    "sv/test_cases_time.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_time.py:test_norm"
+    },
+    "sv/test_cases_whitelist.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_whitelist.py:test_norm"
+    },
+    "sv/test_cases_word.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_word.py:test_norm"
+    },
+    "hy/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_cardinal.py:test_norm"
+    },
+    "hy/test_cases_decimal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_decimal.py:test_norm"
+    },
+    "hy/test_cases_fraction.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_fraction.py:test_norm"
+    },
+    "hy/test_cases_measure.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_measure.py:test_norm"
+    },
+    "hy/test_cases_money.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_money.py:test_norm"
+    },
+    "hy/test_cases_ordinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_ordinal.py:test_norm"
+    },
+    "hy/test_cases_time.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_whitelist.py:test_norm"
+    },
+    "hy/test_cases_word.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "lower_cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_word.py:test_norm"
+    },
+    "rw/test_cases_cardinal.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased",
+        "post_process": true
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_cardinal.py:test_norm"
+    },
+    "rw/test_cases_time.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_time.py:test_norm"
+    },
+    "rw/test_cases_whitelist.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_whitelist.py:test_norm"
+    },
+    "rw/test_cases_word.txt": {
+      "options": {
+        "punct_post_process": false
+      },
+      "constructor_options": {
+        "input_case": "cased"
+      },
+      "strip_expected": false,
+      "audio_only": false,
+      "input_column": 0,
+      "test": "test_word.py:test_norm"
+    }
+  }
+}

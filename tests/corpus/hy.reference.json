@@ -1,0 +1,512 @@
+{
+  "nemo_version": "1.2.0",
+  "pynini_version": "2.1.6.post1",
+  "sacremoses_version": "0.2.0",
+  "load_seconds": 0.10432358365505934,
+  "cases": [
+    {
+      "id": "hy-001",
+      "lang": "hy",
+      "category": "cardinal",
+      "input": "Մեր տանը 2 կատու կա։",
+      "expected": "Մեր տանը երկու կատու կա։",
+      "reference_error": null,
+      "reference_seconds": 0.005319042131304741
+    },
+    {
+      "id": "hy-002",
+      "lang": "hy",
+      "category": "cardinal",
+      "input": "Ավտոբուսում 17 ուղևոր կա։",
+      "expected": "Ավտոբուսում տասնյոթ ուղևոր կա։",
+      "reference_error": null,
+      "reference_seconds": 0.005238670855760574
+    },
+    {
+      "id": "hy-003",
+      "lang": "hy",
+      "category": "cardinal",
+      "input": "Գրադարանը գնել է 35 գիրք։",
+      "expected": "Գրադարանը գնել է երեսունհինգ գիրք։",
+      "reference_error": null,
+      "reference_seconds": 0.0055316658690571785
+    },
+    {
+      "id": "hy-004",
+      "lang": "hy",
+      "category": "cardinal",
+      "input": "Համերգի համար մնացել է 99 տոմս։",
+      "expected": "Համերգի համար մնացել է իննսունինը տոմս։",
+      "reference_error": null,
+      "reference_seconds": 0.005941968411207199
+    },
+    {
+      "id": "hy-005",
+      "lang": "hy",
+      "category": "cardinal",
+      "input": "Գյուղում ապրում է 120 մարդ։",
+      "expected": "Գյուղում ապրում է հարյուր քսան մարդ։",
+      "reference_error": null,
+      "reference_seconds": 0.0071690743789076805
+    },
+    {
+      "id": "hy-006",
+      "lang": "hy",
+      "category": "cardinal",
+      "input": "Այգում տնկել ենք 1234 ծառ։",
+      "expected": "Այգում տնկել ենք հազար երկու հարյուր երեսունչորս ծառ։",
+      "reference_error": null,
+      "reference_seconds": 0.008822302334010601
+    },
+    {
+      "id": "hy-007",
+      "lang": "hy",
+      "category": "ordinal",
+      "input": "Նա զբաղեցրեց 3-րդ տեղը։",
+      "expected": "Նա զբաղեցրեց երրորդ տեղը։",
+      "reference_error": null,
+      "reference_seconds": 0.003285987302660942
+    },
+    {
+      "id": "hy-008",
+      "lang": "hy",
+      "category": "decimal",
+      "input": "Հաշվարկի արդյունքը 3,14 է։",
+      "expected": "Հաշվարկի արդյունքը 3,14 է։",
+      "reference_error": null,
+      "reference_seconds": 0.003151213750243187
+    },
+    {
+      "id": "hy-009",
+      "lang": "hy",
+      "category": "decimal",
+      "input": "Տարբերությունը 0,05 միավոր է։",
+      "expected": "Տարբերությունը 0,05 միավոր է։",
+      "reference_error": null,
+      "reference_seconds": 0.0024415533989667892
+    },
+    {
+      "id": "hy-010",
+      "lang": "hy",
+      "category": "decimal",
+      "input": "Ջերմաստիճանը իջել է մինչև -2,5 աստիճան։",
+      "expected": "Ջերմաստիճանը իջել է մինչև -2,5 աստիճան։",
+      "reference_error": null,
+      "reference_seconds": 0.004445401020348072
+    },
+    {
+      "id": "hy-011",
+      "lang": "hy",
+      "category": "decimal",
+      "input": "Խմիչքը պարունակում է 12% շաքար։",
+      "expected": "Խմիչքը պարունակում է տասներկու տոկոս շաքար։",
+      "reference_error": null,
+      "reference_seconds": 0.005050117149949074
+    },
+    {
+      "id": "hy-012",
+      "lang": "hy",
+      "category": "decimal",
+      "input": "Տարեկան տոկոսադրույքը 4,5% է։",
+      "expected": "Տարեկան տոկոսադրույքը 4,5% է։",
+      "reference_error": null,
+      "reference_seconds": 0.003178926184773445
+    },
+    {
+      "id": "hy-013",
+      "lang": "hy",
+      "category": "fraction",
+      "input": "Ավելացրեք 1/2 բաժակ կաթ։",
+      "expected": "Ավելացրեք մեկ երկրորդ բաժակ կաթ։",
+      "reference_error": null,
+      "reference_seconds": 0.003428630530834198
+    },
+    {
+      "id": "hy-014",
+      "lang": "hy",
+      "category": "fraction",
+      "input": "Մենք անցել ենք ճանապարհի 3/4 մասը։",
+      "expected": "Մենք անցել ենք ճանապարհի երեք չորրորդ մասը։",
+      "reference_error": null,
+      "reference_seconds": 0.004238530993461609
+    },
+    {
+      "id": "hy-015",
+      "lang": "hy",
+      "category": "money",
+      "input": "Սուրճն արժե 500 դրամ։",
+      "expected": "Սուրճն արժե հինգ հարյուր դրամ։",
+      "reference_error": null,
+      "reference_seconds": 0.006677055731415749
+    },
+    {
+      "id": "hy-016",
+      "lang": "hy",
+      "category": "money",
+      "input": "Ճաշի համար վճարեցի 1250 դրամ։",
+      "expected": "Ճաշի համար վճարեցի հազար երկու հարյուր հիսուն դրամ։",
+      "reference_error": null,
+      "reference_seconds": 0.008452391251921654
+    },
+    {
+      "id": "hy-017",
+      "lang": "hy",
+      "category": "money",
+      "input": "Բյուջեն կազմում է 125000 դրամ։",
+      "expected": "Բյուջեն կազմում է հարյուր քսանհինգ հազար դրամ։",
+      "reference_error": null,
+      "reference_seconds": 0.011345085687935352
+    },
+    {
+      "id": "hy-018",
+      "lang": "hy",
+      "category": "money",
+      "input": "Տոմսն արժե 20 դոլար։",
+      "expected": "Տոմսն արժե քսան դոլար։",
+      "reference_error": null,
+      "reference_seconds": 0.004799460060894489
+    },
+    {
+      "id": "hy-019",
+      "lang": "hy",
+      "category": "money",
+      "input": "Վաճառողը վերադարձրեց 75 դրամ։",
+      "expected": "Վաճառողը վերադարձրեց յոթանասունհինգ դրամ։",
+      "reference_error": null,
+      "reference_seconds": 0.005097128450870514
+    },
+    {
+      "id": "hy-020",
+      "lang": "hy",
+      "category": "money",
+      "input": "Համակարգիչն արժե 299999 դրամ։",
+      "expected": "Համակարգիչն արժե երկու հարյուր իննսունինը հազար ինը հարյուր իննսունինը դրամ։",
+      "reference_error": null,
+      "reference_seconds": 0.010342498309910297
+    },
+    {
+      "id": "hy-021",
+      "lang": "hy",
+      "category": "money",
+      "input": "Հիմնադրամը նվիրաբերել է 1 միլիոն դրամ։",
+      "expected": "Հիմնադրամը նվիրաբերել է մեկ միլիոն դրամ։",
+      "reference_error": null,
+      "reference_seconds": 0.004576439969241619
+    },
+    {
+      "id": "hy-022",
+      "lang": "hy",
+      "category": "date",
+      "input": "Ժողովը կլինի 2026 թվականի հունվարի 5-ին։",
+      "expected": "Ժողովը կլինի երկու հազար քսանվեց թվականի հունվարի 5-ին։",
+      "reference_error": null,
+      "reference_seconds": 0.016110533848404884
+    },
+    {
+      "id": "hy-023",
+      "lang": "hy",
+      "category": "date",
+      "input": "Նա ծնվել է 1998 թվականի փետրվարի 14-ին։",
+      "expected": "Նա ծնվել է հազար ինը հարյուր իննսունութ թվականի փետրվարի 14-ին։",
+      "reference_error": null,
+      "reference_seconds": 0.012168261222541332
+    },
+    {
+      "id": "hy-024",
+      "lang": "hy",
+      "category": "date",
+      "input": "Փաստաթղթի վրա նշված է 03.04.2025։",
+      "expected": "Փաստաթղթի վրա նշված է 03.04.2025։",
+      "reference_error": null,
+      "reference_seconds": 0.0028553707525134087
+    },
+    {
+      "id": "hy-025",
+      "lang": "hy",
+      "category": "date",
+      "input": "Առաքման օրը 2026-09-25 է։",
+      "expected": "Առաքման օրը 2026-09-25 է։",
+      "reference_error": null,
+      "reference_seconds": 0.008265776559710503
+    },
+    {
+      "id": "hy-026",
+      "lang": "hy",
+      "category": "date",
+      "input": "Շենքը բացվել է 2001 թվականին։",
+      "expected": "Շենքը բացվել է երկու հազար մեկ թվականին։",
+      "reference_error": null,
+      "reference_seconds": 0.009752578102052212
+    },
+    {
+      "id": "hy-027",
+      "lang": "hy",
+      "category": "date",
+      "input": "Արձակուրդը սկսվում է հուլիսի 1-ին։",
+      "expected": "Արձակուրդը սկսվում է հուլիսի 1-ին։",
+      "reference_error": null,
+      "reference_seconds": 0.0037004584446549416
+    },
+    {
+      "id": "hy-028",
+      "lang": "hy",
+      "category": "date",
+      "input": "Արխիվը ներառում է 1980-1990 թվականները։",
+      "expected": "Արխիվը ներառում է 1980-1990 թվականները։",
+      "reference_error": null,
+      "reference_seconds": 0.00897372979670763
+    },
+    {
+      "id": "hy-029",
+      "lang": "hy",
+      "category": "time",
+      "input": "Գնացքը մեկնում է 08:30-ին։",
+      "expected": "Գնացքը մեկնում է 08:30-ին։",
+      "reference_error": null,
+      "reference_seconds": 0.002532309852540493
+    },
+    {
+      "id": "hy-030",
+      "lang": "hy",
+      "category": "time",
+      "input": "Հանդիպենք ժամը 15:15-ին։",
+      "expected": "Հանդիպենք ժամը 15:15-ին։",
+      "reference_error": null,
+      "reference_seconds": 0.004190904088318348
+    },
+    {
+      "id": "hy-031",
+      "lang": "hy",
+      "category": "time",
+      "input": "Զարթուցիչը զանգում է 7:00-ին։",
+      "expected": "Զարթուցիչը զանգում է 7:00-ին։",
+      "reference_error": null,
+      "reference_seconds": 0.0031553106382489204
+    },
+    {
+      "id": "hy-032",
+      "lang": "hy",
+      "category": "time",
+      "input": "Ֆիլմը սկսվում է 21:45-ին։",
+      "expected": "Ֆիլմը սկսվում է 21:45-ին։",
+      "reference_error": null,
+      "reference_seconds": 0.004536819644272327
+    },
+    {
+      "id": "hy-033",
+      "lang": "hy",
+      "category": "time",
+      "input": "Վայրկենաչափը ցույց է տալիս 01:02:03։",
+      "expected": "Վայրկենաչափը ցույց է տալիս 01:02:03։",
+      "reference_error": null,
+      "reference_seconds": 0.0029339827597141266
+    },
+    {
+      "id": "hy-034",
+      "lang": "hy",
+      "category": "time",
+      "input": "Խանութը բացվում է առավոտյան ժամը 9-ին։",
+      "expected": "Խանութը բացվում է առավոտյան ժամը 9-ին։",
+      "reference_error": null,
+      "reference_seconds": 0.004033675417304039
+    },
+    {
+      "id": "hy-035",
+      "lang": "hy",
+      "category": "time",
+      "input": "Կայարանում սպասեցինք 30 րոպե։",
+      "expected": "Կայարանում սպասեցինք երեսուն րոպե։",
+      "reference_error": null,
+      "reference_seconds": 0.004903331398963928
+    },
+    {
+      "id": "hy-036",
+      "lang": "hy",
+      "category": "measure",
+      "input": "Արկղը կշռում է 5 կգ։",
+      "expected": "Արկղը կշռում է հինգ կգ։",
+      "reference_error": null,
+      "reference_seconds": 0.004064738750457764
+    },
+    {
+      "id": "hy-037",
+      "lang": "hy",
+      "category": "measure",
+      "input": "Ավելացրեք 250 մլ ջուր։",
+      "expected": "Ավելացրեք երկու հարյուր հիսուն մլ ջուր։",
+      "reference_error": null,
+      "reference_seconds": 0.006914965808391571
+    },
+    {
+      "id": "hy-038",
+      "lang": "hy",
+      "category": "measure",
+      "input": "Ճանապարհի երկարությունը 12 կմ է։",
+      "expected": "Ճանապարհի երկարությունը տասներկու կիլոմետր է։",
+      "reference_error": null,
+      "reference_seconds": 0.0056807538494467735
+    },
+    {
+      "id": "hy-039",
+      "lang": "hy",
+      "category": "measure",
+      "input": "Թույլատրելի արագությունը 80 կմ/ժ է։",
+      "expected": "Թույլատրելի արագությունը ութսուն կիլոմետր ժամ է։",
+      "reference_error": null,
+      "reference_seconds": 0.0055567417293787
+    },
+    {
+      "id": "hy-040",
+      "lang": "hy",
+      "category": "measure",
+      "input": "Սեղանի լայնությունը 1,5 մ է։",
+      "expected": "Սեղանի լայնությունը 1,5 մ է։",
+      "reference_error": null,
+      "reference_seconds": 0.003567066043615341
+    },
+    {
+      "id": "hy-041",
+      "lang": "hy",
+      "category": "measure",
+      "input": "Այսօր ջերմաստիճանը 23 °C է։",
+      "expected": "Այսօր ջերմաստիճանը քսաներեք ցելսիուս է։",
+      "reference_error": null,
+      "reference_seconds": 0.005548456683754921
+    },
+    {
+      "id": "hy-042",
+      "lang": "hy",
+      "category": "measure",
+      "input": "Բաքը տեղավորում է 10 լ ջուր։",
+      "expected": "Բաքը տեղավորում է տասը լ ջուր։",
+      "reference_error": null,
+      "reference_seconds": 0.005586807616055012
+    },
+    {
+      "id": "hy-043",
+      "lang": "hy",
+      "category": "electronic",
+      "input": "Մանրամասները կգտնեք https://example.com կայքում։",
+      "expected": "Մանրամասները կգտնեք https://example.com կայքում։",
+      "reference_error": null,
+      "reference_seconds": 0.0025588972494006157
+    },
+    {
+      "id": "hy-044",
+      "lang": "hy",
+      "category": "electronic",
+      "input": "Մինչև ուրբաթ գրեք hello@example.am հասցեին։",
+      "expected": "Մինչև ուրբաթ գրեք hello@example.am հասցեին։",
+      "reference_error": null,
+      "reference_seconds": 0.0028453534469008446
+    },
+    {
+      "id": "hy-045",
+      "lang": "hy",
+      "category": "electronic",
+      "input": "Օգնության համար զանգահարեք 010123456։",
+      "expected": "Օգնության համար զանգահարեք 010123456։",
+      "reference_error": null,
+      "reference_seconds": 0.0027051465585827827
+    },
+    {
+      "id": "hy-046",
+      "lang": "hy",
+      "category": "electronic",
+      "input": "Սերվերի հասցեն 192.168.1.1 է։",
+      "expected": "Սերվերի հասցեն 192.168.1.1 է։",
+      "reference_error": null,
+      "reference_seconds": 0.0063617778941988945
+    },
+    {
+      "id": "hy-047",
+      "lang": "hy",
+      "category": "electronic",
+      "input": "Տեղադրեք 2.4.1 տարբերակը։",
+      "expected": "Տեղադրեք 2.4.1 տարբերակը։",
+      "reference_error": null,
+      "reference_seconds": 0.002924308180809021
+    },
+    {
+      "id": "hy-048",
+      "lang": "hy",
+      "category": "electronic",
+      "input": "Պատվերի կոդը AB123 է։",
+      "expected": "Պատվերի կոդը AB123 է։",
+      "reference_error": null,
+      "reference_seconds": 0.0023432066664099693
+    },
+    {
+      "id": "hy-049",
+      "lang": "hy",
+      "category": "electronic",
+      "input": "Մեր կայքը www.example.am է։",
+      "expected": "Մեր կայքը www.example.am է։",
+      "reference_error": null,
+      "reference_seconds": 0.002390582114458084
+    },
+    {
+      "id": "hy-050",
+      "lang": "hy",
+      "category": "mixed",
+      "input": "Բժիշկն այսօր ընդունել է 12 հիվանդի։",
+      "expected": "Բժիշկն այսօր ընդունել է տասներկու հիվանդի։",
+      "reference_error": null,
+      "reference_seconds": 0.006059496663510799
+    },
+    {
+      "id": "hy-051",
+      "lang": "hy",
+      "category": "punctuation",
+      "input": "Նա ասաց. «Ինձ 3 տոմս է պետք»։",
+      "expected": "Նա ասաց. «Ինձ երեք տոմս է պետք»։",
+      "reference_error": null,
+      "reference_seconds": 0.005349196493625641
+    },
+    {
+      "id": "hy-052",
+      "lang": "hy",
+      "category": "punctuation",
+      "input": "Դեռ 7 ազատ տեղ կա՞։",
+      "expected": "Դեռ յոթ ազատ տեղ կա՞։",
+      "reference_error": null,
+      "reference_seconds": 0.004017782397568226
+    },
+    {
+      "id": "hy-053",
+      "lang": "hy",
+      "category": "punctuation",
+      "input": "Կարդացեք [4] և [5] բաժինները։",
+      "expected": "Կարդացեք [4] և [5] բաժինները։",
+      "reference_error": null,
+      "reference_seconds": 0.002753952518105507
+    },
+    {
+      "id": "hy-054",
+      "lang": "hy",
+      "category": "plain",
+      "input": "Խաղաղ գետը հոսում է հովտով։",
+      "expected": "Խաղաղ գետը հոսում է հովտով։",
+      "reference_error": null,
+      "reference_seconds": 0.0027365731075406075
+    },
+    {
+      "id": "hy-055",
+      "lang": "hy",
+      "category": "mixed",
+      "input": "Մայիսի 5-ին 2 կգ բրնձի համար վճարեցի 2450 դրամ։",
+      "expected": "Մայիսի 5-ին երկու կիլոգրամ բրնձի համար վճարեցի երկու հազար չորս հարյուր հիսուն դրամ։",
+      "reference_error": null,
+      "reference_seconds": 0.012807803228497505
+    },
+    {
+      "id": "hy-056",
+      "lang": "hy",
+      "category": "mixed",
+      "input": "Ժամը 10:30-ին ջերմաստիճանը 22,5 °C էր, իսկ խոնավությունը՝ 60%։",
+      "expected": "Ժամը 10:30-ին ջերմաստիճանը 22,5 °C էր, իսկ խոնավությունը՝ 60%։",
+      "reference_error": null,
+      "reference_seconds": 0.011234319768846035
+    }
+  ]
+}

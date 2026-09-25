@@ -1,0 +1,56 @@
+cardinal|J'ai 2 chats à la maison.
+cardinal|Le bus transporte 17 voyageurs.
+cardinal|La bibliothèque a acheté 35 livres.
+cardinal|Il reste 99 places pour le concert.
+cardinal|Le village compte 120 habitants.
+cardinal|Nous avons planté 1 234 arbres.
+ordinal|Elle est arrivée en 3e position.
+decimal|Le résultat est 3,14.
+decimal|L'écart est de 0,05 point.
+decimal|La température est descendue à -2,5 degrés.
+decimal|Ce mélange contient 12% de sucre.
+decimal|Le taux annuel est de 4,5%.
+fraction|Ajoutez 1/2 tasse de lait.
+fraction|Nous avons parcouru les 3/4 du trajet.
+money|Le café coûte 2 €.
+money|J'ai payé 12,50 € pour le déjeuner.
+money|Le budget est de 1 250 euros.
+money|Le billet coûte 20 $.
+money|On m'a rendu 0,75 €.
+money|Cet ordinateur vaut 999,99 €.
+money|Le don s'élève à 1 million d'euros.
+date|La réunion aura lieu le 5 janvier 2026.
+date|Elle est née le 14 février 1998.
+date|Le document est daté du 03/04/2025.
+date|La livraison est prévue pour le 2026-09-25.
+date|Le bâtiment a été inauguré en 2001.
+date|Les vacances commencent le 1er juillet.
+date|Les archives couvrent la période 1980-1990.
+time|Le train part à 08:30.
+time|Retrouvons-nous à 15 h 15.
+time|Le réveil sonne à 7 h.
+time|Le film commence à 21:45.
+time|Le chronomètre affiche 01:02:03.
+time|La boutique ouvre à 9 heures.
+time|Nous avons attendu 30 min à la gare.
+measure|La caisse pèse 5 kg.
+measure|Ajoutez 250 ml d'eau.
+measure|La route mesure 12 km.
+measure|La vitesse est limitée à 80 km/h.
+measure|La table fait 1,5 m de large.
+measure|Il fait 23 °C aujourd'hui.
+measure|Le réservoir contient 10 L.
+electronic|Consultez https://example.com pour les détails.
+electronic|Écrivez à bonjour@example.fr avant vendredi.
+electronic|Appelez le 01 23 45 67 89 demain.
+electronic|L'adresse du serveur est 192.168.1.1.
+electronic|Installez la version 2.4.1.
+electronic|La référence de commande est AB123.
+electronic|Notre site est www.exemple.fr.
+mixed|Le Dr Martin a reçu 12 patients.
+punctuation|Elle a dit : « Il me faut 3 billets. »
+punctuation|Reste-t-il 7 places ?
+punctuation|Consultez les pages [4] et [5].
+plain|Une rivière paisible traverse la vallée.
+mixed|Le 5 mai, j'ai payé 24,50 € pour 2 kg de café.
+mixed|À 10:30, le capteur indiquait 22,5 °C et 60% d'humidité.

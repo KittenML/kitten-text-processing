@@ -1,0 +1,512 @@
+{
+  "nemo_version": "1.2.0",
+  "pynini_version": "2.1.6.post1",
+  "sacremoses_version": "0.2.0",
+  "load_seconds": 0.01281978003680706,
+  "cases": [
+    {
+      "id": "fr-001",
+      "lang": "fr",
+      "category": "cardinal",
+      "input": "J'ai 2 chats à la maison.",
+      "expected": "J'ai deux chats à la maison.",
+      "reference_error": null,
+      "reference_seconds": 0.0029162373393774033
+    },
+    {
+      "id": "fr-002",
+      "lang": "fr",
+      "category": "cardinal",
+      "input": "Le bus transporte 17 voyageurs.",
+      "expected": "Le bus transporte dix-sept voyageurs.",
+      "reference_error": null,
+      "reference_seconds": 0.0023459941148757935
+    },
+    {
+      "id": "fr-003",
+      "lang": "fr",
+      "category": "cardinal",
+      "input": "La bibliothèque a acheté 35 livres.",
+      "expected": "La bibliothèque a acheté trente-cinq livres.",
+      "reference_error": null,
+      "reference_seconds": 0.002591933123767376
+    },
+    {
+      "id": "fr-004",
+      "lang": "fr",
+      "category": "cardinal",
+      "input": "Il reste 99 places pour le concert.",
+      "expected": "Il reste quatre-vingt-dix-neuf places pour le concert.",
+      "reference_error": null,
+      "reference_seconds": 0.0026729218661785126
+    },
+    {
+      "id": "fr-005",
+      "lang": "fr",
+      "category": "cardinal",
+      "input": "Le village compte 120 habitants.",
+      "expected": "Le village compte cent vingt habitants.",
+      "reference_error": null,
+      "reference_seconds": 0.0024315956979990005
+    },
+    {
+      "id": "fr-006",
+      "lang": "fr",
+      "category": "cardinal",
+      "input": "Nous avons planté 1 234 arbres.",
+      "expected": "Nous avons planté mille deux cent trente-quatre arbres.",
+      "reference_error": null,
+      "reference_seconds": 0.002981114201247692
+    },
+    {
+      "id": "fr-007",
+      "lang": "fr",
+      "category": "ordinal",
+      "input": "Elle est arrivée en 3e position.",
+      "expected": "Elle est arrivée en troisième position.",
+      "reference_error": null,
+      "reference_seconds": 0.0022572139278054237
+    },
+    {
+      "id": "fr-008",
+      "lang": "fr",
+      "category": "decimal",
+      "input": "Le résultat est 3,14.",
+      "expected": "Le résultat est trois virgule quatorze.",
+      "reference_error": null,
+      "reference_seconds": 0.002074730582535267
+    },
+    {
+      "id": "fr-009",
+      "lang": "fr",
+      "category": "decimal",
+      "input": "L'écart est de 0,05 point.",
+      "expected": "L'écart est de zéro virgule zéro cinq point.",
+      "reference_error": null,
+      "reference_seconds": 0.0021329987794160843
+    },
+    {
+      "id": "fr-010",
+      "lang": "fr",
+      "category": "decimal",
+      "input": "La température est descendue à -2,5 degrés.",
+      "expected": "La température est descendue à moins deux virgule cinq degrés.",
+      "reference_error": null,
+      "reference_seconds": 0.003302939236164093
+    },
+    {
+      "id": "fr-011",
+      "lang": "fr",
+      "category": "decimal",
+      "input": "Ce mélange contient 12% de sucre.",
+      "expected": "Ce mélange contient douze pour cent de sucre.",
+      "reference_error": null,
+      "reference_seconds": 0.002535833977162838
+    },
+    {
+      "id": "fr-012",
+      "lang": "fr",
+      "category": "decimal",
+      "input": "Le taux annuel est de 4,5%.",
+      "expected": "Le taux annuel est de quatre virgule cinq pour cent.",
+      "reference_error": null,
+      "reference_seconds": 0.00225935410708189
+    },
+    {
+      "id": "fr-013",
+      "lang": "fr",
+      "category": "fraction",
+      "input": "Ajoutez 1/2 tasse de lait.",
+      "expected": "Ajoutez un demi tasse de lait.",
+      "reference_error": null,
+      "reference_seconds": 0.0021634623408317566
+    },
+    {
+      "id": "fr-014",
+      "lang": "fr",
+      "category": "fraction",
+      "input": "Nous avons parcouru les 3/4 du trajet.",
+      "expected": "Nous avons parcouru les trois avril du trajet.",
+      "reference_error": null,
+      "reference_seconds": 0.0027775298804044724
+    },
+    {
+      "id": "fr-015",
+      "lang": "fr",
+      "category": "money",
+      "input": "Le café coûte 2 €.",
+      "expected": "Le café coûte deux €.",
+      "reference_error": null,
+      "reference_seconds": 0.0014664353802800179
+    },
+    {
+      "id": "fr-016",
+      "lang": "fr",
+      "category": "money",
+      "input": "J'ai payé 12,50 € pour le déjeuner.",
+      "expected": "J'ai payé douze virgule cinquante €pour le déjeuner.",
+      "reference_error": null,
+      "reference_seconds": 0.002903587184846401
+    },
+    {
+      "id": "fr-017",
+      "lang": "fr",
+      "category": "money",
+      "input": "Le budget est de 1 250 euros.",
+      "expected": "Le budget est de mille deux cent cinquante euros.",
+      "reference_error": null,
+      "reference_seconds": 0.0026034433394670486
+    },
+    {
+      "id": "fr-018",
+      "lang": "fr",
+      "category": "money",
+      "input": "Le billet coûte 20 $.",
+      "expected": "Le billet coûte vingt $.",
+      "reference_error": null,
+      "reference_seconds": 0.0016827303916215897
+    },
+    {
+      "id": "fr-019",
+      "lang": "fr",
+      "category": "money",
+      "input": "On m'a rendu 0,75 €.",
+      "expected": "On m'a rendu zéro virgule soixante-quinze €.",
+      "reference_error": null,
+      "reference_seconds": 0.0019174516201019287
+    },
+    {
+      "id": "fr-020",
+      "lang": "fr",
+      "category": "money",
+      "input": "Cet ordinateur vaut 999,99 €.",
+      "expected": "Cet ordinateur vaut neuf cent quatre-vingt-dix-neuf virgule quatre-vingt-dix-neuf €.",
+      "reference_error": null,
+      "reference_seconds": 0.0029740622267127037
+    },
+    {
+      "id": "fr-021",
+      "lang": "fr",
+      "category": "money",
+      "input": "Le don s'élève à 1 million d'euros.",
+      "expected": "Le don s'élève à un million d'euros.",
+      "reference_error": null,
+      "reference_seconds": 0.0025007780641317368
+    },
+    {
+      "id": "fr-022",
+      "lang": "fr",
+      "category": "date",
+      "input": "La réunion aura lieu le 5 janvier 2026.",
+      "expected": "La réunion aura lieu le cinq janvier deux mille vingt-six.",
+      "reference_error": null,
+      "reference_seconds": 0.0035036252811551094
+    },
+    {
+      "id": "fr-023",
+      "lang": "fr",
+      "category": "date",
+      "input": "Elle est née le 14 février 1998.",
+      "expected": "Elle est née le quatorze février mille neuf cent quatre-vingt-dix-huit.",
+      "reference_error": null,
+      "reference_seconds": 0.003436163067817688
+    },
+    {
+      "id": "fr-024",
+      "lang": "fr",
+      "category": "date",
+      "input": "Le document est daté du 03/04/2025.",
+      "expected": "Le document est daté du trois avril deux mille vingt-cinq.",
+      "reference_error": null,
+      "reference_seconds": 0.0036108186468482018
+    },
+    {
+      "id": "fr-025",
+      "lang": "fr",
+      "category": "date",
+      "input": "La livraison est prévue pour le 2026-09-25.",
+      "expected": "La livraison est prévue pour le vingt vingt-six septembre vingt-cinq.",
+      "reference_error": null,
+      "reference_seconds": 0.004088505171239376
+    },
+    {
+      "id": "fr-026",
+      "lang": "fr",
+      "category": "date",
+      "input": "Le bâtiment a été inauguré en 2001.",
+      "expected": "Le bâtiment a été inauguré en deux mille un.",
+      "reference_error": null,
+      "reference_seconds": 0.002767994999885559
+    },
+    {
+      "id": "fr-027",
+      "lang": "fr",
+      "category": "date",
+      "input": "Les vacances commencent le 1er juillet.",
+      "expected": "Les vacances commencent le premier juillet.",
+      "reference_error": null,
+      "reference_seconds": 0.002611151896417141
+    },
+    {
+      "id": "fr-028",
+      "lang": "fr",
+      "category": "date",
+      "input": "Les archives couvrent la période 1980-1990.",
+      "expected": "Les archives couvrent la période mille neuf cent quatre-vingts moins mille neuf cent quatre-vingt-dix.",
+      "reference_error": null,
+      "reference_seconds": 0.004393832758069038
+    },
+    {
+      "id": "fr-029",
+      "lang": "fr",
+      "category": "time",
+      "input": "Le train part à 08:30.",
+      "expected": "Le train part à zéro huit:trente.",
+      "reference_error": null,
+      "reference_seconds": 0.0019685309380292892
+    },
+    {
+      "id": "fr-030",
+      "lang": "fr",
+      "category": "time",
+      "input": "Retrouvons-nous à 15 h 15.",
+      "expected": "Retrouvons-nous à quinze h quinze.",
+      "reference_error": null,
+      "reference_seconds": 0.0023000789806246758
+    },
+    {
+      "id": "fr-031",
+      "lang": "fr",
+      "category": "time",
+      "input": "Le réveil sonne à 7 h.",
+      "expected": "Le réveil sonne à sept h.",
+      "reference_error": null,
+      "reference_seconds": 0.0016993498429656029
+    },
+    {
+      "id": "fr-032",
+      "lang": "fr",
+      "category": "time",
+      "input": "Le film commence à 21:45.",
+      "expected": "Le film commence à vingt et un:quarante-cinq.",
+      "reference_error": null,
+      "reference_seconds": 0.002227403223514557
+    },
+    {
+      "id": "fr-033",
+      "lang": "fr",
+      "category": "time",
+      "input": "Le chronomètre affiche 01:02:03.",
+      "expected": "Le chronomètre affiche zéro un:zéro deux:zéro trois.",
+      "reference_error": null,
+      "reference_seconds": 0.0026223240420222282
+    },
+    {
+      "id": "fr-034",
+      "lang": "fr",
+      "category": "time",
+      "input": "La boutique ouvre à 9 heures.",
+      "expected": "La boutique ouvre à neuf heures.",
+      "reference_error": null,
+      "reference_seconds": 0.0020780395716428757
+    },
+    {
+      "id": "fr-035",
+      "lang": "fr",
+      "category": "time",
+      "input": "Nous avons attendu 30 min à la gare.",
+      "expected": "Nous avons attendu trente min à la gare.",
+      "reference_error": null,
+      "reference_seconds": 0.0025723958387970924
+    },
+    {
+      "id": "fr-036",
+      "lang": "fr",
+      "category": "measure",
+      "input": "La caisse pèse 5 kg.",
+      "expected": "La caisse pèse cinq kg.",
+      "reference_error": null,
+      "reference_seconds": 0.001526016741991043
+    },
+    {
+      "id": "fr-037",
+      "lang": "fr",
+      "category": "measure",
+      "input": "Ajoutez 250 ml d'eau.",
+      "expected": "Ajoutez deux cent cinquante ml d'eau.",
+      "reference_error": null,
+      "reference_seconds": 0.0018333196640014648
+    },
+    {
+      "id": "fr-038",
+      "lang": "fr",
+      "category": "measure",
+      "input": "La route mesure 12 km.",
+      "expected": "La route mesure douze km.",
+      "reference_error": null,
+      "reference_seconds": 0.0017862515524029732
+    },
+    {
+      "id": "fr-039",
+      "lang": "fr",
+      "category": "measure",
+      "input": "La vitesse est limitée à 80 km/h.",
+      "expected": "La vitesse est limitée à quatre-vingts km/h.",
+      "reference_error": null,
+      "reference_seconds": 0.002391500398516655
+    },
+    {
+      "id": "fr-040",
+      "lang": "fr",
+      "category": "measure",
+      "input": "La table fait 1,5 m de large.",
+      "expected": "La table fait un virgule cinq m de large.",
+      "reference_error": null,
+      "reference_seconds": 0.0023094844073057175
+    },
+    {
+      "id": "fr-041",
+      "lang": "fr",
+      "category": "measure",
+      "input": "Il fait 23 °C aujourd'hui.",
+      "expected": "Il fait vingt-trois °C aujourd'hui.",
+      "reference_error": null,
+      "reference_seconds": 0.002066117711365223
+    },
+    {
+      "id": "fr-042",
+      "lang": "fr",
+      "category": "measure",
+      "input": "Le réservoir contient 10 L.",
+      "expected": "Le réservoir contient dix L.",
+      "reference_error": null,
+      "reference_seconds": 0.00196014903485775
+    },
+    {
+      "id": "fr-043",
+      "lang": "fr",
+      "category": "electronic",
+      "input": "Consultez https://example.com pour les détails.",
+      "expected": "Consultez https://example.com pour les détails.",
+      "reference_error": null,
+      "reference_seconds": 0.002963467501103878
+    },
+    {
+      "id": "fr-044",
+      "lang": "fr",
+      "category": "electronic",
+      "input": "Écrivez à bonjour@example.fr avant vendredi.",
+      "expected": "Écrivez à bonjour@example.fr avant vendredi.",
+      "reference_error": null,
+      "reference_seconds": 0.0027491459622979164
+    },
+    {
+      "id": "fr-045",
+      "lang": "fr",
+      "category": "electronic",
+      "input": "Appelez le 01 23 45 67 89 demain.",
+      "expected": "Appelez le zéro un vingt-trois quarante-cinq soixante-sept quatre-vingt-neuf demain.",
+      "reference_error": null,
+      "reference_seconds": 0.0042303986847400665
+    },
+    {
+      "id": "fr-046",
+      "lang": "fr",
+      "category": "electronic",
+      "input": "L'adresse du serveur est 192.168.1.1.",
+      "expected": "L'adresse du serveur est dix-neuf deux janvier soixante-huit. un janvier.",
+      "reference_error": null,
+      "reference_seconds": 0.0038253366947174072
+    },
+    {
+      "id": "fr-047",
+      "lang": "fr",
+      "category": "electronic",
+      "input": "Installez la version 2.4.1.",
+      "expected": "Installez la version deux. quatre janvier.",
+      "reference_error": null,
+      "reference_seconds": 0.002191889099776745
+    },
+    {
+      "id": "fr-048",
+      "lang": "fr",
+      "category": "electronic",
+      "input": "La référence de commande est AB123.",
+      "expected": "La référence de commande est AB123.",
+      "reference_error": null,
+      "reference_seconds": 0.002694712020456791
+    },
+    {
+      "id": "fr-049",
+      "lang": "fr",
+      "category": "electronic",
+      "input": "Notre site est www.exemple.fr.",
+      "expected": "Notre site est www.exemple.fr.",
+      "reference_error": null,
+      "reference_seconds": 0.001953737810254097
+    },
+    {
+      "id": "fr-050",
+      "lang": "fr",
+      "category": "mixed",
+      "input": "Le Dr Martin a reçu 12 patients.",
+      "expected": "Le Dr Martin a reçu douze patients.",
+      "reference_error": null,
+      "reference_seconds": 0.0023913858458399773
+    },
+    {
+      "id": "fr-051",
+      "lang": "fr",
+      "category": "punctuation",
+      "input": "Elle a dit : « Il me faut 3 billets. »",
+      "expected": "Elle a dit : « Il me faut trois billets. »",
+      "reference_error": null,
+      "reference_seconds": 0.0028494931757450104
+    },
+    {
+      "id": "fr-052",
+      "lang": "fr",
+      "category": "punctuation",
+      "input": "Reste-t-il 7 places ?",
+      "expected": "Reste-t-il sept places ?",
+      "reference_error": null,
+      "reference_seconds": 0.0016323123127222061
+    },
+    {
+      "id": "fr-053",
+      "lang": "fr",
+      "category": "punctuation",
+      "input": "Consultez les pages [4] et [5].",
+      "expected": "Consultez les pages [quatre] et [cinq].",
+      "reference_error": null,
+      "reference_seconds": 0.0024090055376291275
+    },
+    {
+      "id": "fr-054",
+      "lang": "fr",
+      "category": "plain",
+      "input": "Une rivière paisible traverse la vallée.",
+      "expected": "Une rivière paisible traverse la vallée.",
+      "reference_error": null,
+      "reference_seconds": 0.0025213388726115227
+    },
+    {
+      "id": "fr-055",
+      "lang": "fr",
+      "category": "mixed",
+      "input": "Le 5 mai, j'ai payé 24,50 € pour 2 kg de café.",
+      "expected": "Le cinq mai, j'ai payé vingt-quatre virgule cinq zéro €pour deux kg de café.",
+      "reference_error": null,
+      "reference_seconds": 0.004069236107170582
+    },
+    {
+      "id": "fr-056",
+      "lang": "fr",
+      "category": "mixed",
+      "input": "À 10:30, le capteur indiquait 22,5 °C et 60% d'humidité.",
+      "expected": "À dix:trente, le capteur indiquait vingt-deux virgule cinq °C et soixante pour cent d'humidité.",
+      "reference_error": null,
+      "reference_seconds": 0.004920421168208122
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "nemo_version": "1.2.0",
+  "pynini_version": "2.1.6.post1",
+  "sacremoses_version": "0.2.0",
+  "load_seconds": 0.050512831658124924,
+  "cases": [
+    {
+      "id": "pt-001",
+      "lang": "pt",
+      "category": "cardinal",
+      "input": "Tenho 2 gatos em casa.",
+      "expected": "Tenho dois gatos em casa.",
+      "reference_error": null,
+      "reference_seconds": 0.021348523907363415
+    },
+    {
+      "id": "pt-002",
+      "lang": "pt",
+      "category": "cardinal",
+      "input": "O ônibus leva 17 passageiros.",
+      "expected": "O ônibus leva dezessete passageiros.",
+      "reference_error": null,
+      "reference_seconds": 0.021136135794222355
+    },
+    {
+      "id": "pt-003",
+      "lang": "pt",
+      "category": "cardinal",
+      "input": "A biblioteca recebeu 35 livros novos.",
+      "expected": "A biblioteca recebeu trinta e cinco livros novos.",
+      "reference_error": null,
+      "reference_seconds": 0.026956288143992424
+    },
+    {
+      "id": "pt-004",
+      "lang": "pt",
+      "category": "cardinal",
+      "input": "Ainda restam 99 ingressos para o show.",
+      "expected": "Ainda restam noventa e nove ingressos para o show.",
+      "reference_error": null,
+      "reference_seconds": 0.029466668143868446
+    },
+    {
+      "id": "pt-005",
+      "lang": "pt",
+      "category": "cardinal",
+      "input": "A vila tem 120 moradores.",
+      "expected": "A vila tem cento e vinte moradores.",
+      "reference_error": null,
+      "reference_seconds": 0.020282349549233913
+    },
+    {
+      "id": "pt-006",
+      "lang": "pt",
+      "category": "cardinal",
+      "input": "Contamos 1.234 árvores no parque.",
+      "expected": "Contamos mil duzentos e trinta e quatro árvores no parque.",
+      "reference_error": null,
+      "reference_seconds": 0.016947811469435692
+    },
+    {
+      "id": "pt-007",
+      "lang": "pt",
+      "category": "ordinal",
+      "input": "Ela chegou em 3º lugar.",
+      "expected": "Ela chegou em terceiro lugar.",
+      "reference_error": null,
+      "reference_seconds": 0.01746252551674843
+    },
+    {
+      "id": "pt-008",
+      "lang": "pt",
+      "category": "decimal",
+      "input": "O resultado é 3,14.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.013952096924185753
+    },
+    {
+      "id": "pt-009",
+      "lang": "pt",
+      "category": "decimal",
+      "input": "A diferença foi de 0,05 ponto.",
+      "expected": "A diferença foi de zero vírgula zero cinco ponto.",
+      "reference_error": null,
+      "reference_seconds": 0.01812789961695671
+    },
+    {
+      "id": "pt-010",
+      "lang": "pt",
+      "category": "decimal",
+      "input": "A temperatura caiu para -2,5 graus.",
+      "expected": "A temperatura caiu para menos dois vírgula cinco graus.",
+      "reference_error": null,
+      "reference_seconds": 0.01849379576742649
+    },
+    {
+      "id": "pt-011",
+      "lang": "pt",
+      "category": "decimal",
+      "input": "A mistura contém 12% de açúcar.",
+      "expected": "A mistura contém doze por cento de açúcar.",
+      "reference_error": null,
+      "reference_seconds": 0.023457718081772327
+    },
+    {
+      "id": "pt-012",
+      "lang": "pt",
+      "category": "decimal",
+      "input": "A taxa anual é de 4,5%.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.02002383302897215
+    },
+    {
+      "id": "pt-013",
+      "lang": "pt",
+      "category": "fraction",
+      "input": "Precisamos de 1/2 xícara de leite.",
+      "expected": "Precisamos de um meio xícara de leite.",
+      "reference_error": null,
+      "reference_seconds": 0.019013230688869953
+    },
+    {
+      "id": "pt-014",
+      "lang": "pt",
+      "category": "fraction",
+      "input": "Já percorremos 3/4 do caminho.",
+      "expected": "Já percorremos três quartos do caminho.",
+      "reference_error": null,
+      "reference_seconds": 0.01726133655756712
+    },
+    {
+      "id": "pt-015",
+      "lang": "pt",
+      "category": "money",
+      "input": "O café custa R$ 2.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.016449621878564358
+    },
+    {
+      "id": "pt-016",
+      "lang": "pt",
+      "category": "money",
+      "input": "Paguei R$ 12,50 pelo almoço.",
+      "expected": "Paguei doze reais e cinquenta centavos pelo almoço.",
+      "reference_error": null,
+      "reference_seconds": 0.020618091337382793
+    },
+    {
+      "id": "pt-017",
+      "lang": "pt",
+      "category": "money",
+      "input": "O orçamento é de R$ 1.250.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.01914541982114315
+    },
+    {
+      "id": "pt-018",
+      "lang": "pt",
+      "category": "money",
+      "input": "A passagem custa 20 €.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.017311102710664272
+    },
+    {
+      "id": "pt-019",
+      "lang": "pt",
+      "category": "money",
+      "input": "Recebi R$ 0,75 de troco.",
+      "expected": "Recebi setenta e cinco centavos de troco.",
+      "reference_error": null,
+      "reference_seconds": 0.015167267061769962
+    },
+    {
+      "id": "pt-020",
+      "lang": "pt",
+      "category": "money",
+      "input": "O computador custa R$ 999,99.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.02549713384360075
+    },
+    {
+      "id": "pt-021",
+      "lang": "pt",
+      "category": "money",
+      "input": "A doação foi de 1 milhão de reais.",
+      "expected": "A doação foi de um milhão de reais.",
+      "reference_error": null,
+      "reference_seconds": 0.026575974188745022
+    },
+    {
+      "id": "pt-022",
+      "lang": "pt",
+      "category": "date",
+      "input": "A reunião será em 5 de janeiro de 2026.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.03993787430226803
+    },
+    {
+      "id": "pt-023",
+      "lang": "pt",
+      "category": "date",
+      "input": "Ela nasceu em 14 de fevereiro de 1998.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.043683730997145176
+    },
+    {
+      "id": "pt-024",
+      "lang": "pt",
+      "category": "date",
+      "input": "O documento tem a data 03/04/2025.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.017678108997642994
+    },
+    {
+      "id": "pt-025",
+      "lang": "pt",
+      "category": "date",
+      "input": "A entrega está marcada para 2026-09-25.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.026239583268761635
+    },
+    {
+      "id": "pt-026",
+      "lang": "pt",
+      "category": "date",
+      "input": "O prédio foi inaugurado em 2001.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.02288898639380932
+    },
+    {
+      "id": "pt-027",
+      "lang": "pt",
+      "category": "date",
+      "input": "As férias começam em 1º de julho.",
+      "expected": "As férias começam em primeiro de julho.",
+      "reference_error": null,
+      "reference_seconds": 0.022413351573050022
+    },
+    {
+      "id": "pt-028",
+      "lang": "pt",
+      "category": "date",
+      "input": "O arquivo cobre os anos de 1980-1990.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.032089016400277615
+    },
+    {
+      "id": "pt-029",
+      "lang": "pt",
+      "category": "time",
+      "input": "O trem parte às 08:30.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.014894894324243069
+    },
+    {
+      "id": "pt-030",
+      "lang": "pt",
+      "category": "time",
+      "input": "Vamos nos encontrar às 15h15.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.020283947698771954
+    },
+    {
+      "id": "pt-031",
+      "lang": "pt",
+      "category": "time",
+      "input": "O despertador toca às 7:00.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.016761896200478077
+    },
+    {
+      "id": "pt-032",
+      "lang": "pt",
+      "category": "time",
+      "input": "O filme começa às 21:45.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.018383407033979893
+    },
+    {
+      "id": "pt-033",
+      "lang": "pt",
+      "category": "time",
+      "input": "O cronômetro marca 01:02:03.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.012079775333404541
+    },
+    {
+      "id": "pt-034",
+      "lang": "pt",
+      "category": "time",
+      "input": "A loja abre às 9 h.",
+      "expected": "A loja abre às nove h.",
+      "reference_error": null,
+      "reference_seconds": 0.020535312592983246
+    },
+    {
+      "id": "pt-035",
+      "lang": "pt",
+      "category": "time",
+      "input": "Esperamos 30 min na estação.",
+      "expected": "Esperamos trinta minutos na estação.",
+      "reference_error": null,
+      "reference_seconds": 0.01821912545710802
+    },
+    {
+      "id": "pt-036",
+      "lang": "pt",
+      "category": "measure",
+      "input": "A caixa pesa 5 kg.",
+      "expected": "A caixa pesa cinco kg.",
+      "reference_error": null,
+      "reference_seconds": 0.017494460567831993
+    },
+    {
+      "id": "pt-037",
+      "lang": "pt",
+      "category": "measure",
+      "input": "Acrescente 250 ml de água.",
+      "expected": "Acrescente duzentos e cinquenta mililitros de água.",
+      "reference_error": null,
+      "reference_seconds": 0.023563328199088573
+    },
+    {
+      "id": "pt-038",
+      "lang": "pt",
+      "category": "measure",
+      "input": "A estrada tem 12 km de extensão.",
+      "expected": "A estrada tem doze quilômetros de extensão.",
+      "reference_error": null,
+      "reference_seconds": 0.038092806935310364
+    },
+    {
+      "id": "pt-039",
+      "lang": "pt",
+      "category": "measure",
+      "input": "O limite de velocidade é 80 km/h.",
+      "expected": "O limite de velocidade é oitenta km/h.",
+      "reference_error": null,
+      "reference_seconds": 0.02418376598507166
+    },
+    {
+      "id": "pt-040",
+      "lang": "pt",
+      "category": "measure",
+      "input": "A mesa tem 1,5 m de largura.",
+      "expected": "A mesa tem um vírgula cinco metros de largura.",
+      "reference_error": null,
+      "reference_seconds": 0.022373557090759277
+    },
+    {
+      "id": "pt-041",
+      "lang": "pt",
+      "category": "measure",
+      "input": "Hoje a temperatura é de 23 °C.",
+      "expected": "Hoje a temperatura é de vinte e três °C.",
+      "reference_error": null,
+      "reference_seconds": 0.030136755667626858
+    },
+    {
+      "id": "pt-042",
+      "lang": "pt",
+      "category": "measure",
+      "input": "O reservatório comporta 10 L.",
+      "expected": "O reservatório comporta dez L.",
+      "reference_error": null,
+      "reference_seconds": 0.01985508669167757
+    },
+    {
+      "id": "pt-043",
+      "lang": "pt",
+      "category": "electronic",
+      "input": "Acesse https://example.com para mais detalhes.",
+      "expected": "Acesse h t t p s dois pontos barra barra e x a m p l e ponto com para mais detalhes.",
+      "reference_error": null,
+      "reference_seconds": 0.015511794947087765
+    },
+    {
+      "id": "pt-044",
+      "lang": "pt",
+      "category": "electronic",
+      "input": "Escreva para ola@example.com.br antes de sexta.",
+      "expected": "Escreva para o l a arroba e x a m p l e ponto com ponto br antes de sexta.",
+      "reference_error": null,
+      "reference_seconds": 0.018481128849089146
+    },
+    {
+      "id": "pt-045",
+      "lang": "pt",
+      "category": "electronic",
+      "input": "Ligue para (11) 3456-7890 amanhã.",
+      "expected": "Ligue para um um três quatro cinco seis sete oito nove zero amanhã.",
+      "reference_error": null,
+      "reference_seconds": 0.012256167829036713
+    },
+    {
+      "id": "pt-046",
+      "lang": "pt",
+      "category": "electronic",
+      "input": "O endereço do servidor é 192.168.1.1.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.03405335824936628
+    },
+    {
+      "id": "pt-047",
+      "lang": "pt",
+      "category": "electronic",
+      "input": "Instale a versão 2.4.1.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.021289600059390068
+    },
+    {
+      "id": "pt-048",
+      "lang": "pt",
+      "category": "electronic",
+      "input": "O código do pedido é AB123.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.017818576656281948
+    },
+    {
+      "id": "pt-049",
+      "lang": "pt",
+      "category": "electronic",
+      "input": "Nosso site é www.exemplo.pt.",
+      "expected": "Nosso site é www.exemplo.pt.",
+      "reference_error": null,
+      "reference_seconds": 0.012233012355864048
+    },
+    {
+      "id": "pt-050",
+      "lang": "pt",
+      "category": "mixed",
+      "input": "A Dra. Silva atendeu 12 pacientes.",
+      "expected": "A Dra. Silva atendeu doze pacientes.",
+      "reference_error": null,
+      "reference_seconds": 0.023914335295557976
+    },
+    {
+      "id": "pt-051",
+      "lang": "pt",
+      "category": "punctuation",
+      "input": "Ela disse: \"Preciso de 3 ingressos.\"",
+      "expected": "Ela disse: \"Preciso de três ingressos.\"",
+      "reference_error": null,
+      "reference_seconds": 0.020902404561638832
+    },
+    {
+      "id": "pt-052",
+      "lang": "pt",
+      "category": "punctuation",
+      "input": "Ainda há 7 vagas disponíveis?",
+      "expected": "Ainda há sete vagas disponíveis?",
+      "reference_error": null,
+      "reference_seconds": 0.017590176314115524
+    },
+    {
+      "id": "pt-053",
+      "lang": "pt",
+      "category": "punctuation",
+      "input": "Consulte as páginas [4] e [5].",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.011866359040141106
+    },
+    {
+      "id": "pt-054",
+      "lang": "pt",
+      "category": "plain",
+      "input": "Um rio tranquilo atravessa o vale.",
+      "expected": "Um rio tranquilo atravessa o vale.",
+      "reference_error": null,
+      "reference_seconds": 0.018102698028087616
+    },
+    {
+      "id": "pt-055",
+      "lang": "pt",
+      "category": "mixed",
+      "input": "Em 5 de maio, paguei R$ 24,50 por 2 kg de café.",
+      "expected": "Em cinco de maio, paguei vinte e quatro reais e cinquenta centavos por dois quilos de café.",
+      "reference_error": null,
+      "reference_seconds": 0.058899776078760624
+    },
+    {
+      "id": "pt-056",
+      "lang": "pt",
+      "category": "mixed",
+      "input": "Às 10:30, o sensor registrou 22,5 °C e 60% de umidade.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.0075916713103652
+    }
+  ]
+}

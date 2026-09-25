@@ -1,0 +1,56 @@
+cardinal|Vi har 2 katter hemma.
+cardinal|Det finns 17 passagerare på bussen.
+cardinal|Biblioteket köpte 35 böcker.
+cardinal|Det finns 99 biljetter kvar till konserten.
+cardinal|Byn har 120 invånare.
+cardinal|Vi planterade 1 234 träd i parken.
+ordinal|Hon kom på 3:e plats.
+decimal|Resultatet är 3,14.
+decimal|Skillnaden var 0,05 poäng.
+decimal|Temperaturen sjönk till -2,5 grader.
+decimal|Drycken innehåller 12% socker.
+decimal|Årsräntan är 4,5%.
+fraction|Tillsätt 1/2 kopp mjölk.
+fraction|Vi har gått 3/4 av sträckan.
+money|Kaffet kostar 20 kr.
+money|Jag betalade 125,50 kr för lunchen.
+money|Budgeten är 1 250 kronor.
+money|Biljetten kostar 20 €.
+money|Jag fick 0,75 kr tillbaka.
+money|Datorn kostar 9 999,99 kr.
+money|Stiftelsen skänkte 1 miljon kronor.
+date|Mötet hålls den 5 januari 2026.
+date|Hon föddes den 14 februari 1998.
+date|Dokumentet är daterat 2025-03-04.
+date|Leveransen är planerad till 2026-09-25.
+date|Byggnaden öppnade år 2001.
+date|Semestern börjar den 1 juli.
+date|Arkivet omfattar åren 1980-1990.
+time|Tåget avgår klockan 08:30.
+time|Vi ses klockan 15.15.
+time|Väckarklockan ringer 7:00.
+time|Filmen börjar klockan 21:45.
+time|Tidtagaruret visar 01:02:03.
+time|Butiken öppnar klockan 9.
+time|Vi väntade 30 min på stationen.
+measure|Lådan väger 5 kg.
+measure|Tillsätt 250 ml vatten.
+measure|Vägen är 12 km lång.
+measure|Hastighetsgränsen är 80 km/h.
+measure|Bordet är 1,5 m brett.
+measure|Det är 23 °C ute i dag.
+measure|Tanken rymmer 10 l.
+electronic|Besök https://example.com för mer information.
+electronic|Skriv till hej@example.se före fredag.
+electronic|Ring 08-123 45 67 i morgon.
+electronic|Serverns adress är 192.168.1.1.
+electronic|Installera version 2.4.1.
+electronic|Beställningens kod är AB123.
+electronic|Vår webbplats är www.exempel.se.
+mixed|Dr Andersson tog emot 12 patienter.
+punctuation|Hon sa: ”Jag behöver 3 biljetter.”
+punctuation|Finns det fortfarande 7 lediga platser?
+punctuation|Läs avsnitten [4] och [5].
+plain|En stilla flod rinner genom dalen.
+mixed|Den 5 maj betalade jag 24,50 kr för 2 kg ris.
+mixed|Klockan 10:30 visade sensorn 22,5 °C och 60% luftfuktighet.

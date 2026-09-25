@@ -1,0 +1,56 @@
+cardinal|Tengo 2 gatos en casa.
+cardinal|El autobús lleva 17 pasajeros.
+cardinal|La biblioteca compró 35 libros.
+cardinal|Quedan 99 entradas para el concierto.
+cardinal|El pueblo tiene 120 habitantes.
+cardinal|Contamos 1.234 árboles en el parque.
+ordinal|Llegó en 3.º lugar a la meta.
+decimal|El resultado es 3,14.
+decimal|La diferencia fue de 0,05 puntos.
+decimal|La temperatura bajó a -2,5 grados.
+decimal|La mezcla contiene un 12% de azúcar.
+decimal|El interés anual es del 4,5%.
+fraction|Necesitamos 1/2 taza de leche.
+fraction|Ya hemos recorrido 3/4 del camino.
+money|El café cuesta 2 €.
+money|Pagué 12,50 € por el almuerzo.
+money|El presupuesto es de 1.250 euros.
+money|La entrada cuesta $20.
+money|Me devolvieron 0,75 €.
+money|Ese ordenador vale 999,99 €.
+money|La donación fue de 1 millón de euros.
+date|La reunión será el 5 de enero de 2026.
+date|Nació el 14 de febrero de 1998.
+date|El documento lleva la fecha 03/04/2025.
+date|La entrega está prevista para 2026-09-25.
+date|El edificio se inauguró en 2001.
+date|Las vacaciones empiezan el 1 de julio.
+date|El archivo abarca los años 1980-1990.
+time|El tren sale a las 08:30.
+time|Nos vemos a las 3:15 p. m.
+time|La alarma suena a las 7:00.
+time|La película empieza a las 21:45.
+time|El cronómetro marca 01:02:03.
+time|La tienda abre a las 9 h.
+time|Esperamos 30 min en la estación.
+measure|La caja pesa 5 kg.
+measure|Añade 250 ml de agua.
+measure|La carretera mide 12 km.
+measure|El límite es de 80 km/h.
+measure|La mesa tiene 1,5 m de ancho.
+measure|Hoy estamos a 23 °C.
+measure|El depósito contiene 10 L.
+electronic|Visita https://example.com para más información.
+electronic|Escribe a hola@example.es antes del viernes.
+electronic|Llama al 912 345 678 por la mañana.
+electronic|La dirección es 192.168.1.1.
+electronic|Instala la versión 2.4.1.
+electronic|El código del pedido es AB123.
+electronic|La web es www.ejemplo.es.
+mixed|La Dra. García atendió a 12 pacientes.
+punctuation|Dijo: «Necesito 3 entradas».
+punctuation|¿Quedan 7 plazas libres?
+punctuation|Consulta las páginas [4] y [5].
+plain|El río atraviesa un valle tranquilo.
+mixed|El 5 de mayo pagué 24,50 € por 2 kg de café.
+mixed|A las 10:30, el sensor registró 22,5 °C y un 60% de humedad.

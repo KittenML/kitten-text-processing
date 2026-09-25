@@ -1,0 +1,512 @@
+{
+  "nemo_version": "1.2.0",
+  "pynini_version": "2.1.6.post1",
+  "sacremoses_version": "0.2.0",
+  "load_seconds": 0.056075725704431534,
+  "cases": [
+    {
+      "id": "vi-001",
+      "lang": "vi",
+      "category": "cardinal",
+      "input": "Nhà tôi có 2 con mèo.",
+      "expected": "Nhà tôi có hai con mèo.",
+      "reference_error": null,
+      "reference_seconds": 0.007196960970759392
+    },
+    {
+      "id": "vi-002",
+      "lang": "vi",
+      "category": "cardinal",
+      "input": "Trên xe buýt có 17 hành khách.",
+      "expected": "Trên xe buýt có mười bảy hành khách.",
+      "reference_error": null,
+      "reference_seconds": 0.006081036292016506
+    },
+    {
+      "id": "vi-003",
+      "lang": "vi",
+      "category": "cardinal",
+      "input": "Thư viện đã mua 35 cuốn sách.",
+      "expected": "Thư viện đã mua ba mươi lăm cuốn sách.",
+      "reference_error": null,
+      "reference_seconds": 0.0055214036256074905
+    },
+    {
+      "id": "vi-004",
+      "lang": "vi",
+      "category": "cardinal",
+      "input": "Buổi hòa nhạc còn 99 vé.",
+      "expected": "Buổi hòa nhạc còn chín mươi chín vé.",
+      "reference_error": null,
+      "reference_seconds": 0.005103112198412418
+    },
+    {
+      "id": "vi-005",
+      "lang": "vi",
+      "category": "cardinal",
+      "input": "Ngôi làng có 120 người sinh sống.",
+      "expected": "Ngôi làng có một trăm hai mươi người sinh sống.",
+      "reference_error": null,
+      "reference_seconds": 0.0072494857013225555
+    },
+    {
+      "id": "vi-006",
+      "lang": "vi",
+      "category": "cardinal",
+      "input": "Chúng tôi trồng 1234 cây trong công viên.",
+      "expected": "Chúng tôi trồng một nghìn hai trăm ba mươi tư cây trong công viên.",
+      "reference_error": null,
+      "reference_seconds": 0.011991305276751518
+    },
+    {
+      "id": "vi-007",
+      "lang": "vi",
+      "category": "ordinal",
+      "input": "Cô ấy về đích ở vị trí thứ 3.",
+      "expected": "Cô ấy về đích ở vị trí thứ ba.",
+      "reference_error": null,
+      "reference_seconds": 0.004308509640395641
+    },
+    {
+      "id": "vi-008",
+      "lang": "vi",
+      "category": "decimal",
+      "input": "Kết quả tính toán là 3,14.",
+      "expected": "Kết quả tính toán là ba phẩy một bốn.",
+      "reference_error": null,
+      "reference_seconds": 0.007008611224591732
+    },
+    {
+      "id": "vi-009",
+      "lang": "vi",
+      "category": "decimal",
+      "input": "Sai số chỉ là 0,05 điểm.",
+      "expected": "Sai số chỉ là không phẩy không năm điểm.",
+      "reference_error": null,
+      "reference_seconds": 0.004223334603011608
+    },
+    {
+      "id": "vi-010",
+      "lang": "vi",
+      "category": "decimal",
+      "input": "Nhiệt độ giảm xuống -2,5 độ.",
+      "expected": "Nhiệt độ giảm xuống âm hai phẩy năm độ.",
+      "reference_error": null,
+      "reference_seconds": 0.005103965289890766
+    },
+    {
+      "id": "vi-011",
+      "lang": "vi",
+      "category": "decimal",
+      "input": "Đồ uống này chứa 12% đường.",
+      "expected": "Đồ uống này chứa mười hai phần trăm đường.",
+      "reference_error": null,
+      "reference_seconds": 0.0053369635716080666
+    },
+    {
+      "id": "vi-012",
+      "lang": "vi",
+      "category": "decimal",
+      "input": "Lãi suất hằng năm là 4,5%.",
+      "expected": "Lãi suất hằng năm là bốn phẩy năm phần trăm.",
+      "reference_error": null,
+      "reference_seconds": 0.004779096692800522
+    },
+    {
+      "id": "vi-013",
+      "lang": "vi",
+      "category": "fraction",
+      "input": "Cho thêm 1/2 cốc sữa.",
+      "expected": "Cho thêm một phần hai cốc sữa.",
+      "reference_error": null,
+      "reference_seconds": 0.003940676338970661
+    },
+    {
+      "id": "vi-014",
+      "lang": "vi",
+      "category": "fraction",
+      "input": "Chúng tôi đã đi được 3/4 quãng đường.",
+      "expected": "Chúng tôi đã đi được ba phần tư quãng đường.",
+      "reference_error": null,
+      "reference_seconds": 0.0059369150549173355
+    },
+    {
+      "id": "vi-015",
+      "lang": "vi",
+      "category": "money",
+      "input": "Cà phê có giá 20000 đồng.",
+      "expected": "Cà phê có giá hai mươi nghìn đồng.",
+      "reference_error": null,
+      "reference_seconds": 0.005830959416925907
+    },
+    {
+      "id": "vi-016",
+      "lang": "vi",
+      "category": "money",
+      "input": "Tôi trả 125000 đồng cho bữa trưa.",
+      "expected": "Tôi trả một trăm hai mươi lăm nghìn đồng cho bữa trưa.",
+      "reference_error": null,
+      "reference_seconds": 0.012059827335178852
+    },
+    {
+      "id": "vi-017",
+      "lang": "vi",
+      "category": "money",
+      "input": "Ngân sách là 1.250.000 đồng.",
+      "expected": "Ngân sách là một triệu hai trăm năm mươi nghìn đồng.",
+      "reference_error": null,
+      "reference_seconds": 0.009954158216714859
+    },
+    {
+      "id": "vi-018",
+      "lang": "vi",
+      "category": "money",
+      "input": "Giá vé là 20 USD.",
+      "expected": "Giá vé là hai mươi đô la.",
+      "reference_error": null,
+      "reference_seconds": 0.00352435652166605
+    },
+    {
+      "id": "vi-019",
+      "lang": "vi",
+      "category": "money",
+      "input": "Người bán trả lại 7500 đồng.",
+      "expected": "Người bán trả lại bảy nghìn năm trăm đồng.",
+      "reference_error": null,
+      "reference_seconds": 0.007681288756430149
+    },
+    {
+      "id": "vi-020",
+      "lang": "vi",
+      "category": "money",
+      "input": "Máy tính này giá 999,99 đô la.",
+      "expected": "Máy tính này giá chín trăm chín mươi chín phẩy chín chín đô la.",
+      "reference_error": null,
+      "reference_seconds": 0.010981285013258457
+    },
+    {
+      "id": "vi-021",
+      "lang": "vi",
+      "category": "money",
+      "input": "Quỹ đã quyên góp 1 triệu đồng.",
+      "expected": "Quỹ đã quyên góp một triệu đồng.",
+      "reference_error": null,
+      "reference_seconds": 0.004218270070850849
+    },
+    {
+      "id": "vi-022",
+      "lang": "vi",
+      "category": "date",
+      "input": "Cuộc họp diễn ra ngày 5 tháng 1 năm 2026.",
+      "expected": "Cuộc họp diễn ra ngày năm tháng một năm hai nghìn hai mươi sáu.",
+      "reference_error": null,
+      "reference_seconds": 0.01294398121535778
+    },
+    {
+      "id": "vi-023",
+      "lang": "vi",
+      "category": "date",
+      "input": "Cô ấy sinh ngày 14 tháng 2 năm 1998.",
+      "expected": "Cô ấy sinh ngày mười bốn tháng hai năm một nghìn chín trăm chín mươi tám.",
+      "reference_error": null,
+      "reference_seconds": 0.01642030943185091
+    },
+    {
+      "id": "vi-024",
+      "lang": "vi",
+      "category": "date",
+      "input": "Tài liệu ghi ngày 03/04/2025.",
+      "expected": "Tài liệu ghi ngày ba tháng tư năm hai nghìn hai mươi lăm.",
+      "reference_error": null,
+      "reference_seconds": 0.01820917520672083
+    },
+    {
+      "id": "vi-025",
+      "lang": "vi",
+      "category": "date",
+      "input": "Ngày giao hàng dự kiến là 2026-09-25.",
+      "expected": "Ngày giao hàng dự kiến là ngày hai mươi lăm tháng chín năm hai nghìn hai mươi sáu.",
+      "reference_error": null,
+      "reference_seconds": 0.016824163496494293
+    },
+    {
+      "id": "vi-026",
+      "lang": "vi",
+      "category": "date",
+      "input": "Tòa nhà được mở cửa vào năm 2001.",
+      "expected": "Tòa nhà được mở cửa vào năm hai nghìn linh một.",
+      "reference_error": null,
+      "reference_seconds": 0.008761055767536163
+    },
+    {
+      "id": "vi-027",
+      "lang": "vi",
+      "category": "date",
+      "input": "Kỳ nghỉ bắt đầu vào ngày 1 tháng 7.",
+      "expected": "Kỳ nghỉ bắt đầu vào ngày một tháng bảy.",
+      "reference_error": null,
+      "reference_seconds": 0.006022700108587742
+    },
+    {
+      "id": "vi-028",
+      "lang": "vi",
+      "category": "date",
+      "input": "Hồ sơ bao gồm giai đoạn 1980-1990.",
+      "expected": "Hồ sơ bao gồm giai đoạn một nghìn chín trăm tám mươi âm một nghìn chín trăm chín mươi.",
+      "reference_error": null,
+      "reference_seconds": 0.018913056701421738
+    },
+    {
+      "id": "vi-029",
+      "lang": "vi",
+      "category": "time",
+      "input": "Tàu khởi hành lúc 08:30.",
+      "expected": "Tàu khởi hành lúc tám giờ ba mươi phút.",
+      "reference_error": null,
+      "reference_seconds": 0.005685777403414249
+    },
+    {
+      "id": "vi-030",
+      "lang": "vi",
+      "category": "time",
+      "input": "Hẹn gặp lúc 15:15.",
+      "expected": "Hẹn gặp lúc mười lăm giờ mười lăm phút.",
+      "reference_error": null,
+      "reference_seconds": 0.007413665764033794
+    },
+    {
+      "id": "vi-031",
+      "lang": "vi",
+      "category": "time",
+      "input": "Chuông báo thức reo lúc 7:00.",
+      "expected": "Chuông báo thức reo lúc bảy giờ.",
+      "reference_error": null,
+      "reference_seconds": 0.00458676740527153
+    },
+    {
+      "id": "vi-032",
+      "lang": "vi",
+      "category": "time",
+      "input": "Bộ phim bắt đầu lúc 21:45.",
+      "expected": "Bộ phim bắt đầu lúc hai mươi mốt giờ bốn mươi lăm phút.",
+      "reference_error": null,
+      "reference_seconds": 0.0078171007335186
+    },
+    {
+      "id": "vi-033",
+      "lang": "vi",
+      "category": "time",
+      "input": "Đồng hồ bấm giờ hiển thị 01:02:03.",
+      "expected": "Đồng hồ bấm giờ hiển thị một giờ hai phút ba giây.",
+      "reference_error": null,
+      "reference_seconds": 0.006937156431376934
+    },
+    {
+      "id": "vi-034",
+      "lang": "vi",
+      "category": "time",
+      "input": "Cửa hàng mở lúc 9 giờ sáng.",
+      "expected": "Cửa hàng mở lúc chín giờ sáng.",
+      "reference_error": null,
+      "reference_seconds": 0.003863801248371601
+    },
+    {
+      "id": "vi-035",
+      "lang": "vi",
+      "category": "time",
+      "input": "Chúng tôi chờ ở ga 30 phút.",
+      "expected": "Chúng tôi chờ ở ga ba mươi phút.",
+      "reference_error": null,
+      "reference_seconds": 0.004519810900092125
+    },
+    {
+      "id": "vi-036",
+      "lang": "vi",
+      "category": "measure",
+      "input": "Thùng hàng nặng 5 kg.",
+      "expected": "Thùng hàng nặng năm ki lô gam.",
+      "reference_error": null,
+      "reference_seconds": 0.0032934164628386497
+    },
+    {
+      "id": "vi-037",
+      "lang": "vi",
+      "category": "measure",
+      "input": "Thêm 250 ml nước.",
+      "expected": "Thêm hai trăm năm mươi mi li lít nước.",
+      "reference_error": null,
+      "reference_seconds": 0.005238842219114304
+    },
+    {
+      "id": "vi-038",
+      "lang": "vi",
+      "category": "measure",
+      "input": "Con đường dài 12 km.",
+      "expected": "Con đường dài mười hai ki lô mét.",
+      "reference_error": null,
+      "reference_seconds": 0.004513086751103401
+    },
+    {
+      "id": "vi-039",
+      "lang": "vi",
+      "category": "measure",
+      "input": "Giới hạn tốc độ là 80 km/h.",
+      "expected": "Giới hạn tốc độ là tám mươi ki lô mét trên giờ.",
+      "reference_error": null,
+      "reference_seconds": 0.004683460108935833
+    },
+    {
+      "id": "vi-040",
+      "lang": "vi",
+      "category": "measure",
+      "input": "Bàn rộng 1,5 m.",
+      "expected": "Bàn rộng một phẩy năm mét.",
+      "reference_error": null,
+      "reference_seconds": 0.003604351542890072
+    },
+    {
+      "id": "vi-041",
+      "lang": "vi",
+      "category": "measure",
+      "input": "Nhiệt độ hôm nay là 23 °C.",
+      "expected": "Nhiệt độ hôm nay là hai mươi ba độ C.",
+      "reference_error": null,
+      "reference_seconds": 0.005022807978093624
+    },
+    {
+      "id": "vi-042",
+      "lang": "vi",
+      "category": "measure",
+      "input": "Bình chứa được 10 lít.",
+      "expected": "Bình chứa được mười lít.",
+      "reference_error": null,
+      "reference_seconds": 0.003954441286623478
+    },
+    {
+      "id": "vi-043",
+      "lang": "vi",
+      "category": "electronic",
+      "input": "Truy cập https://example.com để xem chi tiết.",
+      "expected": "Truy cập https://example.com để xem chi tiết.",
+      "reference_error": null,
+      "reference_seconds": 0.004986562766134739
+    },
+    {
+      "id": "vi-044",
+      "lang": "vi",
+      "category": "electronic",
+      "input": "Gửi thư tới hello@example.vn trước thứ Sáu.",
+      "expected": "Gửi thư tới hello@example.vn trước thứ Sáu.",
+      "reference_error": null,
+      "reference_seconds": 0.004811388440430164
+    },
+    {
+      "id": "vi-045",
+      "lang": "vi",
+      "category": "electronic",
+      "input": "Gọi 0912345678 để được hỗ trợ.",
+      "expected": "Gọi không chín trăm mười hai triệu ba trăm bốn mươi lăm nghìn sáu trăm bảy mươi tám để được hỗ trợ.",
+      "reference_error": null,
+      "reference_seconds": 0.026369312778115273
+    },
+    {
+      "id": "vi-046",
+      "lang": "vi",
+      "category": "electronic",
+      "input": "Địa chỉ máy chủ là 192.168.1.1.",
+      "expected": "Địa chỉ máy chủ là một trăm chín mươi hai. ngày một tháng một năm một trăm sáu mươi tám.",
+      "reference_error": null,
+      "reference_seconds": 0.019149689003825188
+    },
+    {
+      "id": "vi-047",
+      "lang": "vi",
+      "category": "electronic",
+      "input": "Cài đặt phiên bản 2.4.1.",
+      "expected": "Cài đặt phiên bản ngày một tháng tư năm hai.",
+      "reference_error": null,
+      "reference_seconds": 0.00718629639595747
+    },
+    {
+      "id": "vi-048",
+      "lang": "vi",
+      "category": "electronic",
+      "input": "Mã đơn hàng là AB123.",
+      "expected": "Mã đơn hàng là AB một trăm hai mươi ba.",
+      "reference_error": null,
+      "reference_seconds": 0.006798987276852131
+    },
+    {
+      "id": "vi-049",
+      "lang": "vi",
+      "category": "electronic",
+      "input": "Trang web là www.example.vn.",
+      "expected": "Trang web là www.example.vn.",
+      "reference_error": null,
+      "reference_seconds": 0.0031616296619176865
+    },
+    {
+      "id": "vi-050",
+      "lang": "vi",
+      "category": "mixed",
+      "input": "Bác sĩ Lan đã khám cho 12 bệnh nhân.",
+      "expected": "Bác sĩ Lan đã khám cho mười hai bệnh nhân.",
+      "reference_error": null,
+      "reference_seconds": 0.006134749390184879
+    },
+    {
+      "id": "vi-051",
+      "lang": "vi",
+      "category": "punctuation",
+      "input": "Cô ấy nói: \"Tôi cần 3 vé.\"",
+      "expected": "Cô ấy nói: \"Tôi cần ba vé.\"",
+      "reference_error": null,
+      "reference_seconds": 0.003714454360306263
+    },
+    {
+      "id": "vi-052",
+      "lang": "vi",
+      "category": "punctuation",
+      "input": "Vẫn còn 7 chỗ trống phải không?",
+      "expected": "Vẫn còn bảy chỗ trống phải không?",
+      "reference_error": null,
+      "reference_seconds": 0.00424518808722496
+    },
+    {
+      "id": "vi-053",
+      "lang": "vi",
+      "category": "punctuation",
+      "input": "Hãy đọc các mục [4] và [5].",
+      "expected": "Hãy đọc các mục [bốn] và [năm].",
+      "reference_error": null,
+      "reference_seconds": 0.004592927172780037
+    },
+    {
+      "id": "vi-054",
+      "lang": "vi",
+      "category": "plain",
+      "input": "Một dòng sông yên bình chảy qua thung lũng.",
+      "expected": "Một dòng sông yên bình chảy qua thung lũng.",
+      "reference_error": null,
+      "reference_seconds": 0.004770922474563122
+    },
+    {
+      "id": "vi-055",
+      "lang": "vi",
+      "category": "mixed",
+      "input": "Ngày 5 tháng 5, tôi mua 2 kg gạo với giá 24500 đồng.",
+      "expected": "Ngày năm tháng năm, tôi mua hai ki lô gam gạo với giá hai mươi tư nghìn năm trăm đồng.",
+      "reference_error": null,
+      "reference_seconds": 0.015748221427202225
+    },
+    {
+      "id": "vi-056",
+      "lang": "vi",
+      "category": "mixed",
+      "input": "Lúc 10:30, cảm biến ghi nhận 22,5 °C và độ ẩm 60%.",
+      "expected": "Lúc mười giờ ba mươi phút, cảm biến ghi nhận hai mươi hai phẩy năm độ C và độ ẩm sáu mươi phần trăm.",
+      "reference_error": null,
+      "reference_seconds": 0.013763451017439365
+    }
+  ]
+}

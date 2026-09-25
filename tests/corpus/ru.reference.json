@@ -1,0 +1,512 @@
+{
+  "nemo_version": "1.2.0",
+  "pynini_version": "2.1.6.post1",
+  "sacremoses_version": "0.2.0",
+  "load_seconds": 0.34148143604397774,
+  "cases": [
+    {
+      "id": "ru-001",
+      "lang": "ru",
+      "category": "cardinal",
+      "input": "У меня дома живут 2 кота.",
+      "expected": "У меня дома живут две кота.",
+      "reference_error": null,
+      "reference_seconds": 0.02714802883565426
+    },
+    {
+      "id": "ru-002",
+      "lang": "ru",
+      "category": "cardinal",
+      "input": "В автобусе едут 17 пассажиров.",
+      "expected": "В автобусе едут семнадцать пассажиров.",
+      "reference_error": null,
+      "reference_seconds": 0.020258001051843166
+    },
+    {
+      "id": "ru-003",
+      "lang": "ru",
+      "category": "cardinal",
+      "input": "Библиотека купила 35 книг.",
+      "expected": "Библиотека купила тридцать пять книг.",
+      "reference_error": null,
+      "reference_seconds": 0.017182230949401855
+    },
+    {
+      "id": "ru-004",
+      "lang": "ru",
+      "category": "cardinal",
+      "input": "На концерт осталось 99 билетов.",
+      "expected": "На концерт осталось девяносто девять билетов.",
+      "reference_error": null,
+      "reference_seconds": 0.017851506359875202
+    },
+    {
+      "id": "ru-005",
+      "lang": "ru",
+      "category": "cardinal",
+      "input": "В деревне живут 120 человек.",
+      "expected": "В деревне живут сто двадцать человек.",
+      "reference_error": null,
+      "reference_seconds": 0.023137212730944157
+    },
+    {
+      "id": "ru-006",
+      "lang": "ru",
+      "category": "cardinal",
+      "input": "В парке посадили 1234 дерева.",
+      "expected": "В парке посадили тысяч двести тридцать четыре дерева.",
+      "reference_error": null,
+      "reference_seconds": 0.0387698644772172
+    },
+    {
+      "id": "ru-007",
+      "lang": "ru",
+      "category": "ordinal",
+      "input": "Она заняла 3-е место.",
+      "expected": "Она заняла три е место.",
+      "reference_error": null,
+      "reference_seconds": 0.003445606678724289
+    },
+    {
+      "id": "ru-008",
+      "lang": "ru",
+      "category": "decimal",
+      "input": "Результат вычисления равен 3,14.",
+      "expected": "Результат вычисления равен три целых четырнадцать сотых.",
+      "reference_error": null,
+      "reference_seconds": 0.00419765617698431
+    },
+    {
+      "id": "ru-009",
+      "lang": "ru",
+      "category": "decimal",
+      "input": "Разница составила 0,05 балла.",
+      "expected": "Разница составила ноль целых пять сотых балла.",
+      "reference_error": null,
+      "reference_seconds": 0.0013093100860714912
+    },
+    {
+      "id": "ru-010",
+      "lang": "ru",
+      "category": "decimal",
+      "input": "Температура упала до -2,5 градуса.",
+      "expected": "Температура упала до минус две целых пять десятых градуса.",
+      "reference_error": null,
+      "reference_seconds": 0.00850004144012928
+    },
+    {
+      "id": "ru-011",
+      "lang": "ru",
+      "category": "decimal",
+      "input": "Напиток содержит 12% сахара.",
+      "expected": "Напиток содержит двенадцать процент сахара.",
+      "reference_error": null,
+      "reference_seconds": 0.013542436994612217
+    },
+    {
+      "id": "ru-012",
+      "lang": "ru",
+      "category": "decimal",
+      "input": "Годовая ставка составляет 4,5%.",
+      "expected": "Годовая ставка составляет четыре целых пять десятых процент.",
+      "reference_error": null,
+      "reference_seconds": 0.003987138159573078
+    },
+    {
+      "id": "ru-013",
+      "lang": "ru",
+      "category": "fraction",
+      "input": "Добавьте 1/2 стакана молока.",
+      "expected": "Добавьте первый февраля стакана молока.",
+      "reference_error": null,
+      "reference_seconds": 0.003216532990336418
+    },
+    {
+      "id": "ru-014",
+      "lang": "ru",
+      "category": "fraction",
+      "input": "Мы прошли 3/4 пути.",
+      "expected": "Мы прошли третьи апреля пути.",
+      "reference_error": null,
+      "reference_seconds": 0.003268417902290821
+    },
+    {
+      "id": "ru-015",
+      "lang": "ru",
+      "category": "money",
+      "input": "Кофе стоит 200 рублей.",
+      "expected": "Кофе стоит двести рублей.",
+      "reference_error": null,
+      "reference_seconds": 0.007991082966327667
+    },
+    {
+      "id": "ru-016",
+      "lang": "ru",
+      "category": "money",
+      "input": "За обед я заплатил 1250,50 руб.",
+      "expected": "За обед я заплатил тысяч двести пятьдесят целых пятьдесят сотых рубля",
+      "reference_error": null,
+      "reference_seconds": 0.03741174563765526
+    },
+    {
+      "id": "ru-017",
+      "lang": "ru",
+      "category": "money",
+      "input": "Бюджет составляет 12500 ₽.",
+      "expected": "Бюджет составляет двенадцать тысяч пятьсот рубля.",
+      "reference_error": null,
+      "reference_seconds": 0.040607369504868984
+    },
+    {
+      "id": "ru-018",
+      "lang": "ru",
+      "category": "money",
+      "input": "Билет стоит 20 долларов.",
+      "expected": "Билет стоит двадцать долларов.",
+      "reference_error": null,
+      "reference_seconds": 0.00691002793610096
+    },
+    {
+      "id": "ru-019",
+      "lang": "ru",
+      "category": "money",
+      "input": "Мне вернули 75 копеек.",
+      "expected": "Мне вернули семьдесят пять копеек.",
+      "reference_error": null,
+      "reference_seconds": 0.017895339988172054
+    },
+    {
+      "id": "ru-020",
+      "lang": "ru",
+      "category": "money",
+      "input": "Компьютер стоит 99999 рублей.",
+      "expected": "Компьютер стоит девяносто девять тысяч девятьсот девяносто девять рублей.",
+      "reference_error": null,
+      "reference_seconds": 0.05413902271538973
+    },
+    {
+      "id": "ru-021",
+      "lang": "ru",
+      "category": "money",
+      "input": "Фонд пожертвовал 1 миллион рублей.",
+      "expected": "Фонд пожертвовал одно миллион рублей.",
+      "reference_error": null,
+      "reference_seconds": 0.004786455072462559
+    },
+    {
+      "id": "ru-022",
+      "lang": "ru",
+      "category": "date",
+      "input": "Встреча состоится 5 января 2026 года.",
+      "expected": "Встреча состоится пять января две тысяч двадцать шесть года.",
+      "reference_error": null,
+      "reference_seconds": 0.02918930444866419
+    },
+    {
+      "id": "ru-023",
+      "lang": "ru",
+      "category": "date",
+      "input": "Она родилась 14 февраля 1998 года.",
+      "expected": "Она родилась четырнадцать февраля тысяч девятьсот девяносто восемь года.",
+      "reference_error": null,
+      "reference_seconds": 0.060136341489851475
+    },
+    {
+      "id": "ru-024",
+      "lang": "ru",
+      "category": "date",
+      "input": "На документе указана дата 03.04.2025.",
+      "expected": "На документе указана дата третьи апреля две тысячи двадцать пятой.",
+      "reference_error": null,
+      "reference_seconds": 0.0027974899858236313
+    },
+    {
+      "id": "ru-025",
+      "lang": "ru",
+      "category": "date",
+      "input": "Доставка назначена на 2026-09-25.",
+      "expected": "Доставка назначена на два ноль два шесть ноль девять два пять.",
+      "reference_error": null,
+      "reference_seconds": 0.023596588522195816
+    },
+    {
+      "id": "ru-026",
+      "lang": "ru",
+      "category": "date",
+      "input": "Здание открылось в 2001 году.",
+      "expected": "Здание открылось в две тысяч одна году.",
+      "reference_error": null,
+      "reference_seconds": 0.0119523536413908
+    },
+    {
+      "id": "ru-027",
+      "lang": "ru",
+      "category": "date",
+      "input": "Каникулы начинаются 1 июля.",
+      "expected": "Каникулы начинаются одно июля.",
+      "reference_error": null,
+      "reference_seconds": 0.004182207398116589
+    },
+    {
+      "id": "ru-028",
+      "lang": "ru",
+      "category": "date",
+      "input": "Архив охватывает период с 1980 по 1990 год.",
+      "expected": "Архив охватывает период с тысяч девятьсот восемьдесят по тысяч девятьсот девяносто год.",
+      "reference_error": null,
+      "reference_seconds": 0.091484977863729
+    },
+    {
+      "id": "ru-029",
+      "lang": "ru",
+      "category": "time",
+      "input": "Поезд отправляется в 08:30.",
+      "expected": "Поезд отправляется в тридцать минут девятого.",
+      "reference_error": null,
+      "reference_seconds": 0.0021321596577763557
+    },
+    {
+      "id": "ru-030",
+      "lang": "ru",
+      "category": "time",
+      "input": "Встретимся в 15:15.",
+      "expected": "Встретимся в пятнадцать часов пятнадцать минут.",
+      "reference_error": null,
+      "reference_seconds": 0.01665414683520794
+    },
+    {
+      "id": "ru-031",
+      "lang": "ru",
+      "category": "time",
+      "input": "Будильник звонит в 7:00.",
+      "expected": "Будильник звонит в семь часов ноль минут.",
+      "reference_error": null,
+      "reference_seconds": 0.003950446844100952
+    },
+    {
+      "id": "ru-032",
+      "lang": "ru",
+      "category": "time",
+      "input": "Фильм начинается в 21:45.",
+      "expected": "Фильм начинается в без пятнадцати минут десять.",
+      "reference_error": null,
+      "reference_seconds": 0.012272712774574757
+    },
+    {
+      "id": "ru-033",
+      "lang": "ru",
+      "category": "time",
+      "input": "Секундомер показывает 01:02:03.",
+      "expected": "Секундомер показывает 01:02:03.",
+      "reference_error": null,
+      "reference_seconds": 0.001348172314465046
+    },
+    {
+      "id": "ru-034",
+      "lang": "ru",
+      "category": "time",
+      "input": "Магазин открывается в 9 часов.",
+      "expected": "Магазин открывается в девять часов.",
+      "reference_error": null,
+      "reference_seconds": 0.004263459704816341
+    },
+    {
+      "id": "ru-035",
+      "lang": "ru",
+      "category": "time",
+      "input": "Мы ждали на станции 30 минут.",
+      "expected": "Мы ждали на станции тридцать минут.",
+      "reference_error": null,
+      "reference_seconds": 0.006821374408900738
+    },
+    {
+      "id": "ru-036",
+      "lang": "ru",
+      "category": "measure",
+      "input": "Коробка весит 5 кг.",
+      "expected": "Коробка весит пять килограм.",
+      "reference_error": null,
+      "reference_seconds": 0.004006672650575638
+    },
+    {
+      "id": "ru-037",
+      "lang": "ru",
+      "category": "measure",
+      "input": "Добавьте 250 мл воды.",
+      "expected": "Добавьте двести пятьдесят миллиитр воды.",
+      "reference_error": null,
+      "reference_seconds": 0.02620633691549301
+    },
+    {
+      "id": "ru-038",
+      "lang": "ru",
+      "category": "measure",
+      "input": "Длина дороги составляет 12 км.",
+      "expected": "Длина дороги составляет двенадцать километр.",
+      "reference_error": null,
+      "reference_seconds": 0.016826136969029903
+    },
+    {
+      "id": "ru-039",
+      "lang": "ru",
+      "category": "measure",
+      "input": "Скорость ограничена до 80 км/ч.",
+      "expected": "Скорость ограничена до восемьдесят километр в час.",
+      "reference_error": null,
+      "reference_seconds": 0.00725023727864027
+    },
+    {
+      "id": "ru-040",
+      "lang": "ru",
+      "category": "measure",
+      "input": "Ширина стола равна 1,5 м.",
+      "expected": "Ширина стола равна одно целых пять десятых метр.",
+      "reference_error": null,
+      "reference_seconds": 0.003940819762647152
+    },
+    {
+      "id": "ru-041",
+      "lang": "ru",
+      "category": "measure",
+      "input": "Сегодня на улице 23 °C.",
+      "expected": "Сегодня на улице двадцать три градусов по цельсию.",
+      "reference_error": null,
+      "reference_seconds": 0.01689351350069046
+    },
+    {
+      "id": "ru-042",
+      "lang": "ru",
+      "category": "measure",
+      "input": "Бак вмещает 10 л.",
+      "expected": "Бак вмещает десять литр.",
+      "reference_error": null,
+      "reference_seconds": 0.005854785442352295
+    },
+    {
+      "id": "ru-043",
+      "lang": "ru",
+      "category": "electronic",
+      "input": "Подробности доступны на https://example.com.",
+      "expected": "Подробности доступны на https://example.com.",
+      "reference_error": null,
+      "reference_seconds": 0.0008925376459956169
+    },
+    {
+      "id": "ru-044",
+      "lang": "ru",
+      "category": "electronic",
+      "input": "Напишите на hello@example.ru до пятницы.",
+      "expected": "Напишите на х и л л о собака и экс эй эм пи л и точка ру до пятницы.",
+      "reference_error": null,
+      "reference_seconds": 0.0011691907420754433
+    },
+    {
+      "id": "ru-045",
+      "lang": "ru",
+      "category": "electronic",
+      "input": "Позвоните по номеру +7 495 123-45-67.",
+      "expected": "Позвоните по номеру +7 четыреста девяносто пять один два три четыре пять шесть семь.",
+      "reference_error": null,
+      "reference_seconds": 0.0695802653208375
+    },
+    {
+      "id": "ru-046",
+      "lang": "ru",
+      "category": "electronic",
+      "input": "Адрес сервера — 192.168.1.1.",
+      "expected": "Адрес сервера — 192.168.1.1.",
+      "reference_error": null,
+      "reference_seconds": 0.040778894908726215
+    },
+    {
+      "id": "ru-047",
+      "lang": "ru",
+      "category": "electronic",
+      "input": "Установите версию 2.4.1.",
+      "expected": "Установите версию 2.4.1.",
+      "reference_error": null,
+      "reference_seconds": 0.0069426605477929115
+    },
+    {
+      "id": "ru-048",
+      "lang": "ru",
+      "category": "electronic",
+      "input": "Код заказа — AB123.",
+      "expected": "Код заказа — AB123.",
+      "reference_error": null,
+      "reference_seconds": 0.0006965706124901772
+    },
+    {
+      "id": "ru-049",
+      "lang": "ru",
+      "category": "electronic",
+      "input": "Наш сайт — www.example.ru.",
+      "expected": "Наш сайт — www.example.ru.",
+      "reference_error": null,
+      "reference_seconds": 0.0008272137492895126
+    },
+    {
+      "id": "ru-050",
+      "lang": "ru",
+      "category": "mixed",
+      "input": "Доктор Иванова приняла 12 пациентов.",
+      "expected": "Доктор Иванова приняла двенадцать пациентов.",
+      "reference_error": null,
+      "reference_seconds": 0.01849202625453472
+    },
+    {
+      "id": "ru-051",
+      "lang": "ru",
+      "category": "punctuation",
+      "input": "Она сказала: «Мне нужны 3 билета».",
+      "expected": "Она сказала: «Мне нужны три билета».",
+      "reference_error": null,
+      "reference_seconds": 0.004559561610221863
+    },
+    {
+      "id": "ru-052",
+      "lang": "ru",
+      "category": "punctuation",
+      "input": "Осталось ещё 7 свободных мест?",
+      "expected": "Осталось ещё семь свободных мест?",
+      "reference_error": null,
+      "reference_seconds": 0.004257814958691597
+    },
+    {
+      "id": "ru-053",
+      "lang": "ru",
+      "category": "punctuation",
+      "input": "Прочитайте разделы [4] и [5].",
+      "expected": "Прочитайте разделы [четыре] и [пять].",
+      "reference_error": null,
+      "reference_seconds": 0.006609000265598297
+    },
+    {
+      "id": "ru-054",
+      "lang": "ru",
+      "category": "plain",
+      "input": "Тихая река течёт по долине.",
+      "expected": "Тихая река течёт по долине.",
+      "reference_error": null,
+      "reference_seconds": 0.0007975827902555466
+    },
+    {
+      "id": "ru-055",
+      "lang": "ru",
+      "category": "mixed",
+      "input": "5 мая я заплатил 245 рублей за 2 кг риса.",
+      "expected": "пять мая я заплатил двести сорок пять рублей за две килограм риса.",
+      "reference_error": null,
+      "reference_seconds": 0.04227331280708313
+    },
+    {
+      "id": "ru-056",
+      "lang": "ru",
+      "category": "mixed",
+      "input": "В 10:30 датчик показал 22,5 °C и влажность 60%.",
+      "expected": "В тридцать минут одиннадцатого датчик показал двадцать два целых пять десятых градусов по цельсию и влажность шестьдесят процент.",
+      "reference_error": null,
+      "reference_seconds": 0.02732139639556408
+    }
+  ]
+}

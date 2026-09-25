@@ -1,0 +1,512 @@
+{
+  "nemo_version": "1.2.0",
+  "pynini_version": "2.1.6.post1",
+  "sacremoses_version": "0.2.0",
+  "load_seconds": 0.04961347207427025,
+  "cases": [
+    {
+      "id": "sv-001",
+      "lang": "sv",
+      "category": "cardinal",
+      "input": "Vi har 2 katter hemma.",
+      "expected": "Vi har två katter hemma.",
+      "reference_error": null,
+      "reference_seconds": 0.009583985432982445
+    },
+    {
+      "id": "sv-002",
+      "lang": "sv",
+      "category": "cardinal",
+      "input": "Det finns 17 passagerare på bussen.",
+      "expected": "Det finns sjutton passagerare på bussen.",
+      "reference_error": null,
+      "reference_seconds": 0.009742769412696362
+    },
+    {
+      "id": "sv-003",
+      "lang": "sv",
+      "category": "cardinal",
+      "input": "Biblioteket köpte 35 böcker.",
+      "expected": "Biblioteket köpte trettiofem böcker.",
+      "reference_error": null,
+      "reference_seconds": 0.007678396068513393
+    },
+    {
+      "id": "sv-004",
+      "lang": "sv",
+      "category": "cardinal",
+      "input": "Det finns 99 biljetter kvar till konserten.",
+      "expected": "Det finns nittionio biljetter kvar till konserten.",
+      "reference_error": null,
+      "reference_seconds": 0.00954657793045044
+    },
+    {
+      "id": "sv-005",
+      "lang": "sv",
+      "category": "cardinal",
+      "input": "Byn har 120 invånare.",
+      "expected": "Byn har hundratjugo invånare.",
+      "reference_error": null,
+      "reference_seconds": 0.011314519681036472
+    },
+    {
+      "id": "sv-006",
+      "lang": "sv",
+      "category": "cardinal",
+      "input": "Vi planterade 1 234 träd i parken.",
+      "expected": "Vi planterade tusen tvåhundratrettiofyra träd i parken.",
+      "reference_error": null,
+      "reference_seconds": 0.020343976095318794
+    },
+    {
+      "id": "sv-007",
+      "lang": "sv",
+      "category": "ordinal",
+      "input": "Hon kom på 3:e plats.",
+      "expected": "Hon kom på tredje plats.",
+      "reference_error": null,
+      "reference_seconds": 0.005605689249932766
+    },
+    {
+      "id": "sv-008",
+      "lang": "sv",
+      "category": "decimal",
+      "input": "Resultatet är 3,14.",
+      "expected": "Resultatet är tre komma fjorton.",
+      "reference_error": null,
+      "reference_seconds": 0.008962166495621204
+    },
+    {
+      "id": "sv-009",
+      "lang": "sv",
+      "category": "decimal",
+      "input": "Skillnaden var 0,05 poäng.",
+      "expected": "Skillnaden var noll komma noll fem poäng.",
+      "reference_error": null,
+      "reference_seconds": 0.004322013817727566
+    },
+    {
+      "id": "sv-010",
+      "lang": "sv",
+      "category": "decimal",
+      "input": "Temperaturen sjönk till -2,5 grader.",
+      "expected": "Temperaturen sjönk till minus två komma fem grader.",
+      "reference_error": null,
+      "reference_seconds": 0.008912662975490093
+    },
+    {
+      "id": "sv-011",
+      "lang": "sv",
+      "category": "decimal",
+      "input": "Drycken innehåller 12% socker.",
+      "expected": "Drycken innehåller tolv procent socker.",
+      "reference_error": null,
+      "reference_seconds": 0.00762027595192194
+    },
+    {
+      "id": "sv-012",
+      "lang": "sv",
+      "category": "decimal",
+      "input": "Årsräntan är 4,5%.",
+      "expected": "Årsräntan är fyra komma fem procent.",
+      "reference_error": null,
+      "reference_seconds": 0.00581052340567112
+    },
+    {
+      "id": "sv-013",
+      "lang": "sv",
+      "category": "fraction",
+      "input": "Tillsätt 1/2 kopp mjölk.",
+      "expected": "Tillsätt februari ett kopp mjölk.",
+      "reference_error": null,
+      "reference_seconds": 0.00501698162406683
+    },
+    {
+      "id": "sv-014",
+      "lang": "sv",
+      "category": "fraction",
+      "input": "Vi har gått 3/4 av sträckan.",
+      "expected": "Vi har gått april tre av sträckan.",
+      "reference_error": null,
+      "reference_seconds": 0.00616717804223299
+    },
+    {
+      "id": "sv-015",
+      "lang": "sv",
+      "category": "money",
+      "input": "Kaffet kostar 20 kr.",
+      "expected": "Kaffet kostar tjugo kronor.",
+      "reference_error": null,
+      "reference_seconds": 0.0076577793806791306
+    },
+    {
+      "id": "sv-016",
+      "lang": "sv",
+      "category": "money",
+      "input": "Jag betalade 125,50 kr för lunchen.",
+      "expected": "Jag betalade hundratjugofem,femtio kronor för lunchen.",
+      "reference_error": null,
+      "reference_seconds": 0.018657377921044827
+    },
+    {
+      "id": "sv-017",
+      "lang": "sv",
+      "category": "money",
+      "input": "Budgeten är 1 250 kronor.",
+      "expected": "Budgeten är tusen tvåhundrafemtio kronor.",
+      "reference_error": null,
+      "reference_seconds": 0.01824962254613638
+    },
+    {
+      "id": "sv-018",
+      "lang": "sv",
+      "category": "money",
+      "input": "Biljetten kostar 20 €.",
+      "expected": "Biljetten kostar tjugo euro.",
+      "reference_error": null,
+      "reference_seconds": 0.00766309630125761
+    },
+    {
+      "id": "sv-019",
+      "lang": "sv",
+      "category": "money",
+      "input": "Jag fick 0,75 kr tillbaka.",
+      "expected": "Jag fick noll,sjuttiofem kronor tillbaka.",
+      "reference_error": null,
+      "reference_seconds": 0.00948397722095251
+    },
+    {
+      "id": "sv-020",
+      "lang": "sv",
+      "category": "money",
+      "input": "Datorn kostar 9 999,99 kr.",
+      "expected": "Datorn kostar niotusen niohundranittionio,nittionio kronor.",
+      "reference_error": null,
+      "reference_seconds": 0.022372054867446423
+    },
+    {
+      "id": "sv-021",
+      "lang": "sv",
+      "category": "money",
+      "input": "Stiftelsen skänkte 1 miljon kronor.",
+      "expected": "Stiftelsen skänkte en miljon kronor.",
+      "reference_error": null,
+      "reference_seconds": 0.006201703101396561
+    },
+    {
+      "id": "sv-022",
+      "lang": "sv",
+      "category": "date",
+      "input": "Mötet hålls den 5 januari 2026.",
+      "expected": "Mötet hålls den femte januari tjugotjugosex.",
+      "reference_error": null,
+      "reference_seconds": 0.016940082423388958
+    },
+    {
+      "id": "sv-023",
+      "lang": "sv",
+      "category": "date",
+      "input": "Hon föddes den 14 februari 1998.",
+      "expected": "Hon föddes den fjortonde februari tusen niohundranittioåttonde",
+      "reference_error": null,
+      "reference_seconds": 0.021576558239758015
+    },
+    {
+      "id": "sv-024",
+      "lang": "sv",
+      "category": "date",
+      "input": "Dokumentet är daterat 2025-03-04.",
+      "expected": "Dokumentet är daterat fjärde mars tjugotjugofem",
+      "reference_error": null,
+      "reference_seconds": 0.01592682022601366
+    },
+    {
+      "id": "sv-025",
+      "lang": "sv",
+      "category": "date",
+      "input": "Leveransen är planerad till 2026-09-25.",
+      "expected": "Leveransen är planerad till tjugofemte september tjugotjugosex",
+      "reference_error": null,
+      "reference_seconds": 0.02079912181943655
+    },
+    {
+      "id": "sv-026",
+      "lang": "sv",
+      "category": "date",
+      "input": "Byggnaden öppnade år 2001.",
+      "expected": "Byggnaden öppnade år tvåtusen ett.",
+      "reference_error": null,
+      "reference_seconds": 0.012745246291160583
+    },
+    {
+      "id": "sv-027",
+      "lang": "sv",
+      "category": "date",
+      "input": "Semestern börjar den 1 juli.",
+      "expected": "Semestern börjar den första juli",
+      "reference_error": null,
+      "reference_seconds": 0.006164484657347202
+    },
+    {
+      "id": "sv-028",
+      "lang": "sv",
+      "category": "date",
+      "input": "Arkivet omfattar åren 1980-1990.",
+      "expected": "Arkivet omfattar åren tusen niohundraåttio-tusen niohundranittionde",
+      "reference_error": null,
+      "reference_seconds": 0.028294488787651062
+    },
+    {
+      "id": "sv-029",
+      "lang": "sv",
+      "category": "time",
+      "input": "Tåget avgår klockan 08:30.",
+      "expected": "Tåget avgår klockan åtta trettio.",
+      "reference_error": null,
+      "reference_seconds": 0.007826398126780987
+    },
+    {
+      "id": "sv-030",
+      "lang": "sv",
+      "category": "time",
+      "input": "Vi ses klockan 15.15.",
+      "expected": "Vi ses klockan femton femton.",
+      "reference_error": null,
+      "reference_seconds": 0.013100987300276756
+    },
+    {
+      "id": "sv-031",
+      "lang": "sv",
+      "category": "time",
+      "input": "Väckarklockan ringer 7:00.",
+      "expected": "Väckarklockan ringer 7:00.",
+      "reference_error": null,
+      "reference_seconds": 0.004482989199459553
+    },
+    {
+      "id": "sv-032",
+      "lang": "sv",
+      "category": "time",
+      "input": "Filmen börjar klockan 21:45.",
+      "expected": "Filmen börjar klockan tjugoett fyrtiofem.",
+      "reference_error": null,
+      "reference_seconds": 0.01155505795031786
+    },
+    {
+      "id": "sv-033",
+      "lang": "sv",
+      "category": "time",
+      "input": "Tidtagaruret visar 01:02:03.",
+      "expected": "Tidtagaruret visar 01:02:03.",
+      "reference_error": null,
+      "reference_seconds": 0.004372364841401577
+    },
+    {
+      "id": "sv-034",
+      "lang": "sv",
+      "category": "time",
+      "input": "Butiken öppnar klockan 9.",
+      "expected": "Butiken öppnar klockan nio.",
+      "reference_error": null,
+      "reference_seconds": 0.004492470994591713
+    },
+    {
+      "id": "sv-035",
+      "lang": "sv",
+      "category": "time",
+      "input": "Vi väntade 30 min på stationen.",
+      "expected": "Vi väntade trettio minuter på stationen.",
+      "reference_error": null,
+      "reference_seconds": 0.008829005062580109
+    },
+    {
+      "id": "sv-036",
+      "lang": "sv",
+      "category": "measure",
+      "input": "Lådan väger 5 kg.",
+      "expected": "Lådan väger fem kilogram.",
+      "reference_error": null,
+      "reference_seconds": 0.005027615465223789
+    },
+    {
+      "id": "sv-037",
+      "lang": "sv",
+      "category": "measure",
+      "input": "Tillsätt 250 ml vatten.",
+      "expected": "Tillsätt tvåhundrafemtio milliliter vatten.",
+      "reference_error": null,
+      "reference_seconds": 0.01071485597640276
+    },
+    {
+      "id": "sv-038",
+      "lang": "sv",
+      "category": "measure",
+      "input": "Vägen är 12 km lång.",
+      "expected": "Vägen är tolv kilometer lång.",
+      "reference_error": null,
+      "reference_seconds": 0.00868490431457758
+    },
+    {
+      "id": "sv-039",
+      "lang": "sv",
+      "category": "measure",
+      "input": "Hastighetsgränsen är 80 km/h.",
+      "expected": "Hastighetsgränsen är åttio kilometer per timme.",
+      "reference_error": null,
+      "reference_seconds": 0.007654653862118721
+    },
+    {
+      "id": "sv-040",
+      "lang": "sv",
+      "category": "measure",
+      "input": "Bordet är 1,5 m brett.",
+      "expected": "Bordet är en komma fem meter brett.",
+      "reference_error": null,
+      "reference_seconds": 0.008167693391442299
+    },
+    {
+      "id": "sv-041",
+      "lang": "sv",
+      "category": "measure",
+      "input": "Det är 23 °C ute i dag.",
+      "expected": "Det är tjugotre celsiusgrader ute i dag.",
+      "reference_error": null,
+      "reference_seconds": 0.009496422484517097
+    },
+    {
+      "id": "sv-042",
+      "lang": "sv",
+      "category": "measure",
+      "input": "Tanken rymmer 10 l.",
+      "expected": "Tanken rymmer tio l.",
+      "reference_error": null,
+      "reference_seconds": 0.007728364318609238
+    },
+    {
+      "id": "sv-043",
+      "lang": "sv",
+      "category": "electronic",
+      "input": "Besök https://example.com för mer information.",
+      "expected": "Besök h t t p s kolon dubbla snedstreck e x a m p l e punkt com för mer information.",
+      "reference_error": null,
+      "reference_seconds": 0.005383442156016827
+    },
+    {
+      "id": "sv-044",
+      "lang": "sv",
+      "category": "electronic",
+      "input": "Skriv till hej@example.se före fredag.",
+      "expected": "Skriv till h e j snabel-a e x a m p l e punkt s e före fredag.",
+      "reference_error": null,
+      "reference_seconds": 0.004751118831336498
+    },
+    {
+      "id": "sv-045",
+      "lang": "sv",
+      "category": "electronic",
+      "input": "Ring 08-123 45 67 i morgon.",
+      "expected": "Ring 08-123 fyrtiofem sextiosju i morgon.",
+      "reference_error": null,
+      "reference_seconds": 0.03757188189774752
+    },
+    {
+      "id": "sv-046",
+      "lang": "sv",
+      "category": "electronic",
+      "input": "Serverns adress är 192.168.1.1.",
+      "expected": "Serverns adress är hundranittiotvå punkt hundrasextioåtta punkt ett punkt ett.",
+      "reference_error": null,
+      "reference_seconds": 0.02389944437891245
+    },
+    {
+      "id": "sv-047",
+      "lang": "sv",
+      "category": "electronic",
+      "input": "Installera version 2.4.1.",
+      "expected": "Installera version andra april ett.",
+      "reference_error": null,
+      "reference_seconds": 0.007927998900413513
+    },
+    {
+      "id": "sv-048",
+      "lang": "sv",
+      "category": "electronic",
+      "input": "Beställningens kod är AB123.",
+      "expected": "Beställningens kod är AB123.",
+      "reference_error": null,
+      "reference_seconds": 0.003169027157127857
+    },
+    {
+      "id": "sv-049",
+      "lang": "sv",
+      "category": "electronic",
+      "input": "Vår webbplats är www.exempel.se.",
+      "expected": "Vår webbplats är w w w punkt e x e m p e l punkt s e.",
+      "reference_error": null,
+      "reference_seconds": 0.00452042929828167
+    },
+    {
+      "id": "sv-050",
+      "lang": "sv",
+      "category": "mixed",
+      "input": "Dr Andersson tog emot 12 patienter.",
+      "expected": "Dr Andersson tog emot tolv patienter.",
+      "reference_error": null,
+      "reference_seconds": 0.009597773663699627
+    },
+    {
+      "id": "sv-051",
+      "lang": "sv",
+      "category": "punctuation",
+      "input": "Hon sa: ”Jag behöver 3 biljetter.”",
+      "expected": "Hon sa: ”Jag behöver tre biljetter.”",
+      "reference_error": null,
+      "reference_seconds": 0.00809427723288536
+    },
+    {
+      "id": "sv-052",
+      "lang": "sv",
+      "category": "punctuation",
+      "input": "Finns det fortfarande 7 lediga platser?",
+      "expected": "Finns det fortfarande sju lediga platser?",
+      "reference_error": null,
+      "reference_seconds": 0.006431369110941887
+    },
+    {
+      "id": "sv-053",
+      "lang": "sv",
+      "category": "punctuation",
+      "input": "Läs avsnitten [4] och [5].",
+      "expected": "Läs avsnitten [fyra] och [fem].",
+      "reference_error": null,
+      "reference_seconds": 0.008493690751492977
+    },
+    {
+      "id": "sv-054",
+      "lang": "sv",
+      "category": "plain",
+      "input": "En stilla flod rinner genom dalen.",
+      "expected": "En stilla flod rinner genom dalen.",
+      "reference_error": null,
+      "reference_seconds": 0.004295936785638332
+    },
+    {
+      "id": "sv-055",
+      "lang": "sv",
+      "category": "mixed",
+      "input": "Den 5 maj betalade jag 24,50 kr för 2 kg ris.",
+      "expected": "Den femte maj betalade jag tjugofyra,femtio kronor för två kilogram ris.",
+      "reference_error": null,
+      "reference_seconds": 0.021564919501543045
+    },
+    {
+      "id": "sv-056",
+      "lang": "sv",
+      "category": "mixed",
+      "input": "Klockan 10:30 visade sensorn 22,5 °C och 60% luftfuktighet.",
+      "expected": "Klockan tio:trettio visade sensorn tjugotvå komma fem celsiusgrader och sextio procent luftfuktighet.",
+      "reference_error": null,
+      "reference_seconds": 0.028475950472056866
+    }
+  ]
+}

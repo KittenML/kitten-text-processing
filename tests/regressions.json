@@ -1,0 +1,578 @@
+[
+  {
+    "lang": "fr",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "douze"
+  },
+  {
+    "lang": "fr",
+    "input": "\u0000",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u0000"
+  },
+  {
+    "lang": "fr",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "onetwo"
+  },
+  {
+    "lang": "fr",
+    "input": "\u20bf 12",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u20bf douze"
+  },
+  {
+    "lang": "fr",
+    "input": "Il reste 99 places pour le concert. \u20bf2 million",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "generated:20260925",
+    "expected": "Il reste quatre-vingt-dix-neuf places pour le concert. \u20bf deux million"
+  },
+  {
+    "lang": "en",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "twelve"
+  },
+  {
+    "lang": "en",
+    "input": "\u0000",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u0000"
+  },
+  {
+    "lang": "en",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "onetwo"
+  },
+  {
+    "lang": "en",
+    "input": "\u20bf 12",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u20bf twelve"
+  },
+  {
+    "lang": "es",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "doce"
+  },
+  {
+    "lang": "es",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "onetwo"
+  },
+  {
+    "lang": "es",
+    "input": "\u20bf 12",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u20bf doce"
+  },
+  {
+    "lang": "de",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "zw\u00f6lf"
+  },
+  {
+    "lang": "de",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "onetwo"
+  },
+  {
+    "lang": "de",
+    "input": "\u20bf 12",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u20bf zw\u00f6lf"
+  },
+  {
+    "lang": "pt",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "doze"
+  },
+  {
+    "lang": "pt",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "onetwo"
+  },
+  {
+    "lang": "pt",
+    "input": "\u20bf 12",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u20bf doze"
+  },
+  {
+    "lang": "it",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "dodici"
+  },
+  {
+    "lang": "it",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "onetwo"
+  },
+  {
+    "lang": "it",
+    "input": "\u20bf 12",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u20bf dodici"
+  },
+  {
+    "lang": "zh",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u5341\u4e8c"
+  },
+  {
+    "lang": "zh",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "onetwo"
+  },
+  {
+    "lang": "zh",
+    "input": "\u20bf 12",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u20bf \u5341\u4e8c"
+  },
+  {
+    "lang": "ja",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u5341\u4e8c"
+  },
+  {
+    "lang": "ja",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "onetwo"
+  },
+  {
+    "lang": "ko",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\uc2ed\uc774"
+  },
+  {
+    "lang": "ko",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "onetwo"
+  },
+  {
+    "lang": "ko",
+    "input": "\u20bf 12",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u20bf \uc2ed\uc774"
+  },
+  {
+    "lang": "ko",
+    "input": "\u20bf285549.01",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "generated:20260925",
+    "expected": "\u20bf \uc774\uc2ed\ud314\ub9cc\uc624\ucc9c\uc624\ubc31\uc0ac\uc2ed\uad6c\uc810\uc601\uc77c"
+  },
+  {
+    "lang": "ko",
+    "input": "\ub9c8\uc744\uc5d0\ub294 \uc8fc\ubbfc 120\uba85\uc774 \uc0b4\uace0 \uc788\uc2b5\ub2c8\ub2e4. \u20bf944273057,50?!",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "generated:20260925",
+    "expected": "\ub9c8\uc744\uc5d0\ub294 \uc8fc\ubbfc \ubc31\uc774\uc2ed \uba85\uc774 \uc0b4\uace0 \uc788\uc2b5\ub2c8\ub2e4. \u20bf \uad6c\uc5b5\uc0ac\ucc9c\uc0ac\ubc31\uc774\uc2ed\uce60\ub9cc\uc0bc\ucc9c\uc624\uc2ed\uce60,\uc624\uc2ed?!"
+  },
+  {
+    "lang": "hi",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u092c\u093e\u0930\u0939"
+  },
+  {
+    "lang": "hi",
+    "input": "\u0000",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u0000"
+  },
+  {
+    "lang": "hi",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u0913 \u090f\u0928 \u0908 \u091f\u0940 \u0921\u092c\u094d\u0932\u094d\u092f\u0942 \u0913"
+  },
+  {
+    "lang": "hi",
+    "input": "\u20bf 12",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u20bf \u092c\u093e\u0930\u0939"
+  },
+  {
+    "lang": "ar",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u0627\u062b\u0646\u0627 \u0639\u0634\u0631"
+  },
+  {
+    "lang": "ar",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "onetwo"
+  },
+  {
+    "lang": "ar",
+    "input": "\u20bf 12",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u20bf \u0627\u062b\u0646\u0627 \u0639\u0634\u0631"
+  },
+  {
+    "lang": "ru",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u0434\u0432\u0435\u043d\u0430\u0434\u0446\u0430\u0442\u044c"
+  },
+  {
+    "lang": "ru",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u043e \u043d \u0438 \u0442\u0438 \u0434\u0430\u0431\u043b \u044e \u043e"
+  },
+  {
+    "lang": "ru",
+    "input": "\u20bf 12",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u20bf \u0434\u0432\u0435\u043d\u0430\u0434\u0446\u0430\u0442\u044c"
+  },
+  {
+    "lang": "vi",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "m\u01b0\u1eddi hai"
+  },
+  {
+    "lang": "vi",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "onetwo"
+  },
+  {
+    "lang": "vi",
+    "input": "\u20bf 12",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u20bf m\u01b0\u1eddi hai"
+  },
+  {
+    "lang": "vi",
+    "input": "\u20bf4603,50",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "generated:20260925",
+    "expected": "\u20bf b\u1ed1n ngh\u00ecn s\u00e1u tr\u0103m linh ba ph\u1ea9y n\u0103m kh\u00f4ng"
+  },
+  {
+    "lang": "vi",
+    "input": "\u20bf621698283.01",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "generated:20260925",
+    "expected": "\u20bf s\u00e1u tr\u0103m hai m\u01b0\u01a1i m\u1ed1t tri\u1ec7u s\u00e1u tr\u0103m ch\u00edn m\u01b0\u01a1i t\u00e1m ngh\u00ecn hai tr\u0103m t\u00e1m m\u01b0\u01a1i ba.kh\u00f4ng m\u1ed9t"
+  },
+  {
+    "lang": "vi",
+    "input": "Ch\u00fang t\u00f4i tr\u1ed3ng 1234 c\u00e2y trong c\u00f4ng vi\u00ean. \u20bf624802.99",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "generated:20260925",
+    "expected": "Ch\u00fang t\u00f4i tr\u1ed3ng m\u1ed9t ngh\u00ecn hai tr\u0103m ba m\u01b0\u01a1i t\u01b0 c\u00e2y trong c\u00f4ng vi\u00ean. \u20bf s\u00e1u tr\u0103m hai m\u01b0\u01a1i t\u01b0 ngh\u00ecn t\u00e1m tr\u0103m linh hai.ch\u00edn m\u01b0\u01a1i ch\u00edn"
+  },
+  {
+    "lang": "hu",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "tizenkett\u0151"
+  },
+  {
+    "lang": "hu",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "onetwo"
+  },
+  {
+    "lang": "hu",
+    "input": "\u20bf 12",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u20bf tizenkett\u0151"
+  },
+  {
+    "lang": "sv",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "tolv"
+  },
+  {
+    "lang": "sv",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "onetwo"
+  },
+  {
+    "lang": "sv",
+    "input": "\u20bf 12",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u20bf tolv"
+  },
+  {
+    "lang": "hy",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u057f\u0561\u057d\u0576\u0565\u0580\u056f\u0578\u0582"
+  },
+  {
+    "lang": "hy",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "onetwo"
+  },
+  {
+    "lang": "hy",
+    "input": "\u20bf 12",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "\u20bf \u057f\u0561\u057d\u0576\u0565\u0580\u056f\u0578\u0582"
+  },
+  {
+    "lang": "rw",
+    "input": "1\u00002",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "cumi na kabiri"
+  },
+  {
+    "lang": "rw",
+    "input": "one\u0000two",
+    "options": {
+      "punct_post_process": true
+    },
+    "source": "edge",
+    "expected": "onetwo"
+  },
+  {
+    "lang": "en",
+    "input": "a `25` example",
+    "options": {
+      "punct_post_process": false
+    },
+    "source": "upstream:en/test_cases_punctuation.txt:2",
+    "expected": "a `twenty five` example"
+  },
+  {
+    "lang": "en",
+    "input": "``He's 50 and 2010``.",
+    "options": {
+      "punct_post_process": false
+    },
+    "source": "upstream:en/test_cases_punctuation.txt:21",
+    "expected": "\"He's fifty and twenty ten\"."
+  },
+  {
+    "lang": "en",
+    "input": "\"He's 50 and 2010\".",
+    "options": {
+      "punct_post_process": false
+    },
+    "source": "upstream:en/test_cases_punctuation.txt:22",
+    "expected": "\"He's fifty and twenty ten\"."
+  },
+  {
+    "lang": "en",
+    "input": "non matching quotes?\" \"12text\"",
+    "options": {
+      "punct_post_process": false
+    },
+    "source": "upstream:en/test_cases_punctuation.txt:29",
+    "expected": "non matching quotes?\" \"twelve text\""
+  },
+  {
+    "lang": "en",
+    "input": "``text 7`` text ``.",
+    "options": {
+      "punct_post_process": false
+    },
+    "source": "upstream:en/test_cases_punctuation.txt:33",
+    "expected": "\"text seven\" text \"."
+  },
+  {
+    "lang": "en",
+    "input": "\"text 7\" text \".",
+    "options": {
+      "punct_post_process": false
+    },
+    "source": "upstream:en/test_cases_punctuation.txt:34",
+    "expected": "\"text seven inches text\"."
+  }
+]

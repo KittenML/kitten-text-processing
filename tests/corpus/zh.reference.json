@@ -1,0 +1,512 @@
+{
+  "nemo_version": "1.2.0",
+  "pynini_version": "2.1.6.post1",
+  "sacremoses_version": "0.2.0",
+  "load_seconds": 0.1534260008484125,
+  "cases": [
+    {
+      "id": "zh-001",
+      "lang": "zh",
+      "category": "cardinal",
+      "input": "我家养了2只猫。",
+      "expected": "我家养了二只猫。",
+      "reference_error": null,
+      "reference_seconds": 0.0025577303022146225
+    },
+    {
+      "id": "zh-002",
+      "lang": "zh",
+      "category": "cardinal",
+      "input": "公交车上有17位乘客。",
+      "expected": "公交车上有十七位乘客。",
+      "reference_error": null,
+      "reference_seconds": 0.0023561203852295876
+    },
+    {
+      "id": "zh-003",
+      "lang": "zh",
+      "category": "cardinal",
+      "input": "图书馆买了35本新书。",
+      "expected": "图书馆买了三十五本新书。",
+      "reference_error": null,
+      "reference_seconds": 0.0023257555440068245
+    },
+    {
+      "id": "zh-004",
+      "lang": "zh",
+      "category": "cardinal",
+      "input": "音乐会还剩99张门票。",
+      "expected": "音乐会还剩九十九张门票。",
+      "reference_error": null,
+      "reference_seconds": 0.002288535237312317
+    },
+    {
+      "id": "zh-005",
+      "lang": "zh",
+      "category": "cardinal",
+      "input": "这个村庄有120位居民。",
+      "expected": "这个村庄有一百二十位居民。",
+      "reference_error": null,
+      "reference_seconds": 0.0026336070150136948
+    },
+    {
+      "id": "zh-006",
+      "lang": "zh",
+      "category": "cardinal",
+      "input": "公园里种了1234棵树。",
+      "expected": "公园里种了一千二百三十四棵树。",
+      "reference_error": null,
+      "reference_seconds": 0.0030104564502835274
+    },
+    {
+      "id": "zh-007",
+      "lang": "zh",
+      "category": "ordinal",
+      "input": "她获得了第3名。",
+      "expected": "她获得了第三名。",
+      "reference_error": null,
+      "reference_seconds": 0.0016071060672402382
+    },
+    {
+      "id": "zh-008",
+      "lang": "zh",
+      "category": "decimal",
+      "input": "计算结果是3.14。",
+      "expected": "计算结果是三点一四。",
+      "reference_error": null,
+      "reference_seconds": 0.0023479461669921875
+    },
+    {
+      "id": "zh-009",
+      "lang": "zh",
+      "category": "decimal",
+      "input": "误差只有0.05。",
+      "expected": "误差只有零点零五。",
+      "reference_error": null,
+      "reference_seconds": 0.002017233520746231
+    },
+    {
+      "id": "zh-010",
+      "lang": "zh",
+      "category": "decimal",
+      "input": "温度下降到了-2.5度。",
+      "expected": "温度下降到了负二点五度。",
+      "reference_error": null,
+      "reference_seconds": 0.002515816129744053
+    },
+    {
+      "id": "zh-011",
+      "lang": "zh",
+      "category": "decimal",
+      "input": "这种饮料含有12%的糖。",
+      "expected": "这种饮料含有百分之十二的糖。",
+      "reference_error": null,
+      "reference_seconds": 0.0026716943830251694
+    },
+    {
+      "id": "zh-012",
+      "lang": "zh",
+      "category": "decimal",
+      "input": "年利率是4.5%。",
+      "expected": "年利率是百分之四点五。",
+      "reference_error": null,
+      "reference_seconds": 0.0021069934591650963
+    },
+    {
+      "id": "zh-013",
+      "lang": "zh",
+      "category": "fraction",
+      "input": "请加入1/2杯牛奶。",
+      "expected": "请加入二分之一杯牛奶。",
+      "reference_error": null,
+      "reference_seconds": 0.002156415954232216
+    },
+    {
+      "id": "zh-014",
+      "lang": "zh",
+      "category": "fraction",
+      "input": "我们已经走完了全程的3/4。",
+      "expected": "我们已经走完了全程的四分之三。",
+      "reference_error": null,
+      "reference_seconds": 0.002846183255314827
+    },
+    {
+      "id": "zh-015",
+      "lang": "zh",
+      "category": "money",
+      "input": "这杯咖啡要2元。",
+      "expected": "这杯咖啡要二元。",
+      "reference_error": null,
+      "reference_seconds": 0.0017249910160899162
+    },
+    {
+      "id": "zh-016",
+      "lang": "zh",
+      "category": "money",
+      "input": "我花了12.50元吃午饭。",
+      "expected": "我花了十二点五零元吃午饭。",
+      "reference_error": null,
+      "reference_seconds": 0.003006783314049244
+    },
+    {
+      "id": "zh-017",
+      "lang": "zh",
+      "category": "money",
+      "input": "这次活动的预算是1250元。",
+      "expected": "这次活动的预算是一千二百五十元。",
+      "reference_error": null,
+      "reference_seconds": 0.0033185509964823723
+    },
+    {
+      "id": "zh-018",
+      "lang": "zh",
+      "category": "money",
+      "input": "门票价格是20美元。",
+      "expected": "门票价格是二十美元。",
+      "reference_error": null,
+      "reference_seconds": 0.0021203989163041115
+    },
+    {
+      "id": "zh-019",
+      "lang": "zh",
+      "category": "money",
+      "input": "收银员找给我0.75元。",
+      "expected": "收银员找给我零点七五元。",
+      "reference_error": null,
+      "reference_seconds": 0.0026030270382761955
+    },
+    {
+      "id": "zh-020",
+      "lang": "zh",
+      "category": "money",
+      "input": "这台电脑卖999.99美元。",
+      "expected": "这台电脑卖九百九十九点九九美元。",
+      "reference_error": null,
+      "reference_seconds": 0.0035198088735342026
+    },
+    {
+      "id": "zh-021",
+      "lang": "zh",
+      "category": "money",
+      "input": "他们捐赠了100万元。",
+      "expected": "他们捐赠了一百万元。",
+      "reference_error": null,
+      "reference_seconds": 0.0023844577372074127
+    },
+    {
+      "id": "zh-022",
+      "lang": "zh",
+      "category": "date",
+      "input": "会议定在2026年1月5日。",
+      "expected": "会议定在二零二六年一月五日。",
+      "reference_error": null,
+      "reference_seconds": 0.003581663593649864
+    },
+    {
+      "id": "zh-023",
+      "lang": "zh",
+      "category": "date",
+      "input": "她出生于1998年2月14日。",
+      "expected": "她出生于一九九八年二月十四日。",
+      "reference_error": null,
+      "reference_seconds": 0.0039785271510481834
+    },
+    {
+      "id": "zh-024",
+      "lang": "zh",
+      "category": "date",
+      "input": "文件上的日期是2025/03/04。",
+      "expected": "文件上的日期是零分之两千零二十五零分之三四。",
+      "reference_error": null,
+      "reference_seconds": 0.004710583947598934
+    },
+    {
+      "id": "zh-025",
+      "lang": "zh",
+      "category": "date",
+      "input": "预计交货日期为2026-09-25。",
+      "expected": "预计交货日期为二零二六年九月二十五日。",
+      "reference_error": null,
+      "reference_seconds": 0.004484893754124641
+    },
+    {
+      "id": "zh-026",
+      "lang": "zh",
+      "category": "date",
+      "input": "这座大楼于2001年开放。",
+      "expected": "这座大楼于二零零一年开放。",
+      "reference_error": null,
+      "reference_seconds": 0.0029305079951882362
+    },
+    {
+      "id": "zh-027",
+      "lang": "zh",
+      "category": "date",
+      "input": "暑假从7月1日开始。",
+      "expected": "暑假从7月1日开始。",
+      "reference_error": null,
+      "reference_seconds": 0.0019484153017401695
+    },
+    {
+      "id": "zh-028",
+      "lang": "zh",
+      "category": "date",
+      "input": "档案记录了1980至1990年的历史。",
+      "expected": "档案记录了一千九百八十至一九九零年的历史。",
+      "reference_error": null,
+      "reference_seconds": 0.004877282306551933
+    },
+    {
+      "id": "zh-029",
+      "lang": "zh",
+      "category": "time",
+      "input": "火车在08:30出发。",
+      "expected": "火车在八点三十分出发。",
+      "reference_error": null,
+      "reference_seconds": 0.0024386243894696236
+    },
+    {
+      "id": "zh-030",
+      "lang": "zh",
+      "category": "time",
+      "input": "我们下午3点15分见。",
+      "expected": "我们下午三点十五分见。",
+      "reference_error": null,
+      "reference_seconds": 0.0024283025413751602
+    },
+    {
+      "id": "zh-031",
+      "lang": "zh",
+      "category": "time",
+      "input": "闹钟设在7:00。",
+      "expected": "闹钟设在七点零分。",
+      "reference_error": null,
+      "reference_seconds": 0.001911110244691372
+    },
+    {
+      "id": "zh-032",
+      "lang": "zh",
+      "category": "time",
+      "input": "电影21:45开始。",
+      "expected": "电影二十一点四十五分开始。",
+      "reference_error": null,
+      "reference_seconds": 0.0024670008569955826
+    },
+    {
+      "id": "zh-033",
+      "lang": "zh",
+      "category": "time",
+      "input": "计时器显示01:02:03。",
+      "expected": "计时器显示一点二分三秒。",
+      "reference_error": null,
+      "reference_seconds": 0.0029481686651706696
+    },
+    {
+      "id": "zh-034",
+      "lang": "zh",
+      "category": "time",
+      "input": "商店上午9点开门。",
+      "expected": "商店上午九点开门。",
+      "reference_error": null,
+      "reference_seconds": 0.0018468508496880531
+    },
+    {
+      "id": "zh-035",
+      "lang": "zh",
+      "category": "time",
+      "input": "我们在车站等了30分钟。",
+      "expected": "我们在车站等了三十分钟。",
+      "reference_error": null,
+      "reference_seconds": 0.0023926999419927597
+    },
+    {
+      "id": "zh-036",
+      "lang": "zh",
+      "category": "measure",
+      "input": "这个箱子重5kg。",
+      "expected": "这个箱子重五千克。",
+      "reference_error": null,
+      "reference_seconds": 0.0017941594123840332
+    },
+    {
+      "id": "zh-037",
+      "lang": "zh",
+      "category": "measure",
+      "input": "请加250ml水。",
+      "expected": "请加二百五十毫升水。",
+      "reference_error": null,
+      "reference_seconds": 0.0021258406341075897
+    },
+    {
+      "id": "zh-038",
+      "lang": "zh",
+      "category": "measure",
+      "input": "这条路长12公里。",
+      "expected": "这条路长十二公里。",
+      "reference_error": null,
+      "reference_seconds": 0.0019898051396012306
+    },
+    {
+      "id": "zh-039",
+      "lang": "zh",
+      "category": "measure",
+      "input": "这里限速80km/h。",
+      "expected": "这里限速八十千米/h。",
+      "reference_error": null,
+      "reference_seconds": 0.0022044237703084946
+    },
+    {
+      "id": "zh-040",
+      "lang": "zh",
+      "category": "measure",
+      "input": "桌子宽1.5米。",
+      "expected": "桌子宽一点五米。",
+      "reference_error": null,
+      "reference_seconds": 0.001812715083360672
+    },
+    {
+      "id": "zh-041",
+      "lang": "zh",
+      "category": "measure",
+      "input": "今天的气温是23℃。",
+      "expected": "今天的气温是二十三摄氏度。",
+      "reference_error": null,
+      "reference_seconds": 0.0021929536014795303
+    },
+    {
+      "id": "zh-042",
+      "lang": "zh",
+      "category": "measure",
+      "input": "水箱可以装10L水。",
+      "expected": "水箱可以装十L水。",
+      "reference_error": null,
+      "reference_seconds": 0.0020855721086263657
+    },
+    {
+      "id": "zh-043",
+      "lang": "zh",
+      "category": "electronic",
+      "input": "详情请访问https://example.com。",
+      "expected": "详情请访问https://example.com。",
+      "reference_error": null,
+      "reference_seconds": 0.004263296723365784
+    },
+    {
+      "id": "zh-044",
+      "lang": "zh",
+      "category": "electronic",
+      "input": "请在周五前发邮件到hello@example.cn。",
+      "expected": "请在周五前发邮件到hello@example.cn。",
+      "reference_error": null,
+      "reference_seconds": 0.00443226657807827
+    },
+    {
+      "id": "zh-045",
+      "lang": "zh",
+      "category": "electronic",
+      "input": "有问题请拨打13800138000。",
+      "expected": "有问题请拨打一百三十八亿零十三万八千。",
+      "reference_error": null,
+      "reference_seconds": 0.005743543617427349
+    },
+    {
+      "id": "zh-046",
+      "lang": "zh",
+      "category": "electronic",
+      "input": "服务器地址为192.168.1.1。",
+      "expected": "服务器地址为一百九十二.一六八年一月一日。",
+      "reference_error": null,
+      "reference_seconds": 0.004659656435251236
+    },
+    {
+      "id": "zh-047",
+      "lang": "zh",
+      "category": "electronic",
+      "input": "请安装2.4.1版本。",
+      "expected": "请安装二.四点一版本。",
+      "reference_error": null,
+      "reference_seconds": 0.002461695112287998
+    },
+    {
+      "id": "zh-048",
+      "lang": "zh",
+      "category": "electronic",
+      "input": "订单编号是AB123。",
+      "expected": "订单编号是AB一百二十三。",
+      "reference_error": null,
+      "reference_seconds": 0.002547158859670162
+    },
+    {
+      "id": "zh-049",
+      "lang": "zh",
+      "category": "electronic",
+      "input": "我们的网站是www.example.cn。",
+      "expected": "我们的网站是www.example.cn。",
+      "reference_error": null,
+      "reference_seconds": 0.007079530507326126
+    },
+    {
+      "id": "zh-050",
+      "lang": "zh",
+      "category": "mixed",
+      "input": "王医生今天看了12位病人。",
+      "expected": "王医生今天看了十二位病人。",
+      "reference_error": null,
+      "reference_seconds": 0.0054069384932518005
+    },
+    {
+      "id": "zh-051",
+      "lang": "zh",
+      "category": "punctuation",
+      "input": "她说：“我需要3张票。”",
+      "expected": "她说：“我需要三张票。”",
+      "reference_error": null,
+      "reference_seconds": 0.0038561252877116203
+    },
+    {
+      "id": "zh-052",
+      "lang": "zh",
+      "category": "punctuation",
+      "input": "还剩7个座位吗？",
+      "expected": "还剩七个座位吗？",
+      "reference_error": null,
+      "reference_seconds": 0.002481956034898758
+    },
+    {
+      "id": "zh-053",
+      "lang": "zh",
+      "category": "punctuation",
+      "input": "请阅读第[4]节和第[5]节。",
+      "expected": "请阅读第[四]节和第[五]节。",
+      "reference_error": null,
+      "reference_seconds": 0.0040101055055856705
+    },
+    {
+      "id": "zh-054",
+      "lang": "zh",
+      "category": "plain",
+      "input": "一条平静的河流穿过山谷。",
+      "expected": "一条平静的河流穿过山谷。",
+      "reference_error": null,
+      "reference_seconds": 0.0027157189324498177
+    },
+    {
+      "id": "zh-055",
+      "lang": "zh",
+      "category": "mixed",
+      "input": "5月5日，我花了24.50元买了2公斤大米。",
+      "expected": "五月五日，我花了二十四点五零元买了二公斤大米。",
+      "reference_error": null,
+      "reference_seconds": 0.005539820529520512
+    },
+    {
+      "id": "zh-056",
+      "lang": "zh",
+      "category": "mixed",
+      "input": "10:30时，传感器显示22.5℃，湿度为60%。",
+      "expected": "十点三十分时，传感器显示二十二点五摄氏度，湿度为百分之六十。",
+      "reference_error": null,
+      "reference_seconds": 0.006084580905735493
+    }
+  ]
+}

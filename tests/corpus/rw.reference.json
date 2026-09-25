@@ -1,0 +1,512 @@
+{
+  "nemo_version": "1.2.0",
+  "pynini_version": "2.1.6.post1",
+  "sacremoses_version": "0.2.0",
+  "load_seconds": 2.6006344612687826,
+  "cases": [
+    {
+      "id": "rw-001",
+      "lang": "rw",
+      "category": "cardinal",
+      "input": "Mu rugo dufite injangwe 2.",
+      "expected": "Mu\"} tokens {name: \"rugo\"} tokens {name: \"dufite\"} tokens {name: \"injangwe\"} tokens {cardinal {integer: \"kabiri\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.003176494501531124
+    },
+    {
+      "id": "rw-002",
+      "lang": "rw",
+      "category": "cardinal",
+      "input": "Muri bisi harimo abagenzi 17.",
+      "expected": "Muri\"} tokens {name: \"bisi\"} tokens {name: \"harimo\"} tokens {name: \"abagenzi\"} tokens {cardinal {integer: \"cumi na karindwi\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.002489982172846794
+    },
+    {
+      "id": "rw-003",
+      "lang": "rw",
+      "category": "cardinal",
+      "input": "Isomero ryaguze ibitabo 35.",
+      "expected": "Isomero\"} tokens {name: \"ryaguze\"} tokens {name: \"ibitabo\"} tokens {cardinal {integer: \"mirongo itatu na gatanu\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.0021713515743613243
+    },
+    {
+      "id": "rw-004",
+      "lang": "rw",
+      "category": "cardinal",
+      "input": "Hasigaye amatike 99 y'igitaramo.",
+      "expected": "Hasigaye\"} tokens {name: \"amatike\"} tokens {cardinal {integer: \"mirongo icyenda n'icyenda\"}} tokens {name: \"y'igitaramo.",
+      "reference_error": null,
+      "reference_seconds": 0.0021498994901776314
+    },
+    {
+      "id": "rw-005",
+      "lang": "rw",
+      "category": "cardinal",
+      "input": "Mu mudugudu hatuye abantu 120.",
+      "expected": "Mu\"} tokens {name: \"mudugudu\"} tokens {name: \"hatuye\"} tokens {name: \"abantu\"} tokens {cardinal {integer: \"ijana na makumyabiri\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.0026201624423265457
+    },
+    {
+      "id": "rw-006",
+      "lang": "rw",
+      "category": "cardinal",
+      "input": "Twateye ibiti 1234 muri pariki.",
+      "expected": "Twateye\"} tokens {name: \"ibiti\"} tokens {cardinal {integer: \"igihumbi na magana abiri na mirongo itatu na kane\"}} tokens {name: \"muri\"} tokens {name: \"pariki.",
+      "reference_error": null,
+      "reference_seconds": 0.0028411271050572395
+    },
+    {
+      "id": "rw-007",
+      "lang": "rw",
+      "category": "ordinal",
+      "input": "Yabaye uwa 3 mu isiganwa.",
+      "expected": "Yabaye\"} tokens {name: \"uwa\"} tokens {cardinal {integer: \"gatatu\"}} tokens {name: \"mu\"} tokens {name: \"isiganwa.",
+      "reference_error": null,
+      "reference_seconds": 0.0020830323919653893
+    },
+    {
+      "id": "rw-008",
+      "lang": "rw",
+      "category": "decimal",
+      "input": "Igisubizo ni 3,14.",
+      "expected": "Igisubizo\"} tokens {name: \"ni\"} tokens {cardinal {integer: \"gatatu rimwe kane\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.0017593149095773697
+    },
+    {
+      "id": "rw-009",
+      "lang": "rw",
+      "category": "decimal",
+      "input": "Itandukaniro ni amanota 0,05.",
+      "expected": "Itandukaniro\"} tokens {name: \"ni\"} tokens {name: \"amanota\"} tokens {cardinal {integer: \"zeru zeru gatanu\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.0018403250724077225
+    },
+    {
+      "id": "rw-010",
+      "lang": "rw",
+      "category": "decimal",
+      "input": "Ubushyuhe bwamanutse bugera kuri -2,5.",
+      "expected": "Ubushyuhe\"} tokens {name: \"bwamanutse\"} tokens {name: \"bugera\"} tokens {name: \"kuri\"} tokens {name: \" -\"} tokens {cardinal {integer: \"kabiri gatanu\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.002655463293194771
+    },
+    {
+      "id": "rw-011",
+      "lang": "rw",
+      "category": "decimal",
+      "input": "Iki kinyobwa kirimo isukari 12%.",
+      "expected": "Iki\"} tokens {name: \"kinyobwa\"} tokens {name: \"kirimo\"} tokens {name: \"isukari\"} tokens {name: \"12%\"} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.002380168065428734
+    },
+    {
+      "id": "rw-012",
+      "lang": "rw",
+      "category": "decimal",
+      "input": "Inyungu y'umwaka ni 4,5%.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.0012451959773898125
+    },
+    {
+      "id": "rw-013",
+      "lang": "rw",
+      "category": "fraction",
+      "input": "Ongeramo 1/2 cy'igikombe cy'amata.",
+      "expected": "Ongeramo\"} tokens {name: \"1/2\"} tokens {name: \"cy'igikombe\"} tokens {name: \"cy'amata.",
+      "reference_error": null,
+      "reference_seconds": 0.0017888890579342842
+    },
+    {
+      "id": "rw-014",
+      "lang": "rw",
+      "category": "fraction",
+      "input": "Tumaze kugenda 3/4 by'urugendo.",
+      "expected": "Tumaze\"} tokens {name: \"kugenda\"} tokens {name: \"3/4\"} tokens {name: \"by'urugendo.",
+      "reference_error": null,
+      "reference_seconds": 0.0017600413411855698
+    },
+    {
+      "id": "rw-015",
+      "lang": "rw",
+      "category": "money",
+      "input": "Ikawa igura amafaranga 500.",
+      "expected": "Ikawa\"} tokens {name: \"igura\"} tokens {name: \"amafaranga\"} tokens {cardinal {integer: \"magana atanu\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.002289379946887493
+    },
+    {
+      "id": "rw-016",
+      "lang": "rw",
+      "category": "money",
+      "input": "Nishyuye amafaranga 1250 ku ifunguro.",
+      "expected": "Nishyuye\"} tokens {name: \"amafaranga\"} tokens {cardinal {integer: \"igihumbi na magana abiri na mirongo itanu\"}} tokens {name: \"ku\"} tokens {name: \"ifunguro.",
+      "reference_error": null,
+      "reference_seconds": 0.0028999177739024162
+    },
+    {
+      "id": "rw-017",
+      "lang": "rw",
+      "category": "money",
+      "input": "Ingengo y'imari ni amafaranga 125000.",
+      "expected": "Ingengo\"} tokens {name: \"y'imari\"} tokens {name: \"ni\"} tokens {name: \"amafaranga\"} tokens {cardinal {integer: \"ibihumbi ijana na makumyabiri na bitanu\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.00330356415361166
+    },
+    {
+      "id": "rw-018",
+      "lang": "rw",
+      "category": "money",
+      "input": "Itike igura amadolari 20.",
+      "expected": "Itike\"} tokens {name: \"igura\"} tokens {name: \"amadolari\"} tokens {cardinal {integer: \"makumyabiri\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.0020661549642682076
+    },
+    {
+      "id": "rw-019",
+      "lang": "rw",
+      "category": "money",
+      "input": "Umucuruzi yanshubije amafaranga 75.",
+      "expected": "Umucuruzi\"} tokens {name: \"yanshubije\"} tokens {name: \"amafaranga\"} tokens {cardinal {integer: \"mirongo irindwi na gatanu\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.0022187447175383568
+    },
+    {
+      "id": "rw-020",
+      "lang": "rw",
+      "category": "money",
+      "input": "Iyi mudasobwa igura amafaranga 299999.",
+      "expected": "Iyi\"} tokens {name: \"mudasobwa\"} tokens {name: \"igura\"} tokens {name: \"amafaranga\"} tokens {cardinal {integer: \"ibihumbi magana abiri na mirongo icyenda n'icyenda na magana cyenda na mirongo icyenda n'icyenda\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.003451218828558922
+    },
+    {
+      "id": "rw-021",
+      "lang": "rw",
+      "category": "money",
+      "input": "Umuryango watanze amafaranga 1000000.",
+      "expected": "Umuryango\"} tokens {name: \"watanze\"} tokens {name: \"amafaranga\"} tokens {cardinal {integer: \"miliyoni\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.002937215380370617
+    },
+    {
+      "id": "rw-022",
+      "lang": "rw",
+      "category": "date",
+      "input": "Inama izaba ku wa 5 Mutarama 2026.",
+      "expected": "Inama\"} tokens {name: \"izaba\"} tokens {name: \"ku\"} tokens {name: \"wa\"} tokens {cardinal {integer: \"gatanu\"}} tokens {name: \"Mutarama\"} tokens {cardinal {integer: \"ibihumbi bibiri na makumyabiri na gatandatu\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.003800167702138424
+    },
+    {
+      "id": "rw-023",
+      "lang": "rw",
+      "category": "date",
+      "input": "Yavutse ku wa 14 Gashyantare 1998.",
+      "expected": "Yavutse\"} tokens {name: \"ku\"} tokens {name: \"wa\"} tokens {cardinal {integer: \"cumi na kane\"}} tokens {name: \"Gashyantare\"} tokens {cardinal {integer: \"igihumbi na magana cyenda na mirongo icyenda n'umunani\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.0038374876603484154
+    },
+    {
+      "id": "rw-024",
+      "lang": "rw",
+      "category": "date",
+      "input": "Ku nyandiko handitse itariki 03/04/2025.",
+      "expected": "Ku\"} tokens {name: \"nyandiko\"} tokens {name: \"handitse\"} tokens {name: \"itariki\"} tokens {name: \"03/04/2025\"} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.00202216487377882
+    },
+    {
+      "id": "rw-025",
+      "lang": "rw",
+      "category": "date",
+      "input": "Ibicuruzwa bizagera hano ku wa 2026-09-25.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.0023337574675679207
+    },
+    {
+      "id": "rw-026",
+      "lang": "rw",
+      "category": "date",
+      "input": "Iyi nyubako yafunguwe mu mwaka wa 2001.",
+      "expected": "Iyi\"} tokens {name: \"nyubako\"} tokens {name: \"yafunguwe\"} tokens {name: \"mu\"} tokens {name: \"mwaka\"} tokens {name: \"wa\"} tokens {cardinal {integer: \"ibihumbi bibiri na rimwe\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.0035025831311941147
+    },
+    {
+      "id": "rw-027",
+      "lang": "rw",
+      "category": "date",
+      "input": "Ikiruhuko gitangira ku wa 1 Nyakanga.",
+      "expected": "Ikiruhuko\"} tokens {name: \"gitangira\"} tokens {name: \"ku\"} tokens {name: \"wa\"} tokens {cardinal {integer: \"rimwe\"}} tokens {name: \"Nyakanga.",
+      "reference_error": null,
+      "reference_seconds": 0.002461148425936699
+    },
+    {
+      "id": "rw-028",
+      "lang": "rw",
+      "category": "date",
+      "input": "Ububiko burimo inyandiko zo kuva mu 1980 kugeza mu 1990.",
+      "expected": "Ububiko\"} tokens {name: \"burimo\"} tokens {name: \"inyandiko\"} tokens {name: \"zo\"} tokens {name: \"kuva\"} tokens {name: \"mu\"} tokens {cardinal {integer: \"igihumbi na magana cyenda na mirongo inani\"}} tokens {name: \"kugeza\"} tokens {name: \"mu\"} tokens {cardinal {integer: \"igihumbi na magana cyenda na mirongo icyenda\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.005849393084645271
+    },
+    {
+      "id": "rw-029",
+      "lang": "rw",
+      "category": "time",
+      "input": "Gari ya moshi ihaguruka saa 08:30.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.0015513254329562187
+    },
+    {
+      "id": "rw-030",
+      "lang": "rw",
+      "category": "time",
+      "input": "Tuzahure saa 15:15.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.0011569363996386528
+    },
+    {
+      "id": "rw-031",
+      "lang": "rw",
+      "category": "time",
+      "input": "Isaha izavuga saa 7:00.",
+      "expected": "Isaha\"} tokens {name: \"izavuga\"} tokens {name: \"saa\"} tokens {time {hours: \"saa moya\" minutes: \"\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.0020073074847459793
+    },
+    {
+      "id": "rw-032",
+      "lang": "rw",
+      "category": "time",
+      "input": "Filimi itangira saa 21:45.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.0014244429767131805
+    },
+    {
+      "id": "rw-033",
+      "lang": "rw",
+      "category": "time",
+      "input": "Isaha yerekana 01:02:03.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.000758664682507515
+    },
+    {
+      "id": "rw-034",
+      "lang": "rw",
+      "category": "time",
+      "input": "Iduka rifungura saa 9 za mu gitondo.",
+      "expected": "Iduka\"} tokens {name: \"rifungura\"} tokens {name: \"saa\"} tokens {cardinal {integer: \"icyenda\"}} tokens {name: \"za\"} tokens {name: \"mu\"} tokens {name: \"gitondo.",
+      "reference_error": null,
+      "reference_seconds": 0.0027675479650497437
+    },
+    {
+      "id": "rw-035",
+      "lang": "rw",
+      "category": "time",
+      "input": "Twategereje iminota 30 kuri sitasiyo.",
+      "expected": "Twategereje\"} tokens {name: \"iminota\"} tokens {cardinal {integer: \"mirongo itatu\"}} tokens {name: \"kuri\"} tokens {name: \"sitasiyo.",
+      "reference_error": null,
+      "reference_seconds": 0.0024120062589645386
+    },
+    {
+      "id": "rw-036",
+      "lang": "rw",
+      "category": "measure",
+      "input": "Agasanduku gapima kg 5.",
+      "expected": "Agasanduku\"} tokens {name: \"gapima\"} tokens {name: \"kg\"} tokens {cardinal {integer: \"gatanu\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.001843959093093872
+    },
+    {
+      "id": "rw-037",
+      "lang": "rw",
+      "category": "measure",
+      "input": "Ongeramo ml 250 z'amazi.",
+      "expected": "Ongeramo\"} tokens {name: \"ml\"} tokens {cardinal {integer: \"magana abiri na mirongo itanu\"}} tokens {name: \"z'amazi.",
+      "reference_error": null,
+      "reference_seconds": 0.0022441698238253593
+    },
+    {
+      "id": "rw-038",
+      "lang": "rw",
+      "category": "measure",
+      "input": "Umuhanda ufite uburebure bwa km 12.",
+      "expected": "Umuhanda\"} tokens {name: \"ufite\"} tokens {name: \"uburebure\"} tokens {name: \"bwa\"} tokens {name: \"km\"} tokens {cardinal {integer: \"cumi na kabiri\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.002729998901486397
+    },
+    {
+      "id": "rw-039",
+      "lang": "rw",
+      "category": "measure",
+      "input": "Umuvuduko ntarengwa ni km 80 mu isaha.",
+      "expected": "Umuvuduko\"} tokens {name: \"ntarengwa\"} tokens {name: \"ni\"} tokens {name: \"km\"} tokens {cardinal {integer: \"mirongo inani\"}} tokens {name: \"mu\"} tokens {name: \"isaha.",
+      "reference_error": null,
+      "reference_seconds": 0.002970742993056774
+    },
+    {
+      "id": "rw-040",
+      "lang": "rw",
+      "category": "measure",
+      "input": "Imeza ifite ubugari bwa m 1,5.",
+      "expected": "Imeza\"} tokens {name: \"ifite\"} tokens {name: \"ubugari\"} tokens {name: \"bwa\"} tokens {name: \"m\"} tokens {cardinal {integer: \"rimwe gatanu\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.0025435462594032288
+    },
+    {
+      "id": "rw-041",
+      "lang": "rw",
+      "category": "measure",
+      "input": "Uyu munsi ubushyuhe ni 23 °C.",
+      "expected": "Uyu\"} tokens {name: \"munsi\"} tokens {name: \"ubushyuhe\"} tokens {name: \"ni\"} tokens {cardinal {integer: \"makumyabiri na gatatu\"}} tokens {name: \"°C.",
+      "reference_error": null,
+      "reference_seconds": 0.0026560667902231216
+    },
+    {
+      "id": "rw-042",
+      "lang": "rw",
+      "category": "measure",
+      "input": "Ikigega kijyamo litiro 10.",
+      "expected": "Ikigega\"} tokens {name: \"kijyamo\"} tokens {name: \"litiro\"} tokens {cardinal {integer: \"icumi\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.0020582424476742744
+    },
+    {
+      "id": "rw-043",
+      "lang": "rw",
+      "category": "electronic",
+      "input": "Sura https://example.com kugira ngo ubone amakuru.",
+      "expected": "Sura\"} tokens {name: \"https://example.com\"} tokens {name: \"kugira\"} tokens {name: \"ngo\"} tokens {name: \"ubone\"} tokens {name: \"amakuru.",
+      "reference_error": null,
+      "reference_seconds": 0.0023015206679701805
+    },
+    {
+      "id": "rw-044",
+      "lang": "rw",
+      "category": "electronic",
+      "input": "Andikira hello@example.rw mbere yo ku wa Gatanu.",
+      "expected": "Andikira\"} tokens {name: \"hello@example.rw\"} tokens {name: \"mbere\"} tokens {name: \"yo\"} tokens {name: \"ku\"} tokens {name: \"wa\"} tokens {name: \"Gatanu.",
+      "reference_error": null,
+      "reference_seconds": 0.002568347379565239
+    },
+    {
+      "id": "rw-045",
+      "lang": "rw",
+      "category": "electronic",
+      "input": "Hamagara 0781234567 kugira ngo bagufashe.",
+      "expected": "Hamagara\"} tokens {cardinal {integer: \"zeru karindwi umunani rimwe kabiri gatatu kane gatanu gatandatu karindwi\"}} tokens {name: \"kugira\"} tokens {name: \"ngo\"} tokens {name: \"bagufashe.",
+      "reference_error": null,
+      "reference_seconds": 0.0022944090887904167
+    },
+    {
+      "id": "rw-046",
+      "lang": "rw",
+      "category": "electronic",
+      "input": "Aderesi ya seriveri ni 192.168.1.1.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.0018729930743575096
+    },
+    {
+      "id": "rw-047",
+      "lang": "rw",
+      "category": "electronic",
+      "input": "Shyiramo verisiyo 2.4.1.",
+      "expected": null,
+      "reference_error": "FstOpError: Operation failed",
+      "reference_seconds": 0.0009183231741189957
+    },
+    {
+      "id": "rw-048",
+      "lang": "rw",
+      "category": "electronic",
+      "input": "Kode y'ibyo watumije ni AB123.",
+      "expected": "Kode\"} tokens {name: \"y'ibyo\"} tokens {name: \"watumije\"} tokens {name: \"ni\"} tokens {name: \"AB123\"} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.0019132206216454506
+    },
+    {
+      "id": "rw-049",
+      "lang": "rw",
+      "category": "electronic",
+      "input": "Urubuga rwacu ni www.example.rw.",
+      "expected": "Urubuga\"} tokens {name: \"rwacu\"} tokens {name: \"ni\"} tokens {name: \"www.example.rw.",
+      "reference_error": null,
+      "reference_seconds": 0.0015445174649357796
+    },
+    {
+      "id": "rw-050",
+      "lang": "rw",
+      "category": "mixed",
+      "input": "Muganga yakiriye abarwayi 12 uyu munsi.",
+      "expected": "Muganga\"} tokens {name: \"yakiriye\"} tokens {name: \"abarwayi\"} tokens {cardinal {integer: \"cumi na kabiri\"}} tokens {name: \"uyu\"} tokens {name: \"munsi.",
+      "reference_error": null,
+      "reference_seconds": 0.0027010971680283546
+    },
+    {
+      "id": "rw-051",
+      "lang": "rw",
+      "category": "punctuation",
+      "input": "Yavuze ati: \"Nkeneye amatike 3.\"",
+      "expected": "Yavuze\"} tokens {name: \"ati:\"} tokens {name: \"\"Nkeneye\"} tokens {name: \"amatike\"} tokens {cardinal {integer: \"gatatu\"}} tokens {name: \".\"",
+      "reference_error": null,
+      "reference_seconds": 0.0024389568716287613
+    },
+    {
+      "id": "rw-052",
+      "lang": "rw",
+      "category": "punctuation",
+      "input": "Haracyari imyanya 7 idafite abayicayeho?",
+      "expected": "Haracyari\"} tokens {name: \"imyanya\"} tokens {cardinal {integer: \"karindwi\"}} tokens {name: \"idafite\"} tokens {name: \"abayicayeho?",
+      "reference_error": null,
+      "reference_seconds": 0.0022325385361909866
+    },
+    {
+      "id": "rw-053",
+      "lang": "rw",
+      "category": "punctuation",
+      "input": "Soma ibice [4] na [5].",
+      "expected": "Soma\"} tokens {name: \"ibice\"} tokens {name: \" [\"} tokens {cardinal {integer: \"kane\"}} tokens {name: \"] \"} tokens {name: \"na\"} tokens {name: \" [\"} tokens {cardinal {integer: \"gatanu\"}} tokens {name: \"].",
+      "reference_error": null,
+      "reference_seconds": 0.003039865754544735
+    },
+    {
+      "id": "rw-054",
+      "lang": "rw",
+      "category": "plain",
+      "input": "Uruzi rutuje runyura mu kibaya.",
+      "expected": "Uruzi\"} tokens {name: \"rutuje\"} tokens {name: \"runyura\"} tokens {name: \"mu\"} tokens {name: \"kibaya.",
+      "reference_error": null,
+      "reference_seconds": 0.0018196608871221542
+    },
+    {
+      "id": "rw-055",
+      "lang": "rw",
+      "category": "mixed",
+      "input": "Ku wa 5 Gicurasi naguze kg 2 z'umuceri ku mafaranga 2450.",
+      "expected": "Ku\"} tokens {name: \"wa\"} tokens {cardinal {integer: \"gatanu\"}} tokens {name: \"Gicurasi\"} tokens {name: \"naguze\"} tokens {name: \"kg\"} tokens {cardinal {integer: \"kabiri\"}} tokens {name: \"z'umuceri\"} tokens {name: \"ku\"} tokens {name: \"mafaranga\"} tokens {cardinal {integer: \"ibihumbi bibiri na magana ane na mirongo itanu\"}} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.005594784393906593
+    },
+    {
+      "id": "rw-056",
+      "lang": "rw",
+      "category": "mixed",
+      "input": "Saa 10:30 ubushyuhe bwari 22,5 °C naho ubuhehere ari 60%.",
+      "expected": "Saa\"} tokens {time {hours: \"saa ine\" minutes: \"n'iminota mirongo itatu\"}} tokens {name: \"ubushyuhe\"} tokens {name: \"bwari\"} tokens {cardinal {integer: \"kabiri kabiri gatanu\"}} tokens {name: \"°C\"} tokens {name: \"naho\"} tokens {name: \"ubuhehere\"} tokens {name: \"ari\"} tokens {name: \"60%\"} tokens {name: \".",
+      "reference_error": null,
+      "reference_seconds": 0.005905077792704105
+    }
+  ]
+}

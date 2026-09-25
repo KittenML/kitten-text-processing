@@ -1,0 +1,4 @@
+include LICENSE LICENSE-SACREMOSES NOTICE
+recursive-include kitten_text_processing/data *.gz *.json
+recursive-include tests *.py *.txt *.json *.jsonl *.md
+recursive-include tools *.py *.txt
