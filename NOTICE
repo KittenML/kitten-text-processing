@@ -24,3 +24,8 @@ _unicode_data.py contains Unicode character tables exported from Sacremoses
 
 The output-epsilon removal ordering follows the OpenFst RmEpsilon algorithm
 (Copyright Google, Inc., Apache-2.0); the implementation here uses Python.
+
+The C++ decoder and normalization helpers port the Python implementation,
+including the NeMo-derived token parsing, ordering, and punctuation algorithms.
+cpp/src/unicode_data.hpp contains the same MIT-licensed Sacremoses character
+tables as _unicode_data.py. The same licenses and notices apply to both runtimes.

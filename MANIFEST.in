@@ -1,4 +1,6 @@
 include LICENSE LICENSE-SACREMOSES NOTICE
+include CMakeLists.txt
+recursive-include cpp *.cpp *.hpp *.cmake *.in *.md CMakeLists.txt
 recursive-include kitten_text_processing/data *.gz *.json
 recursive-include tests *.py *.txt *.json *.jsonl *.md
 recursive-include tools *.py *.txt

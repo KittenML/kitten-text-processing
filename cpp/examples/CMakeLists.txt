@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16)
+project(NormalizerConsumer LANGUAGES CXX)
+find_package(KittenTextProcessing CONFIG REQUIRED)
+add_executable(normalize_example main.cpp)
+target_link_libraries(normalize_example PRIVATE KittenTextProcessing::normalizer)

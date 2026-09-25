@@ -1,0 +1,4 @@
+@PACKAGE_INIT@
+include("${CMAKE_CURRENT_LIST_DIR}/KittenTextProcessingTargets.cmake")
+set_and_check(KittenTextProcessing_DATA_DIR "@PACKAGE_KITTEN_INSTALL_DATA_DIR@")
+check_required_components(KittenTextProcessing)

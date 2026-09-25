@@ -23,43 +23,26 @@ def graph(edges, finals):
 
 
 class DecoderTests(unittest.TestCase):
-    def test_negative_edge_without_negative_cycle(self):
-        g = graph([(0, 1, 97, 120, 1), (0, 2, 0, 0, 3), (2, 3, 97, 121, -5)], {1: 0, 3: 0})
-        self.assertEqual(g.rewrite('a'), 'y')
+    pass
 
-    def test_equal_weight_ordering(self):
-        g = graph([(0, 1, 97, 120, 0), (0, 2, 97, 121, 0)], {1: 0, 2: 0})
-        self.assertEqual(g.rewrite('a'), 'y')
 
-    def test_dead_epsilon_cycle_is_trimmed(self):
-        g = graph([(0, 1, 0, 0, 0), (1, 0, 0, 0, 1),
-                   (0, 2, 97, 120, 0), (0, 3, 97, 121, 0),
-                   (0, 4, 0, 0, 0), (4, 5, 0, 0, 0), (5, 4, 0, 0, 0)], {2: 0, 3: 0})
-        self.assertEqual(g.rewrite('a'), 'y')
+def case_test(case):
+    def test(self):
+        g=graph(case['edges'],{int(k):v for k,v in case['finals'].items()})
+        g.project_output=case.get('project_output',False)
+        for check in case['checks']:
+            with self.subTest(input=check['input']):
+                if check.get('error'):
+                    with self.assertRaises(NoPathError): g.rewrite(check['input'])
+                else:
+                    self.assertEqual(g.rewrite(check['input']),check['expected'])
+    return test
 
-    def test_float32_rounding_at_each_addition(self):
-        g = graph([(0, 1, 0, 0, 100_000_000), (1, 2, 97, 120, 1),
-                   (1, 3, 97, 121, 2)], {2: 0, 3: 0})
-        # Both costs round to 100,000,000 in float32; traversal resolves the tie.
-        self.assertEqual(g.rewrite('a'), 'y')
 
-    def test_chain_contraction_keeps_join_predecessors(self):
-        # Collapsing both branches into parallel arcs would select x instead of y.
-        g = graph([(0, 1, 97, 0, 0), (0, 3, 97, 0, 0),
-                   (1, 2, 0, 120, 0), (2, 5, 0, 0, 0),
-                   (3, 4, 0, 121, 0), (4, 5, 0, 0, 0)], {5: 0})
-        self.assertEqual(g.rewrite('a'), 'y')
-
-    def test_final_weights_and_no_path(self):
-        g = graph([(0, 1, 97, 120, 0), (0, 2, 97, 121, 0)], {1: 0, 2: 10})
-        self.assertEqual(g.rewrite('a'), 'x')
-        with self.assertRaises(NoPathError):
-            g.rewrite('b')
-
-    def test_utf8_byte_labels(self):
-        g = graph([(0, 1, 0xC3, 0xC3, 0), (1, 2, 0xA9, 0xA9, 0)], {2: 0})
-        self.assertEqual(g.rewrite('é'), 'é')
-
+import json
+from pathlib import Path
+for _case in json.loads((Path(__file__).parent/'decoder_cases.json').read_text()):
+    setattr(DecoderTests,'test_'+_case['name'],case_test(_case))
 
 if __name__ == '__main__':
     unittest.main()

@@ -27,6 +27,16 @@ Languages: `en es fr de pt it zh ja ko hi ar ru vi hu sv hy rw`.
 Locale tags such as `en-US`, `pt-BR`, `zh-CN`, and `hi_IN` select the corresponding
 language grammar; they do not select separate regional grammars. Python 3.10+.
 
+## C++ library
+
+A standalone C++17 library and CLI are also included. C++ applications can link
+`KittenTextProcessing::normalizer` through CMake. It uses the same grammar data
+and test corpus, with no third-party runtime dependencies. See the
+[C++ build and integration guide](https://github.com/KittenML/kitten-text-processing/blob/main/cpp/README.md).
+
+Python imports continue using pure Python. There are no bindings or native
+extensions in the Python package in this version.
+
 ## Convenience API
 
 `normalize_text(text, locale='en-US', return_spans=False)` normalizes text and
