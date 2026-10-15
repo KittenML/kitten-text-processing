@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kitten-text-processing"
-version = "0.1.0"
+version = "0.2.0"
 description = "Standalone, standard-library-only multilingual text normalization for TTS"
 readme = "README.md"
 requires-python = ">=3.10"
-license = "Apache-2.0 AND MIT"
-license-files = ["LICENSE", "LICENSE-SACREMOSES", "NOTICE"]
+license = "Apache-2.0 AND MIT AND Unicode-3.0"
+license-files = ["LICENSE", "LICENSE-SACREMOSES", "NOTICE", "cpp/voice/LICENSE-UNICODE", "cpp/voice/NOTICE"]
 dependencies = []
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -29,4 +29,4 @@ kitten-normalize = "kitten_text_processing.__main__:main"
 include = ["kitten_text_processing*"]
 
 [tool.setuptools.package-data]
-kitten_text_processing = ["data/*/*.fst.gz", "data/*/metadata.json"]
+kitten_text_processing = ["data/*/*.fst.gz", "data/*/metadata.json", "data/voice/*.json"]

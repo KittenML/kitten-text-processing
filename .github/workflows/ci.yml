@@ -1,0 +1,24 @@
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  normalization:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: ICU compiler dependency
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq libicu-dev
+      - name: Build shared compatibility and voice runtimes
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DKITTEN_BUILD_VOICE_NORMALIZATION=ON
+          cmake --build build -j4
+      - name: Python legacy fixtures
+        run: python -m unittest discover -s tests -v
+      - name: C++ shared fixtures and independent voice policy tests
+        run: ctest --test-dir build --output-on-failure

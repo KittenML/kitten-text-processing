@@ -5,6 +5,10 @@ dependencies**. It uses Python's standard library to interpret bundled NeMo
 1.2.0 grammar data. No NeMo, Pynini, OpenFst, models, network access, or grammar
 compilation is needed when installing or running the library.
 
+An optional [voice-selected C++ backend](docs/voice-normalization.md) adds fixed
+number, date, currency and time rules for all 16 Kitten TTS 2 voice languages.
+It requires ICU 72+ when built; the original compatibility API remains unchanged.
+
 ```sh
 pip install kitten-text-processing
 python -m kitten_text_processing --lang en 'I paid $12.50 for 3 books.'
